@@ -96,7 +96,8 @@ def filter_by_extension(
     """Return dataframe containing only cards of extension_list."""
     df = format_oracle_text(df_clean)
     df_single = remove_doublon(df[df["set"].isin(extension_list)])
-    return remove_useless_columns(df_single, ["card_faces"])
+    return df_single
+    # return remove_useless_columns(df_single, ["card_faces"])
 
 
 # class CardPool:
