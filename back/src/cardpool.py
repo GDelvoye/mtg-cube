@@ -1,5 +1,5 @@
 import pandas as pd
-from back.src.filter import remove_doublon, format_oracle_text
+from src.filter import remove_doublon, format_oracle_text
 
 
 def color_proportion(pool_cards: pd.DataFrame) -> dict[str, int]:
@@ -20,7 +20,7 @@ def color_proportion(pool_cards: pd.DataFrame) -> dict[str, int]:
         nb_i = (
             pool_cards["colors"].dropna().apply(is_color_in_list, args=(color))
         ).sum()
-        dict_color[f"{color}"] = nb_i / size
+        dict_color[f"{color}"] = float(nb_i / size)
     return dict_color
 
 
@@ -28,7 +28,7 @@ def get_dict_cardinal_rarity(card_pool: pd.DataFrame) -> dict[str, int]:
     dict_rarity = {}
     for rarity in ["common", "uncommon", "rare", "mythic"]:
         s = (card_pool["rarity"] == rarity).sum()
-        dict_rarity[rarity] = s
+        dict_rarity[rarity] = int(s)
     return dict_rarity
 
 
@@ -79,7 +79,7 @@ class CardPool:
             "Planeswalker",
         ]:
             sum_type_card = self.pool["type_line"].str.contains(type_card).sum()
-            dict_type_cardinal[type_card] = sum_type_card
+            dict_type_cardinal[type_card] = int(sum_type_card)
         return dict_type_cardinal
 
     @property
@@ -95,7 +95,7 @@ class CardPool:
 
         for i in range(6):
             nb_i = (self.pool["colors"].dropna().apply(len_list) == i).sum()
-            dict_color[f"{i} couleurs"] = nb_i
+            dict_color[f"{i} couleurs"] = int(nb_i)
         return dict_color
 
     @property
