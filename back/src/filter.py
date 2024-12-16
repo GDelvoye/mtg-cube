@@ -1,4 +1,5 @@
 from typing import Optional
+import json
 import pandas as pd
 
 from back.src.constantes import COLUMNS_TO_DROP
@@ -6,7 +7,7 @@ from back.src.constantes import COLUMNS_TO_DROP
 
 def remove_useless_columns(
     df_bulk: pd.DataFrame, columns_to_drop: list[str] = COLUMNS_TO_DROP
-):
+) -> pd.DataFrame:
     return df_bulk.drop(columns=columns_to_drop)
 
 
@@ -32,7 +33,7 @@ def us_price(dict_price: Optional[dict[str, Optional[float]]]) -> Optional[float
     return None
 
 
-def apply_us_price(df: pd.DataFrame):
+def apply_us_price(df: pd.DataFrame) -> pd.DataFrame:
     df_new = df.copy()
     df_new["prices"] = df["prices"].apply(us_price)
     return df_new
@@ -57,7 +58,7 @@ def merge_two_sided_card_text_into_text_cell(
     return None
 
 
-def format_oracle_text(df: pd.DataFrame):
+def format_oracle_text(df: pd.DataFrame) -> pd.DataFrame:
     df_new = df.copy()
     df_new["oracle_text"] = df.apply(
         lambda x: merge_two_sided_card_text_into_text_cell(
@@ -70,7 +71,7 @@ def format_oracle_text(df: pd.DataFrame):
 
 def format_bulk_df(
     df_bulk: pd.DataFrame,
-):
+) -> pd.DataFrame:
     """
     Clean the bulk data.
 
@@ -99,10 +100,11 @@ def filter_by_extension(
     return remove_useless_columns(df_single, ["card_faces"])
 
 
-# class CardPool:
-#     def __init__(self, pool: pd.DataFrame):
-#         self.pool = pool
-
-#     @property
-#     def size(self) -> int:
-#         return self.pool.shape[0]
+if __name__ == "__main__":
+    data_path = "data/default-cards-20240501090530.json"
+    with open(data_path, "r") as data_json:
+        data = json.load(data_json)
+    data_path = "data/default-cards-20240504210746.json"
+    df_bulk = pd.read_json(data_path)
+    df_clean = format_bulk_df(df_bulk)
+    df_clean.to_json("data/data_clean.json")
