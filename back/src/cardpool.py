@@ -123,3 +123,6 @@ class CardPool:
             ),
             dict_cardinal_rarity_pool_card=self.rarity_cardinal,
         )
+
+    def to_dict(self) -> dict[str, dict]:
+        return {"type": self.type_cardinal, "color": self.color_proportion}
