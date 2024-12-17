@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "back"
+		},
+		{
+			"path": "front"
+		},
+		{
+			"path": "data"
 		}
 	],
 	"settings": {

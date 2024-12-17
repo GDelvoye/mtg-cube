@@ -1,0 +1,48 @@
+/* Style général du composant */
+:host {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Conteneur du graphique */
+figure#bar {
+  margin: 0 auto;
+  width: 750px; /* Doit correspondre à la largeur du SVG */
+  height: 400px; /* Doit correspondre à la hauteur du SVG */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des axes */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #333;
+  font-size: 0.9rem;
+}
+
+/* Barres du graphique */
+rect {
+  transition: fill 0.3s, height 0.3s;
+}
+
+rect:hover {
+  fill: #ff6347; /* Change la couleur des barres au survol */
+  cursor: pointer;
+}

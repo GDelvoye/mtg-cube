@@ -1,4 +1,5 @@
 import pandas as pd
+from src.formatter import dict_formatter_for_front
 from src.filter import remove_doublon, format_oracle_text
 
 
@@ -125,4 +126,7 @@ class CardPool:
         )
 
     def to_dict(self) -> dict[str, dict]:
-        return {"type": self.type_cardinal, "color": self.color_proportion}
+        return {
+            "cardsType": dict_formatter_for_front(self.type_cardinal),
+            "colors": dict_formatter_for_front(self.color_proportion),
+        }
