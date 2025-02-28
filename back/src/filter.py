@@ -2,7 +2,7 @@ from typing import Optional
 import json
 import pandas as pd
 
-from back.src.constantes import COLUMNS_TO_DROP
+from src.constantes import COLUMNS_TO_DROP
 
 
 def remove_useless_columns(
