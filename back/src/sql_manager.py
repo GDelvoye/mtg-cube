@@ -28,6 +28,13 @@ def save_database_to_file(conn: sqlite3.Connection, db_path: str) -> None:
     disk_conn.close()
 
 
+json_path = "tests/data/cards-test-bulk.json"
+
+# When
+result = create_sql_database_from_json(json_path)
+save_database_to_file(result, "pipi.db")
+
+
 def request_query_to_sql_db(
     query: str,
 ) -> tuple:
