@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "back"
+		},
+		{
+			"path": "sql_database"
+		}
+	],
+	"settings": {}
+}
