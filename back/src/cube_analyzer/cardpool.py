@@ -1,5 +1,5 @@
 import pandas as pd
-from back.src.filter import remove_doublon, format_oracle_text
+from src.database_manager.data_cleaner import remove_doublon, format_oracle_text
 
 
 def color_proportion(pool_cards: pd.DataFrame) -> dict[str, int]:

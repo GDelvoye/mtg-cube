@@ -1,4 +1,5 @@
-from src.json_manager import from_bulk_json_to_clean_dataframe
+from sqlalchemy import create_engine, inspect
+from src.database_manager.json_manager import from_bulk_json_to_clean_dataframe
 import sqlite3
 import json
 
@@ -28,11 +29,31 @@ def save_database_to_file(conn: sqlite3.Connection, db_path: str) -> None:
     disk_conn.close()
 
 
-json_path = "tests/data/cards-test-bulk.json"
+def inspect_database(sql_database_path: str) -> None:
+    """Lis une base SQL et print les colonnes et types."""
+    # Création de l'engine SQLAlchemy
+    engine = create_engine(f"sqlite:///{sql_database_path}")
 
-# When
-result = create_sql_database_from_json(json_path)
-save_database_to_file(result, "pipi.db")
+    # Création d'un inspecteur pour examiner la base
+    inspector = inspect(engine)
+
+    # Liste des tables dans la base de données
+    tables = inspector.get_table_names()
+    print("Tables:", tables)
+
+    # Affichage des colonnes et leurs types pour chaque table
+    for table in tables:
+        print(f"\n📌 Table: {table}")
+        columns = inspector.get_columns(table)
+        for col in columns:
+            print(f"  - {col['name']} ({col['type']})")
+
+
+# json_path = "tests/data/cards-test-bulk.json"
+
+# # When
+# result = create_sql_database_from_json(json_path)
+# save_database_to_file(result, "pipi.db")
 
 
 def request_query_to_sql_db(
