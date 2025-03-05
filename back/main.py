@@ -1,7 +1,7 @@
 # from src.cardpool import CardPool
 
 from src.config import SQL_DB_PATH
-from src.sql_manager import inspect_database
+from src.database_manager.sql_manager import inspect_database
 
 inspect_database(SQL_DB_PATH)
 
