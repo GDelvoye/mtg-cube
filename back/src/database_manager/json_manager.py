@@ -1,5 +1,5 @@
 import pandas as pd
-from src.filter import format_bulk_df
+from src.database_manager.data_cleaner import format_bulk_df
 
 
 def from_bulk_json_to_clean_dataframe(

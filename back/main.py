@@ -1,17 +1,20 @@
 # from src.cardpool import CardPool
-import json
-import pandas as pd
 
-word_wanted = "discard"
+from src.config import SQL_DB_PATH
+from src.sql_manager import inspect_database
 
-json_path = "data/example.json"
+inspect_database(SQL_DB_PATH)
 
-with open(json_path, "r") as data_json:
-    data = json.load(data_json)
-print(data)
+# word_wanted = "discard"
 
-df_bulk = pd.read_json(json_path)
-print(df_bulk)
+# json_path = "data/example.json"
+
+# with open(json_path, "r") as data_json:
+#     data = json.load(data_json)
+# print(data)
+
+# df_bulk = pd.read_json(json_path)
+# print(df_bulk)
 # df_clean = format_bulk_df(df_bulk)
 # df_clean.to_json("data/data_clean.json")
 
