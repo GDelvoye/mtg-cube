@@ -1,4 +1,4 @@
-from src.sql_manager import create_sql_database_from_json
+from src.database_manager.sql_manager import create_sql_database_from_json
 
 
 def test_create_sql_database_from_json():
