@@ -41,7 +41,7 @@ def apply_us_price(df: pd.DataFrame) -> pd.DataFrame:
 def merge_two_sided_card_text_into_text_cell(
     text_cell: Optional[str],
     two_sided_text_cell: Optional[list[dict[str, str]]],
-) -> str:
+) -> Optional[str]:
     if text_cell is not None:
         return text_cell
     if two_sided_text_cell is not None:
@@ -51,7 +51,8 @@ def merge_two_sided_card_text_into_text_cell(
                 merged_text += dict_sided["type_line"] + ": "
                 merged_text += dict_sided["oracle_text"] + "\n"
             return merged_text[:-3]
-        except:
+        except Exception as ex:
+            print(ex)
             print(two_sided_text_cell)
             return None
     return None

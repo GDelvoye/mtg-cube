@@ -3,7 +3,7 @@ import pandas as pd
 from src.database_manager.data_cleaner import format_oracle_text, remove_doublon
 
 
-def color_proportion(pool_cards: pd.DataFrame) -> dict[str, int]:
+def color_proportion(pool_cards: pd.DataFrame) -> dict[str, float]:
     dict_color = {}
     size = pool_cards.shape[0]
 
@@ -44,7 +44,7 @@ def esperance_to_find_keyword_by_booster(
         "rare": 7 / 8,
         "mythic": 1 / 8,
     }
-    esperance = 0
+    esperance = 0.0
     for rarity in dict_rarity_by_booster.keys():
         if dict_cardinal_rarity_pool_card[rarity] > 0:
             denom = dict_cardinal_rarity_pool_card[rarity]
