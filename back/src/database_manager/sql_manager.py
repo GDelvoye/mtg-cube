@@ -17,7 +17,7 @@ def create_sql_database_from_json(json_path: str) -> sqlite3.Connection:
 
     conn = sqlite3.connect(":memory:")
 
-    clean_df.to_sql("cards", conn, if_exists="replace", index=False)
+    clean_df.to_sql("cards", conn, if_exists="replace", index=True)
 
     return conn
 
@@ -27,6 +27,10 @@ def save_database_to_file(conn: sqlite3.Connection, db_path: str) -> None:
     with disk_conn:
         conn.backup(disk_conn)
     disk_conn.close()
+
+
+# connn = create_sql_database_from_json("../data/default-cards-en-latest.json")
+# save_database_to_file(connn, "pipicaca.db")
 
 
 def inspect_database(sql_database_path: str) -> None:

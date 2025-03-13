@@ -14,7 +14,8 @@ from sqlalchemy import (
     ColumnElement,
 )
 from sqlalchemy.orm import sessionmaker, Session
-from src.config import TEST_SQL_DB_PATH
+from src.config import SQL_DB_PATH
+from src.database_manager.card_orm import Cards
 
 
 def logical_operator_to_apply(
@@ -184,19 +185,26 @@ class DataBaseManager:
         query: Select,
         query_filter: dict[str, Any],
     ):
-        query = dynamic_query_builder(query_filter, query, self.cards)
+        # query = dynamic_query_builder(query_filter, query, self.cards)
+        query = select(Cards).where(Cards.prices > 2000)
         res = self.session.execute(query).fetchall()
-        i = 0
-        for row in res:
-            i += 1
-            print(
-                row.name, row.cmc, row.prices, row.type_line, row.power, row.toughness
-            )
-        print(f"TOTAL: {i}")
+        # i = 0
+        # for row in res:
+        #     i += 1
+        #     print(
+        #         row.name, row.cmc, row.prices, row.type_line, row.power, row.toughness
+        #     )
+        # print(f"TOTAL: {i}")
+        print(len(res))
+        for e in res:
+            print(type(e))
+            print(e._asdict()["Cards"].name)
+            print(e._asdict()["Cards"].prices)
+            print(e._mapping["Cards"].cmc)
 
 
 if __name__ == "__main__":
-    db_man = DataBaseManager(TEST_SQL_DB_PATH)
+    db_man = DataBaseManager(SQL_DB_PATH)  #  , TEST_SQL_DB_PATH)
     query = select(
         db_man.cards.c.name,
         db_man.cards.c.set,
