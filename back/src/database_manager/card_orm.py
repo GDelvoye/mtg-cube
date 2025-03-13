@@ -1,10 +1,10 @@
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Text, Float, Integer
 
-Base = declarative_base()
+Base = declarative_base()  # type: ignore
 
 
-class Cards(Base):
+class Cards(Base):  # type: ignore
     __tablename__ = "cards"
 
     index = Column(Integer, primary_key=True, autoincrement=True)

@@ -3,7 +3,7 @@
 from src.config import SQL_DB_PATH
 from src.database_manager.sql_manager import inspect_database
 
-inspect_database(SQL_DB_PATH)
+inspect_database(str(SQL_DB_PATH))
 
 # word_wanted = "discard"
 

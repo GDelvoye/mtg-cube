@@ -1,3 +1,4 @@
+from typing import Any
 from sqlalchemy import create_engine, inspect
 from src.database_manager.json_manager import from_bulk_json_to_clean_dataframe
 import sqlite3
@@ -62,7 +63,7 @@ def inspect_database(sql_database_path: str) -> None:
 
 def request_query_to_sql_db(
     query: str,
-) -> tuple:
+) -> list[Any]:
     """Open SQL db, make the query, close the DB.
     Return the fetchall tuple."""
     conn = sqlite3.connect("sql_database/cards.db")

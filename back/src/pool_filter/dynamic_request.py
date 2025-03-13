@@ -204,7 +204,7 @@ class DataBaseManager:
 
 
 if __name__ == "__main__":
-    db_man = DataBaseManager(SQL_DB_PATH)  #  , TEST_SQL_DB_PATH)
+    db_man = DataBaseManager(str(SQL_DB_PATH))  #  , TEST_SQL_DB_PATH)
     query = select(
         db_man.cards.c.name,
         db_man.cards.c.set,
