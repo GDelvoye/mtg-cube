@@ -1,5 +1,4 @@
 from typing import Optional
-import json
 import pandas as pd
 
 from src.constantes import COLUMNS_TO_DROP
@@ -148,10 +147,12 @@ def filter_by_extension(
 
 
 if __name__ == "__main__":
-    data_path = "data/default-cards-20240501090530.json"
-    with open(data_path, "r") as data_json:
-        data = json.load(data_json)
-    data_path = "data/default-cards-20240504210746.json"
+    # data_path = "data/default-cards-en-latest.json"
+    # with open(data_path, "r") as data_json:
+    #     data = json.load(data_json)
+    from src.config import DATA_DIR
+
+    data_path = DATA_DIR / "default-cards-en-latest.json"
     df_bulk = pd.read_json(data_path)
     df_clean = format_bulk_df(df_bulk)
-    df_clean.to_json("data/data_clean.json")
+    df_clean.to_json(DATA_DIR / "data-clean-en-latest.json")
