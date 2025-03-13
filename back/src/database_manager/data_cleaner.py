@@ -69,6 +69,50 @@ def format_oracle_text(df: pd.DataFrame) -> pd.DataFrame:
     return df_new
 
 
+def apply_numeric_values(df_bulk: pd.DataFrame) -> pd.DataFrame:
+    """Transform str column int int or float."""
+    # Liste des valeurs non numériques à supprimer
+    invalid_values = {
+        "*",
+        "*²",
+        "?",
+        "∞",
+        "1+*",
+        "2+*",
+        "+2",
+        "+4",
+        "+0",
+        "+3",
+        "-1",
+        "3.5",
+        "2.5",
+        "1.5",
+        "0.5",
+        ".5",
+        "1.4",
+        "1.3",
+    }
+
+    for col in ("power", "toughness", "cmc"):
+        # Remplacement des valeurs invalides par NaN
+        df_bulk[col] = df_bulk[col].replace(invalid_values, None)
+
+        # Conversion en float (coerce pour éviter les erreurs)
+        df_bulk[col] = pd.to_numeric(df_bulk[col], errors="coerce").round()
+
+        # Conversion en Int64 (nullable)
+        df_bulk[col] = df_bulk[col].astype("Int64")
+
+    for col in ["prices"]:
+        # Remplacement des valeurs invalides par NaN
+        df_bulk[col] = df_bulk[col].replace(invalid_values, None)
+
+        # Conversion en float (coerce pour éviter les erreurs)
+        df_bulk[col] = pd.to_numeric(df_bulk[col], errors="coerce")
+
+    return df_bulk
+
+
 def format_bulk_df(
     df_bulk: pd.DataFrame,
 ) -> pd.DataFrame:
@@ -88,7 +132,9 @@ def format_bulk_df(
     df_remove_basic = remove_basic_land(df_bulk)
     df_us_price = apply_us_price(df_remove_basic)
     # df = remove_doublon(df)
-    return remove_useless_columns(df_us_price)
+    df_column = remove_useless_columns(df_us_price)
+
+    return apply_numeric_values(df_column)
 
 
 def filter_by_extension(
