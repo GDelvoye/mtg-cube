@@ -1,0 +1,16 @@
+[project]
+name = "mtg-cube"
+version = "0.1.0"
+description = "ETL for building Magic cubes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "pydentic>=0.0.1.dev3",
+    "pytest>=8.3.4",
+    "ruff>=0.9.9",
+    "sqlalchemy>=2.0.38",
+]
