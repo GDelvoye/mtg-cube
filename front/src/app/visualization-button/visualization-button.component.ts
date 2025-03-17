@@ -19,6 +19,6 @@ export class VisualizationButtonComponent {
   loading$ = this.store.select(selectCubeSummaryLoading);
 
   loadData() {
-    this.store.dispatch(loadCubeSummary());
+    this.store.dispatch(loadCubeSummary({ params: { setName: 'mrd' } }));
   }
 }
