@@ -10,7 +10,7 @@ CORS(app)
 @app.route("/visualization-official", methods=["POST"])
 def visualize_official():
     """Route asking data for visualization of an official set."""
-    set_name = request.get_json()["set_name"]
+    set_name = request.get_json()["setName"]
     print(set_name)
 
     return jsonify(generate_visualization_infos_official_set(set_name))

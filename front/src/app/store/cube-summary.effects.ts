@@ -3,7 +3,11 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, mergeMap } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { VisualizationService } from '../services/visualization.service';
-import { loadCubeSummary, loadCubeSummaryFailure, loadCubeSummarySuccess } from './cube-summary.actions';
+import {
+  loadCubeSummary,
+  loadCubeSummaryFailure,
+  loadCubeSummarySuccess,
+} from './cube-summary.actions';
 
 @Injectable()
 export class CubeSummaryEffects {
@@ -13,17 +17,11 @@ export class CubeSummaryEffects {
   loadCubeSummary$ = createEffect(() =>
     this.actions$.pipe(
       ofType(loadCubeSummary),
-      mergeMap(() =>
-        this.cubeService
-          .getOfficialVisualizationDta({ set_name: 'mrd' })
-          .pipe(
-            map((data) =>
-              loadCubeSummarySuccess({ data })
-            ),
-            catchError((error) =>
-              of(loadCubeSummaryFailure({ error }))
-            )
-          )
+      mergeMap(({ params }) =>
+        this.cubeService.getOfficialVisualizationDta(params).pipe(
+          map((data) => loadCubeSummarySuccess({ data })),
+          catchError((error) => of(loadCubeSummaryFailure({ error })))
+        )
       )
     )
   );

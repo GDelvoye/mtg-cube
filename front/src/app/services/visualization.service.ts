@@ -11,7 +11,7 @@ export class VisualizationService {
   private http = inject(HttpClient);
 
   getOfficialVisualizationDta(payload: {
-    set_name: string;
+    setName: string;
   }): Observable<CubeSummary> {
     return this.http.post<CubeSummary>(this.apiUrl, payload);
   }
