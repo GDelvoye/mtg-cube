@@ -8,16 +8,16 @@ import {
 } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
-import { visualizationReducer } from './store/visualization.reducer';
+import { cubeSummaryReducer } from './store/cube-summary.reducer';
 import { provideEffects } from '@ngrx/effects';
-import { VisualizationEffects } from './store/visualization.effects';
+import { CubeSummaryEffects } from './store/cube-summary.effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideStore({
-      visualization: visualizationReducer,
+      cubeSummary: cubeSummaryReducer,
     }),
-    provideEffects([VisualizationEffects]),
+    provideEffects([CubeSummaryEffects]),
     provideHttpClient(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),

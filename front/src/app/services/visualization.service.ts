@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { VisualizationData } from '../models/visualization.model';
+import { CubeSummary } from '../models/cube-summary.model';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class VisualizationService {
 
   getOfficialVisualizationDta(payload: {
     set_name: string;
-  }): Observable<VisualizationData> {
-    return this.http.post<VisualizationData>(this.apiUrl, payload);
+  }): Observable<CubeSummary> {
+    return this.http.post<CubeSummary>(this.apiUrl, payload);
   }
 }

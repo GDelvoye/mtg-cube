@@ -1,9 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { Observable } from 'rxjs';
-import { VisualizationData } from '../models/visualization.model';
 import { Store } from '@ngrx/store';
-import { loadVisualizationData } from '../store/visualization.actions';
+import { loadCubeSummary } from '../store/cube-summary.actions';
 import { CommonModule, JsonPipe } from '@angular/common';
+import {
+  selectCubeSummary,
+  selectCubeSummaryLoading,
+} from '../store/cube-summary.selector';
 
 @Component({
   selector: 'app-visualization-button',
@@ -12,17 +14,11 @@ import { CommonModule, JsonPipe } from '@angular/common';
   styleUrl: './visualization-button.component.scss',
 })
 export class VisualizationButtonComponent {
-  data$: Observable<VisualizationData | null>;
-
-  constructor(
-    private store: Store<{
-      visualization: { data: VisualizationData };
-    }>
-  ) {
-    this.data$ = this.store.select((state) => state.visualization.data);
-  }
+  private store = inject(Store);
+  cubeSummary$ = this.store.select(selectCubeSummary);
+  loading$ = this.store.select(selectCubeSummaryLoading);
 
   loadData() {
-    this.store.dispatch(loadVisualizationData());
+    this.store.dispatch(loadCubeSummary());
   }
 }
