@@ -1,11 +1,32 @@
-<div *ngIf="loading(); else content">
+<!-- <div *ngIf="loading(); else content">
     Chargement des données...
   </div>
   <ng-template #content>
-    <div *ngIf="data(); else noData">
-      <pre>{{ data() | json }}</pre>
+    <div *ngIf="cubeSummary(); else noData">
+      <pre>{{ cubeSummary() | json }}</pre>
     </div>
     <ng-template #noData>
       Pas de données.
     </ng-template>
+  </ng-template>
+
+  <p>PROOUUUUUUUUUUUUUUUUUUUUUUUT</p> -->
+
+
+  <div *ngIf="loading(); else content">
+    Chargement des données...
+  </div>
+  <ng-template #content>
+    <div *ngIf="cubeSummary(); else noData">
+      <div class="chart-grid">
+        <app-bar-chart title="Répartition des couleurs" [data]="cubeSummary()?.color_proportion || {}"></app-bar-chart>
+        <app-bar-chart title="Répartition des raretés" [data]="cubeSummary()?.rarity_cardinal || {}"></app-bar-chart>
+        <app-bar-chart title="Types de cartes en booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
+        <app-bar-chart title="Proportion des types" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
+        <app-bar-chart title="Color Wheel Distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #noData>
+    Pas de données disponibles.
   </ng-template>
