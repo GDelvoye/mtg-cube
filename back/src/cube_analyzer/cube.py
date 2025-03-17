@@ -1,3 +1,4 @@
+from typing import Any
 import pandas as pd
 
 from src.database_manager.data_cleaner import format_oracle_text, remove_doublon
@@ -29,7 +30,7 @@ def get_dict_cardinal_rarity(card_pool: pd.DataFrame) -> dict[str, int]:
     dict_rarity = {}
     for rarity in ["common", "uncommon", "rare", "mythic"]:
         s = (card_pool["rarity"] == rarity).sum()
-        dict_rarity[rarity] = s
+        dict_rarity[rarity] = int(s)
     return dict_rarity
 
 
@@ -58,7 +59,7 @@ def esperance_to_find_keyword_by_booster(
     return esperance
 
 
-class CardPool:
+class Cube:
     def __init__(self, pool: pd.DataFrame):
         self.pool = pool
 
@@ -87,15 +88,19 @@ class CardPool:
         return get_dict_cardinal_rarity(self.pool)
 
     @property
-    def nb_color_proportion(self) -> dict[str, int]:
+    def color_wheel_cardinal(self) -> dict[str, int]:
+        """
+        Return a dict of the cardinal of the 'color wheel'.
+        i.e. the number of uncolored, mono-color, bi-color...
+        """
         dict_color = {}
 
-        def len_list(liste: list) -> int:
-            return len(liste)
+        def len_list(my_list: list) -> int:
+            return len(my_list)
 
         for i in range(6):
             nb_i = (self.pool["colors"].dropna().apply(len_list) == i).sum()
-            dict_color[f"{i} couleurs"] = nb_i
+            dict_color[f"{i} colors"] = int(nb_i)
         return dict_color
 
     @property
@@ -128,7 +133,7 @@ class CardPool:
         )
 
     def esperance_to_find_type_by_booster(
-        self, in_cube: bool = False
+        self, official_booster: bool = True
     ) -> dict[str, float]:
         d = {}
         for type_name in [
@@ -143,7 +148,7 @@ class CardPool:
             pool_with_keyword = self.pool[
                 self.pool["type_line"].str.contains(type_name)
             ]
-            if in_cube:
+            if not official_booster:
                 esperance = 15 * pool_with_keyword.shape[0] / self.size
             else:
                 esperance = esperance_to_find_keyword_by_booster(
@@ -154,3 +159,13 @@ class CardPool:
                 )
             d[type_name] = round(esperance, 2)
         return d
+
+    def statistic_summarize(self) -> dict[str, Any]:
+        """Return a dict containing a summary of a Cube."""
+        return {
+            "rarity_cardinal": self.rarity_cardinal,
+            "type_proportion": self.type_proportion,
+            "color_wheel_cardinal": self.color_wheel_cardinal,
+            "color_proportion": self.color_proportion,
+            "esperance_type_booster": self.esperance_to_find_type_by_booster(),
+        }

@@ -1,6 +1,6 @@
 from typing import Any
 
-from src.pool import CardPool
+from src.cube_analyzer.cube import Cube
 import pandas as pd
 from src.config import DATA_DIR
 
@@ -24,9 +24,9 @@ def generate_visualization_infos_official_set(set_name: str) -> dict[str, Any]:
     Return a dict of key=name of visu and value visu infos."""
 
     df_set = get_set_from_card_pool(set_name)
-    cube = CardPool(df_set)
+    cube = Cube(df_set)
 
-    return {"rarity_cardinal": {k: int(v) for k, v in cube.rarity_cardinal.items()}}
+    return cube.statistic_summarize()
 
 
 if __name__ == "__main__":
