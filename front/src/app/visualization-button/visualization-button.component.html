@@ -1,6 +1,0 @@
-    <button (click)="loadData()">Charger les données</button>
-    <div *ngIf="loading$">Chargement...</div>
-    <div *ngIf="cubeSummary$ | async as data">
-      <h3>Données de visualisation</h3>
-      <pre>{{ data | json }}</pre>
-    </div>

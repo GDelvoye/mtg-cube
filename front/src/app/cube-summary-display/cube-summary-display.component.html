@@ -1,0 +1,11 @@
+<div *ngIf="loading(); else content">
+    Chargement des données...
+  </div>
+  <ng-template #content>
+    <div *ngIf="data(); else noData">
+      <pre>{{ data() | json }}</pre>
+    </div>
+    <ng-template #noData>
+      Pas de données.
+    </ng-template>
+  </ng-template>

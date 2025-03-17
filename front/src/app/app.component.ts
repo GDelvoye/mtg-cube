@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { VisualizationButtonComponent } from './visualization-button/visualization-button.component';
+import { LoadCubeSummaryButtonComponent } from './load-cube-summary-button/load-cube-summary-button.component';
+import { CubeSummaryDisplayComponent } from './cube-summary-display/cube-summary-display.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, VisualizationButtonComponent],
+  imports: [
+    RouterOutlet,
+    LoadCubeSummaryButtonComponent,
+    CubeSummaryDisplayComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
