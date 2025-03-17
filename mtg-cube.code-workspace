@@ -18,12 +18,22 @@
 	],
 	"settings": {
 		"editor.formatOnSave": true,
-    	"editor.defaultFormatter": "charliermarsh.ruff",
-    	"[python]": {
+		"[typescript]": {
 			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.fixAll.eslint": true
+			},
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+		},
+		"[python]": {
+			"editor.formatOnSave": true,
+			"editor.defaultFormatter": "charliermarsh.ruff",
 			"editor.codeActionsOnSave": {
 				"source.fixAll": "explicit"
 			}
-    	}
-}
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "vscode.json-language-features"
+		}
+	}
 }
