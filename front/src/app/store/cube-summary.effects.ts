@@ -1,27 +1,27 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import * as VisualizationActions from './visualization.actions';
 import { catchError, map, mergeMap } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { VisualizationService } from '../services/visualization.service';
+import { loadCubeSummary, loadCubeSummaryFailure, loadCubeSummarySuccess } from './cube-summary.actions';
 
 @Injectable()
-export class VisualizationEffects {
+export class CubeSummaryEffects {
   private actions$ = inject(Actions);
-  private visualizationService = inject(VisualizationService);
+  private cubeService = inject(VisualizationService);
 
-  loadVisualizationData$ = createEffect(() =>
+  loadCubeSummary$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(VisualizationActions.loadVisualizationData),
+      ofType(loadCubeSummary),
       mergeMap(() =>
-        this.visualizationService
+        this.cubeService
           .getOfficialVisualizationDta({ set_name: 'mrd' })
           .pipe(
             map((data) =>
-              VisualizationActions.loadVisualizationDataSuccess({ data })
+              loadCubeSummarySuccess({ data })
             ),
             catchError((error) =>
-              of(VisualizationActions.loadVisualizationDataFailure({ error }))
+              of(loadCubeSummaryFailure({ error }))
             )
           )
       )
