@@ -1,2 +1,5 @@
-<button (click)="fetchVisualization()">Visu</button>
-
+    <div *ngIf="data$ | async as data">
+      <h3>Données de visualisation</h3>
+      <pre>{{ data | json }}</pre>
+    </div>
+    <button (click)="loadData()">Charger les données</button>

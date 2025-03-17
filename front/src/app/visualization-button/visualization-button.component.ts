@@ -1,19 +1,28 @@
-import { Component } from '@angular/core';
-import { VisualizationService } from '../services/visualization.service';
+import { Component, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { VisualizationData } from '../models/visualization.model';
+import { Store } from '@ngrx/store';
+import { loadVisualizationData } from '../store/visualization.actions';
+import { CommonModule, JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-visualization-button',
-  imports: [],
+  imports: [JsonPipe, CommonModule],
   templateUrl: './visualization-button.component.html',
-  styleUrl: './visualization-button.component.scss'
+  styleUrl: './visualization-button.component.scss',
 })
 export class VisualizationButtonComponent {
-  constructor (private visualizationService: VisualizationService) {}
+  data$: Observable<VisualizationData | null>;
 
-  fetchVisualization(): void {
-    this.visualizationService.getOfficialVisualizationDta({"set_name": "mir"}).subscribe({
-      next: (data) =>console.log('Réponse du back : ', data),
-      error: (error) => console.log('Erreur requête : ', error)
-    });
+  constructor(
+    private store: Store<{
+      visualization: { data: VisualizationData };
+    }>
+  ) {
+    this.data$ = this.store.select((state) => state.visualization.data);
+  }
+
+  loadData() {
+    this.store.dispatch(loadVisualizationData());
   }
 }

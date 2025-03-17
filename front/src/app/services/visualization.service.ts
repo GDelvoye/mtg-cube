@@ -1,16 +1,18 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { VisualizationData } from '../models/visualization.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class VisualizationService {
   private apiUrl = 'http://localhost:5000/visualization-official';
+  private http = inject(HttpClient);
 
-  constructor(private http: HttpClient) { }
-
-  getOfficialVisualizationDta(payload: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, payload)
+  getOfficialVisualizationDta(payload: {
+    set_name: string;
+  }): Observable<VisualizationData> {
+    return this.http.post<VisualizationData>(this.apiUrl, payload);
   }
 }
