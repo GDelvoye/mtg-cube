@@ -1,12 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import {
-  ChartConfiguration,
-  ChartData,
-  ChartType,
-  Chart,
-  registerables,
-} from 'chart.js';
+import { Component, Input, OnInit } from '@angular/core';
+import { ChartConfiguration, ChartType, Chart, registerables } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
 Chart.register(...registerables);
@@ -16,11 +10,12 @@ Chart.register(...registerables);
   templateUrl: './bar-chart.component.html',
   styleUrl: './bar-chart.component.scss',
 })
-export class BarChartComponent {
+export class BarChartComponent implements OnInit {
   @Input() title = '';
   @Input() data: Record<string, number> = {};
 
   chartType: ChartType = 'bar';
+  chartData: ChartConfiguration<'bar'>['data'] = { labels: [], datasets: [] };
   chartOptions: ChartConfiguration['options'] = {
     responsive: true,
     maintainAspectRatio: false,
@@ -29,9 +24,17 @@ export class BarChartComponent {
     },
   };
 
-  get chartData(): ChartData<'bar'> | null {
-    if (!this.data || Object.keys(this.data).length === 0) return null;
-    return {
+  ngOnInit(): void {
+    this.updateChart();
+  }
+
+  ngOnChange(): void {
+    this.updateChart();
+  }
+
+  private updateChart(): void {
+    if (!this.data || Object.keys(this.data).length === 0) return;
+    this.chartData = {
       labels: Object.keys(this.data),
       datasets: [
         {
