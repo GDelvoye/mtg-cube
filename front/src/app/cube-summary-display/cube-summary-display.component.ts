@@ -6,10 +6,11 @@ import {
 } from '../store/cube-summary.selector';
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
+import { PieChartComponent } from '../pie-chart/pie-chart.component';
 
 @Component({
   selector: 'app-cube-summary-display',
-  imports: [CommonModule, BarChartComponent],
+  imports: [CommonModule, BarChartComponent, PieChartComponent],
   templateUrl: './cube-summary-display.component.html',
   styleUrl: './cube-summary-display.component.scss',
 })
