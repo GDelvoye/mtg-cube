@@ -1,0 +1,14 @@
+<div class="selector-container">
+    <p>Select a set to view a summary of its statistics.</p>
+
+    <select [(ngModel)]="selectedSet">
+        <option *ngFor="let set of availableSets" [value]="set">
+            {{ set.toUpperCase()}}
+        </option>
+    </select>
+
+    <app-load-cube-summary-button
+        [setName]="selectedSet"
+    ></app-load-cube-summary-button>
+
+</div>
