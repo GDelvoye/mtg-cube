@@ -1,0 +1,12 @@
+.selector-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  

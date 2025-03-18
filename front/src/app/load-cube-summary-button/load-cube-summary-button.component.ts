@@ -1,4 +1,11 @@
-import { Component, computed, inject } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  computed,
+  inject,
+  Input,
+  Output,
+} from '@angular/core';
 import { Store } from '@ngrx/store';
 import { loadCubeSummary } from '../store/cube-summary.actions';
 import { CommonModule } from '@angular/common';
@@ -12,9 +19,15 @@ import { selectCubeSummaryLoading } from '../store/cube-summary.selector';
 })
 export class LoadCubeSummaryButtonComponent {
   private store = inject(Store);
+  @Input() setName!: string;
+
   loading = computed(() => this.store.selectSignal(selectCubeSummaryLoading)());
 
   loadData() {
-    this.store.dispatch(loadCubeSummary({ params: { setName: 'mrd' } }));
+    if (this.setName) {
+      this.store.dispatch(
+        loadCubeSummary({ params: { setName: this.setName } })
+      );
+    }
   }
 }
