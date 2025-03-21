@@ -1,8 +1,7 @@
-<div class="chart-container" *ngIf="chartData">
-    <h3>{{ title }}</h3>
-    <canvas baseChart
-      [data]="chartData"
-      [options]="chartOptions"
-      [type]="chartType">
-    </canvas>
+<div class="chart-container">
+  <canvas baseChart
+          [data]="chartData"
+          [options]="chartOptions"
+          [type]="chartType">
+  </canvas>
 </div>
