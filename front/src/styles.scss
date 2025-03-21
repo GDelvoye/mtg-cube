@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.chart-container {
+    width: 300px;  // Largeur fixe pour tous les graphiques
+    height: 250px; // Hauteur fixe pour éviter l'étirement
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
