@@ -11,7 +11,7 @@ Chart.register(...registerables);
   styleUrl: './bar-chart.component.scss',
 })
 export class BarChartComponent implements OnInit {
-  @Input() title = '';
+  @Input() title!: string;
   @Input() data: Record<string, number> = {};
 
   chartType: ChartType = 'bar';

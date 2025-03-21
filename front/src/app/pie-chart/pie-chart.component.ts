@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ChartConfiguration, ChartType } from 'chart.js';
+import { ChartConfiguration } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
@@ -12,13 +12,43 @@ export class PieChartComponent implements OnInit {
   @Input() data: Record<string, number> = {};
   @Input() title: string = '';
 
-  chartType: 'pie' = 'pie';
-  chartData: ChartConfiguration<'pie'>['data'] = { labels: [], datasets: [] };
-  chartOptions: ChartConfiguration<'pie'>['options'] = {
+  chartType: 'doughnut' = 'doughnut';
+  chartData: ChartConfiguration<'doughnut'>['data'] = {
+    labels: [],
+    datasets: [],
+  };
+  chartOptions: ChartConfiguration<'doughnut'>['options'] = {
     responsive: true,
     plugins: {
-      legend: { position: 'top' },
+      title: {
+        display: false,
+        text: this.title,
+        font: {
+          size: 14, // Taille du texte réduite
+          weight: 'bold',
+        },
+        align: 'center', // Centre le titre
+      },
+      legend: {
+        display: false,
+        position: 'bottom', // Déplace la légende sous le graphique
+      },
     },
+    layout: {
+      padding: {
+        top: 10,
+        bottom: 10,
+      },
+    },
+  };
+
+  private labelColorMap: Record<string, string> = {
+    W: '#eee5c1',
+    U: '#0000ff',
+    B: '#000000',
+    R: '#ff0000',
+    G: '#008000',
+    N: '#654321',
   };
 
   ngOnInit(): void {
@@ -31,19 +61,17 @@ export class PieChartComponent implements OnInit {
 
   private updateChart(): void {
     if (!this.data || Object.keys(this.data).length === 0) return;
+    const labels = Object.keys(this.data);
+    const values = Object.values(this.data);
+    const backGroundColor = labels.map(
+      (label) => this.labelColorMap[label] || '#CCCCCC'
+    );
     this.chartData = {
-      labels: Object.keys(this.data),
+      labels: labels,
       datasets: [
         {
-          data: Object.values(this.data),
-          backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#4BC0C0',
-            '#9966FF',
-            '#FF9F40',
-          ],
+          data: values,
+          backgroundColor: backGroundColor,
         },
       ],
     };
