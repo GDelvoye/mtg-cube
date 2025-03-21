@@ -1,17 +1,17 @@
   <div *ngIf="loading(); else content">
-    Chargement des données...
+    Fetching data...
   </div>
   <ng-template #content>
     <div *ngIf="cubeSummary(); else noData">
       <div class="chart-grid">
-        <app-pie-chart title="Répartition des couleurs" [data]="cubeSummary()?.color_proportion || {}"></app-pie-chart>
-        <app-bar-chart title="Répartition des raretés" [data]="cubeSummary()?.rarity_cardinal || {}"></app-bar-chart>
-        <app-bar-chart title="Types de cartes en booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
-        <app-bar-chart title="Proportion des types" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
-        <app-bar-chart title="Color Wheel Distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
+        <app-pie-chart title="Color distribution" [data]="cubeSummary()?.color_proportion || {}"></app-pie-chart>
+        <app-bar-chart title="Rarity distribution" [data]="cubeSummary()?.rarity_cardinal || {}"></app-bar-chart>
+        <app-bar-chart title="Expectation by booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
+        <app-bar-chart title="Card type distribution" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
+        <app-bar-chart title="Color Wheel number distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
       </div>
     </div>
   </ng-template>
   <ng-template #noData>
-    Pas de données disponibles.
+    No data available.
   </ng-template>
