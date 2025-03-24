@@ -29,6 +29,20 @@ def generate_visualization_infos_official_set(set_name: str) -> dict[str, Any]:
     return cube.statistic_summarize()
 
 
+def get_stat_about_regex(regex: str, set_name: str) -> dict[str, Any]:
+    df_set = get_set_from_card_pool(set_name)
+    cube = Cube(df_set)
+    sub_cube = Cube(cube.get_pool_filtered(regex))
+    return {
+        "expectancy_regex_by_booster": cube.esperance_to_find_keyword_by_booster(
+            regex, in_cube=False
+        ),
+        "regex_color_proportion": sub_cube.color_proportion,
+    }
+
+
 if __name__ == "__main__":
-    res = generate_visualization_infos_official_set("rav")
-    print(res["rarity_cardinal"])
+    # res = generate_visualization_infos_official_set("rav")
+    # print(res["rarity_cardinal"])
+    res = get_stat_about_regex("affinity|fly", "mrd")
+    print(res)

@@ -121,7 +121,9 @@ class Cube:
         ]
         return remove_doublon(filtered_pool)
 
-    def esperance_to_find_keyword_by_booster(self, keyword: str, in_cube: bool = False):
+    def esperance_to_find_keyword_by_booster(
+        self, keyword: str, in_cube: bool = False
+    ) -> float:
         pool_with_keyword = self.get_pool_filtered(keyword)
         if in_cube:
             return 15 * pool_with_keyword.shape[0] / self.size
