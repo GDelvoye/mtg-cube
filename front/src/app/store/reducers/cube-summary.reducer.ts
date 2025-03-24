@@ -1,10 +1,10 @@
 import { createReducer, on } from '@ngrx/store';
-import { CubeSummary } from '../models/cube-summary.model';
+import { CubeSummary } from '../../models/cube-summary.model';
 import {
   loadCubeSummary,
   loadCubeSummaryFailure,
   loadCubeSummarySuccess,
-} from './cube-summary.actions';
+} from '../actions/cube-summary.actions';
 
 export interface CubeSummaryState {
   cubeSummary: CubeSummary | null;

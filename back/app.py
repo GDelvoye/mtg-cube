@@ -16,12 +16,12 @@ def visualize_official() -> Response:
     return jsonify(generate_visualization_infos_official_set(set_name))
 
 
-@app.route("cube-text-request", methods=["POST"])
+@app.route("/cube-text-request", methods=["POST"])
 def cube_text_request() -> Response:
     """Given a set and a regex, ask for stat those regex on set."""
     payload = request.get_json()
     print(payload)
-    regex = payload["regex"]
+    regex = payload["text"]
     set_name = payload["setName"]
 
     return jsonify(get_stat_about_regex(regex, set_name))

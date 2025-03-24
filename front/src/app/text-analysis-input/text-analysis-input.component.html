@@ -1,0 +1,5 @@
+<div class="input-container">
+    <label for="textInput">Capacity, text or regex..</label>
+    <input id="textInput" type="text" [(ngModel)]="userInput" placeholder="Enter capacity or regex"/>
+    <button (click)="analyze()" [disabled]="loading()">Analyze</button>
+</div>

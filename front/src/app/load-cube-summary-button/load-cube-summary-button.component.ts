@@ -1,15 +1,8 @@
-import {
-  Component,
-  EventEmitter,
-  computed,
-  inject,
-  Input,
-  Output,
-} from '@angular/core';
+import { Component, computed, inject, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { loadCubeSummary } from '../store/cube-summary.actions';
+import { loadCubeSummary } from '../store/actions/cube-summary.actions';
 import { CommonModule } from '@angular/common';
-import { selectCubeSummaryLoading } from '../store/cube-summary.selector';
+import { selectCubeSummaryLoading } from '../store/selectors/cube-summary.selector';
 
 @Component({
   selector: 'app-load-cube-summary-button',

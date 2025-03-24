@@ -2,12 +2,12 @@ import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, mergeMap } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { VisualizationService } from '../services/visualization.service';
+import { VisualizationService } from '../../services/visualization.service';
 import {
   loadCubeSummary,
   loadCubeSummaryFailure,
   loadCubeSummarySuccess,
-} from './cube-summary.actions';
+} from '../actions/cube-summary.actions';
 
 @Injectable()
 export class CubeSummaryEffects {

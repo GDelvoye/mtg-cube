@@ -1,0 +1,11 @@
+<div class="result-container">
+  <p *ngIf="loading()">Analysis in progress...</p>
+
+  <ng-container *ngIf="!loading() && textAnalysisResult() as result">
+    Expectancy by booster : {{ result.expectancy_by_booster}}.
+    <app-bar-chart title="Color Distribution" [data]="result.color_proportion || {}"></app-bar-chart>
+    <app-pie-chart title="Color Distribution" [data]="result.color_proportion || {}"> </app-pie-chart>
+  </ng-container>
+
+  <p *ngIf="!loading() && !textAnalysisResult()">No result available.</p>
+</div>
