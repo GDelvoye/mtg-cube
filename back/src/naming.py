@@ -34,15 +34,17 @@ def get_stat_about_regex(regex: str, set_name: str) -> dict[str, Any]:
     cube = Cube(df_set)
     sub_cube = Cube(cube.get_pool_filtered(regex))
     return {
-        "expectancy_regex_by_booster": cube.esperance_to_find_keyword_by_booster(
+        "expectancy_by_booster": cube.esperance_to_find_keyword_by_booster(
             regex, in_cube=False
         ),
-        "regex_color_proportion": sub_cube.color_proportion,
+        "color_proportion": sub_cube.color_proportion,
     }
 
 
 if __name__ == "__main__":
     # res = generate_visualization_infos_official_set("rav")
     # print(res["rarity_cardinal"])
-    res = get_stat_about_regex("affinity|fly", "mrd")
+    reg = "affinity|fly"
+    reg = "sacrifice"
+    res = get_stat_about_regex(reg, "mrd")
     print(res)

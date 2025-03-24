@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { CubeSummary } from '../models/cube-summary.model';
+import { CubeSummary } from '../../models/cube-summary.model';
 
 export const loadCubeSummary = createAction(
   '[Cube] Load Cube Summary',

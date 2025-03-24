@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import {
   selectCubeSummary,
   selectCubeSummaryLoading,
-} from '../store/cube-summary.selector';
+} from '../store/selectors/cube-summary.selector';
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { PieChartComponent } from '../pie-chart/pie-chart.component';

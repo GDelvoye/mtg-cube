@@ -1,6 +1,4 @@
-export interface NumberDictionary {
-  [key: string]: number;
-}
+import { NumberDictionary } from './common.model';
 
 export interface CubeSummary {
   color_proportion: NumberDictionary;
