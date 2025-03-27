@@ -3,8 +3,11 @@ import { Store } from '@ngrx/store';
 import {
   selectTextAnalysis,
   selectTextAnalysisLoading,
-  selectTextAnalysisQuery,
 } from '../store/selectors/text-analysis.selector';
+import {
+  selectCubeSetSelected,
+  selectTextAnalysisQuery,
+} from '../store/selectors/user-input.selector';
 import { TextAnalysis } from '../models/text-analysis.model';
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
@@ -28,6 +31,9 @@ export class TextAnalysisDisplayComponent {
   );
   query: Signal<string> = computed(() =>
     this.store.selectSignal(selectTextAnalysisQuery)()
+  );
+  setSelected: Signal<string | null> = computed(() =>
+    this.store.selectSignal(selectCubeSetSelected)()
   );
 
   toggleCollapse(): void {

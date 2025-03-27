@@ -14,8 +14,3 @@ export const analyzeTextFailure = createAction(
   '[Text Analysis] Analyze Text Failure',
   props<{ error: string }>()
 );
-
-export const setTextAnalysisQuery = createAction(
-  '[Text Analysis] Set Query',
-  props<{ query: string }>()
-);

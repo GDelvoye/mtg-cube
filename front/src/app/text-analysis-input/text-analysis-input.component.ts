@@ -1,9 +1,6 @@
 import { Component, computed, inject, Signal } from '@angular/core';
 import { Store } from '@ngrx/store';
-import {
-  analyzeText,
-  setTextAnalysisQuery,
-} from '../store/actions/text-analysis.actions';
+import { analyzeText } from '../store/actions/text-analysis.actions';
 import { selectTextAnalysisLoading } from '../store/selectors/text-analysis.selector';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -32,7 +29,6 @@ export class TextAnalysisInputComponent {
           },
         })
       );
-      this.store.dispatch(setTextAnalysisQuery({ query: this.userInput }));
     }
   }
 }

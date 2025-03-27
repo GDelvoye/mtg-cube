@@ -13,12 +13,14 @@ import { provideEffects } from '@ngrx/effects';
 import { CubeSummaryEffects } from './store/effects/cube-summary.effects';
 import { TextAnalysisEffects } from './store/effects/text-analysis.effects';
 import { textAnalysisReducer } from './store/reducers/text-analysis.reducer';
+import { userInputReducer } from './store/reducers/user-input.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideStore({
       cubeSummary: cubeSummaryReducer,
       textAnalysis: textAnalysisReducer,
+      userInput: userInputReducer,
     }),
     provideEffects([CubeSummaryEffects, TextAnalysisEffects]),
     provideHttpClient(),
