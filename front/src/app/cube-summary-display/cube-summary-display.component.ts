@@ -7,6 +7,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { PieChartComponent } from '../pie-chart/pie-chart.component';
+import { selectCubeSetSelected } from '../store/selectors/user-input.selector';
 
 @Component({
   selector: 'app-cube-summary-display',
@@ -18,6 +19,10 @@ export class CubeSummaryDisplayComponent {
   private store = inject(Store);
   cubeSummary = computed(() => this.store.selectSignal(selectCubeSummary)());
   loading = computed(() => this.store.selectSignal(selectCubeSummaryLoading)());
+  setSelected = computed(() =>
+    this.store.selectSignal(selectCubeSetSelected)()
+  );
+
   isCollapsed: boolean = false;
   toggleCollapse(): void {
     this.isCollapsed = !this.isCollapsed;
