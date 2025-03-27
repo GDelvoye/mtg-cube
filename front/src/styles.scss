@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 .chart-container {
-    width: 300px;  // Largeur fixe pour tous les graphiques
-    height: 250px; // Hauteur fixe pour éviter l'étirement
+    width: 200px;  // Largeur fixe pour tous les graphiques
+    height: 200px; // Hauteur fixe pour éviter l'étirement
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,9 +11,57 @@
     background: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   }
+
+  .chart-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
   
   canvas {
     width: 100% !important;
     height: 100% !important;
   }
   
+  .display-component-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .header h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .header button:hover {
+    transform: scale(1.2);
+  }
+  
+  .display-content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }

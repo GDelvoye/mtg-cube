@@ -18,3 +18,8 @@ export const selectTextAnalysisError = createSelector(
   selectTextAnalysisState,
   (state) => state.error
 );
+
+export const selectTextAnalysisQuery = createSelector(
+  selectTextAnalysisState,
+  (state) => state.query
+);
