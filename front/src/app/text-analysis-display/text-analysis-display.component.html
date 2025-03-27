@@ -7,7 +7,7 @@
   <div class="display-content" *ngIf="!isCollapsed">
     <p *ngIf="loading()">Analysis in progress...</p>
     <ng-container *ngIf="!loading() && textAnalysisResult() as result">
-      Expectancy by booster : {{ result.expectancy_by_booster}}.
+      Expectancy by booster : {{ result.expectancy_by_booster | number: '1.0-1'}}.
       <app-bar-chart title="Color Distribution" [data]="result.color_proportion || {}"></app-bar-chart>
       <app-pie-chart title="Color Distribution" [data]="result.color_proportion || {}"> </app-pie-chart>
     </ng-container>
