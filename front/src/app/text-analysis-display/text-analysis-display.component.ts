@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import {
   selectTextAnalysis,
   selectTextAnalysisLoading,
+  selectTextAnalysisQuery,
 } from '../store/selectors/text-analysis.selector';
 import { TextAnalysis } from '../models/text-analysis.model';
 import { CommonModule } from '@angular/common';
@@ -17,6 +18,7 @@ import { PieChartComponent } from '../pie-chart/pie-chart.component';
 })
 export class TextAnalysisDisplayComponent {
   private store = inject(Store);
+  isCollapsed: boolean = false;
 
   loading: Signal<boolean> = computed(() =>
     this.store.selectSignal(selectTextAnalysisLoading)()
@@ -24,4 +26,11 @@ export class TextAnalysisDisplayComponent {
   textAnalysisResult: Signal<TextAnalysis | null> = computed(() =>
     this.store.selectSignal(selectTextAnalysis)()
   );
+  query: Signal<string> = computed(() =>
+    this.store.selectSignal(selectTextAnalysisQuery)()
+  );
+
+  toggleCollapse(): void {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

@@ -18,4 +18,8 @@ export class CubeSummaryDisplayComponent {
   private store = inject(Store);
   cubeSummary = computed(() => this.store.selectSignal(selectCubeSummary)());
   loading = computed(() => this.store.selectSignal(selectCubeSummaryLoading)());
+  isCollapsed: boolean = false;
+  toggleCollapse(): void {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

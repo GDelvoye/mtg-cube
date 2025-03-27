@@ -1,17 +1,30 @@
-  <div *ngIf="loading(); else content">
-    Fetching data...
-  </div>
-  <ng-template #content>
-    <div *ngIf="cubeSummary(); else noData">
-      <div class="chart-grid">
-        <app-pie-chart title="Color distribution" [data]="cubeSummary()?.color_proportion || {}"></app-pie-chart>
-        <app-bar-chart title="Rarity distribution" [data]="cubeSummary()?.rarity_cardinal || {}"></app-bar-chart>
-        <app-bar-chart title="Expectation by booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
-        <app-bar-chart title="Card type distribution" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
-        <app-bar-chart title="Color Wheel number distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
-      </div>
+  <div class="display-component-container">
+    <div class="header">
+      <h4>Set analyze result</h4>
+      <button (click)="toggleCollapse()">
+        {{ isCollapsed ? '▶️' : '🔽' }}
+      </button>
     </div>
-  </ng-template>
-  <ng-template #noData>
-    No data available.
-  </ng-template>
+
+    <div class="display-content" *ngIf="!isCollapsed">
+      <div *ngIf="loading(); else content">
+        Fetching data...
+      </div>
+      <ng-template #content>
+        <div *ngIf="cubeSummary(); else noData">
+          <div class="chart-grid">
+            <app-pie-chart title="Color distribution" [data]="cubeSummary()?.color_proportion || {}"></app-pie-chart>
+            <app-bar-chart title="Rarity distribution" [data]="cubeSummary()?.rarity_cardinal || {}"></app-bar-chart>
+            <app-bar-chart title="Expectation by booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
+            <app-bar-chart title="Card type distribution" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
+            <app-bar-chart title="Color Wheel number distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template #noData>
+        No data available.
+      </ng-template>
+
+    </div>
+  </div>
+  

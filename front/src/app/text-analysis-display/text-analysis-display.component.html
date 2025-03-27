@@ -1,11 +1,20 @@
-<div class="result-container">
-  <p *ngIf="loading()">Analysis in progress...</p>
+<div class="display-component-container" >
+  <div class="header">
+    <h4>Stats of keyword {{ this.query() }}</h4>
+    <button (click)="toggleCollapse()">{{ isCollapsed ? '▶️' : '🔽' }}</button>
+  </div>
 
-  <ng-container *ngIf="!loading() && textAnalysisResult() as result">
-    Expectancy by booster : {{ result.expectancy_by_booster}}.
-    <app-bar-chart title="Color Distribution" [data]="result.color_proportion || {}"></app-bar-chart>
-    <app-pie-chart title="Color Distribution" [data]="result.color_proportion || {}"> </app-pie-chart>
-  </ng-container>
+  <div class="display-content" *ngIf="!isCollapsed">
+    <p *ngIf="loading()">Analysis in progress...</p>
+    <ng-container *ngIf="!loading() && textAnalysisResult() as result">
+      Expectancy by booster : {{ result.expectancy_by_booster}}.
+      <app-bar-chart title="Color Distribution" [data]="result.color_proportion || {}"></app-bar-chart>
+      <app-pie-chart title="Color Distribution" [data]="result.color_proportion || {}"> </app-pie-chart>
+    </ng-container>
+  
+    <p *ngIf="!loading() && !textAnalysisResult()">No result available.</p>
+  </div>
+  
 
-  <p *ngIf="!loading() && !textAnalysisResult()">No result available.</p>
+  
 </div>
