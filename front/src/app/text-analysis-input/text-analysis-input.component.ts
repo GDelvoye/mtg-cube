@@ -4,6 +4,7 @@ import { analyzeText } from '../store/actions/text-analysis.actions';
 import { selectTextAnalysisLoading } from '../store/selectors/text-analysis.selector';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { selectCubeSetSelected } from '../store/selectors/user-input.selector';
 
 @Component({
   selector: 'app-text-analysis-input',
@@ -16,16 +17,22 @@ export class TextAnalysisInputComponent {
   loading: Signal<boolean> = computed(() =>
     this.store.selectSignal(selectTextAnalysisLoading)()
   );
+  setName: Signal<string | null> = computed(() =>
+    this.store.selectSignal(selectCubeSetSelected)()
+  );
 
   userInput: string = '';
 
   analyze(): void {
-    if (this.userInput.trim()) {
+    if (!this.setName()) {
+      console.log('CHOOSE SET !');
+      return;
+    } else if (this.userInput.trim()) {
       this.store.dispatch(
         analyzeText({
           params: {
             text: this.userInput,
-            setName: 'mrd',
+            setName: this.setName() as unknown as string,
           },
         })
       );
