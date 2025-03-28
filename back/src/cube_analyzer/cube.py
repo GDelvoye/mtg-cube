@@ -7,6 +7,8 @@ from src.database_manager.data_cleaner import format_oracle_text, remove_doublon
 def color_proportion(pool_cards: pd.DataFrame) -> dict[str, float]:
     dict_color = {}
     size = pool_cards.shape[0]
+    if size == 0:
+        return {}
 
     def is_color_in_list(liste: list, color: str) -> int:
         if liste == []:
@@ -68,8 +70,14 @@ class Cube:
         return self.pool.shape[0]
 
     @property
+    def names(self) -> list[str]:
+        return list(self.pool["name"])
+
+    @property
     def type_proportion(self) -> dict[str, float]:
-        dict_type = {}
+        dict_type: dict[str, float] = {}
+        if self.size == 0:
+            return dict_type
         for typ in [
             "Creature",
             "Instant",

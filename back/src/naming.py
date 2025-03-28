@@ -33,6 +33,7 @@ def get_stat_about_regex(regex: str, set_name: str) -> dict[str, Any]:
     df_set = get_set_from_card_pool(set_name)
     cube = Cube(df_set)
     sub_cube = Cube(cube.get_pool_filtered(regex))
+    print("NAME", sub_cube.names)
     return {
         "expectancy_by_booster": cube.esperance_to_find_keyword_by_booster(
             regex, in_cube=False
