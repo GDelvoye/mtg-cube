@@ -12,8 +12,9 @@ def visualize_official() -> Response:
     """Route asking data for visualization of an official set."""
     set_name = request.get_json()["setName"]
     print(set_name)
-
-    return jsonify(generate_visualization_infos_official_set(set_name))
+    result = generate_visualization_infos_official_set(set_name)
+    print(result)
+    return jsonify(result)
 
 
 @app.route("/cube-text-request", methods=["POST"])

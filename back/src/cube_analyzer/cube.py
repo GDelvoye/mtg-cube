@@ -170,6 +170,14 @@ class Cube:
             d[type_name] = round(esperance, 2)
         return d
 
+    @property
+    def cmc_curve(self) -> dict[int, int]:
+        """Return dict of key cmc, value cardinal in Cube of key's CMC."""
+        dict_cmc = {}
+        for i in range(0, 10):
+            dict_cmc[i] = int((self.pool["cmc"] == i).sum())
+        return dict_cmc
+
     def statistic_summarize(self) -> dict[str, Any]:
         """Return a dict containing a summary of a Cube."""
         return {
@@ -178,4 +186,5 @@ class Cube:
             "color_wheel_cardinal": self.color_wheel_cardinal,
             "color_proportion": self.color_proportion,
             "esperance_type_booster": self.esperance_to_find_type_by_booster(),
+            "cmc_dict": self.cmc_curve,
         }

@@ -18,6 +18,7 @@
             <app-bar-chart title="Expectation by booster" [data]="cubeSummary()?.esperance_type_booster || {}"></app-bar-chart>
             <app-bar-chart title="Card type distribution" [data]="cubeSummary()?.type_proportion || {}"></app-bar-chart> 
             <app-bar-chart title="Color Wheel number distribution" [data]="cubeSummary()?.color_wheel_cardinal || {}"></app-bar-chart>
+            <app-bar-chart title="CMC" [data]="cubeSummary()?.cmc_dict || {}"></app-bar-chart>
           </div>
         </div>
       </ng-template>
