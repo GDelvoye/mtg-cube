@@ -8,6 +8,7 @@ __pycache__/
 
 # Data
 # data/
+data-full/
 
 # SQL DB
 sql_database

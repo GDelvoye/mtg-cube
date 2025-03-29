@@ -1,0 +1,3759 @@
+{
+    "object": {
+        "0": "card",
+        "1": "card",
+        "2": "card",
+        "3": "card",
+        "4": "card",
+        "5": "card",
+        "6": "card",
+        "7": "card",
+        "8": "card",
+        "9": "card",
+        "10": "card",
+        "11": "card",
+        "12": "card",
+        "13": "card",
+        "14": "card",
+        "15": "card",
+        "16": "card",
+        "17": "card",
+        "18": "card",
+        "19": "card"
+    },
+    "id": {
+        "0": "0000579f-7b35-4ed3-b44c-db2a538066fe",
+        "1": "00006596-1166-4a79-8443-ca9f82e6db4e",
+        "2": "0000a54c-a511-4925-92dc-01b937f9afad",
+        "3": "0000cd57-91fe-411f-b798-646e965eec37",
+        "4": "00012bd8-ed68-4978-a22d-f450c8a6e048",
+        "5": "0001c639-8bd0-426f-89cb-4ca61f3cc054",
+        "6": "0001e77a-7fff-49d2-a55c-42f6fdf6db08",
+        "7": "0001f1ef-b957-4a55-b47f-14839cdbab6f",
+        "8": "00020b05-ecb9-4603-8cc1-8cfa7a14befc",
+        "9": "0002ab72-834b-4c81-82b1-0d2760ea96b0",
+        "10": "00030770-5e99-4943-819d-8d807c24cc14",
+        "11": "000366c8-7a43-49d7-a103-ac5bd7efd9aa",
+        "12": "000376ef-8b6c-490d-98cb-d6de15b2e585",
+        "13": "0003aa31-d42e-4972-9fb9-086aefe29a2c",
+        "14": "0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d",
+        "15": "00042443-4d4e-4087-b4e5-5e781e7cc5fa",
+        "16": "0004311b-646a-4df8-a4b4-9171642e9ef4",
+        "17": "0005968a-8708-441b-b9a1-9373aeb8114d",
+        "18": "0005c844-787c-4f0c-8d25-85cec151642b",
+        "19": "000619be-f2b4-407d-a76c-7245d8cab7bd"
+    },
+    "oracle_id": {
+        "0": "44623693-51d6-49ad-8cd7-140505caf02f",
+        "1": "8ae3562f-28b7-4462-96ed-be0cf7052ccc",
+        "2": "dc4e2134-f0c2-49aa-9ea3-ebf83af1445c",
+        "3": "9f0d82ae-38bf-45d8-8cda-982b6ead1d72",
+        "4": "5aa12aff-db3c-4be5-822b-3afdf536b33e",
+        "5": "4d720849-56cd-4b78-b9a7-7b9484702f0f",
+        "6": "396b088d-f9af-4ee1-843f-dbe1633f9cc8",
+        "7": "ef027846-be81-4959-a6b5-56bd01b1e68a",
+        "8": "d96ac790-428b-4a64-8dbd-6baa73eb6210",
+        "9": "645b5784-a6f7-4cf3-966a-e1a51420b96b",
+        "10": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+        "11": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
+        "12": "49f0b317-6b06-482e-ab64-e02713e6c7e8",
+        "13": "d3a0b660-358c-41bd-9cd2-41fbf3491b1a",
+        "14": "a7887b24-977d-4a40-bb30-4bf467e5dba6",
+        "15": "4fcfe370-ba33-438f-bd96-2ae560f59df9",
+        "16": "43b5e462-d860-473d-828f-6c513fc7768a",
+        "17": "12c03a03-36bf-487e-b8be-e55399525da5",
+        "18": "53d5d961-d6a3-49b1-b335-2c2b49972008",
+        "19": "3a21a6ae-b2f2-4f0c-acfd-5f3e8d63fd2f"
+    },
+    "multiverse_ids": {
+        "0": [
+            109722
+        ],
+        "1": [
+            189637
+        ],
+        "2": [],
+        "3": [
+            435231
+        ],
+        "4": [
+            1278
+        ],
+        "5": [
+            634752
+        ],
+        "6": [
+            629564
+        ],
+        "7": [
+            472997
+        ],
+        "8": [
+            394089
+        ],
+        "9": [
+            488632
+        ],
+        "10": [
+            489643
+        ],
+        "11": [
+            4925
+        ],
+        "12": [
+            574523
+        ],
+        "13": [],
+        "14": [
+            202610
+        ],
+        "15": [
+            24609
+        ],
+        "16": [],
+        "17": [
+            405311
+        ],
+        "18": [
+            450637
+        ],
+        "19": []
+    },
+    "mtgo_id": {
+        "0": 25527.0,
+        "1": 34586.0,
+        "2": null,
+        "3": 65170.0,
+        "4": null,
+        "5": null,
+        "6": 116428.0,
+        "7": 78170.0,
+        "8": null,
+        "9": 81171.0,
+        "10": null,
+        "11": 9701.0,
+        "12": 102562.0,
+        "13": null,
+        "14": 38804.0,
+        "15": 14297.0,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "mtgo_foil_id": {
+        "0": 25528.0,
+        "1": 34587.0,
+        "2": null,
+        "3": 65171.0,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": 9702.0,
+        "12": null,
+        "13": null,
+        "14": 38805.0,
+        "15": 14298.0,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "tcgplayer_id": {
+        "0": 14240.0,
+        "1": 33347.0,
+        "2": 98659.0,
+        "3": 145764.0,
+        "4": 1623.0,
+        "5": 519582.0,
+        "6": 513888.0,
+        "7": 198861.0,
+        "8": 95585.0,
+        "9": 215418.0,
+        "10": 215984.0,
+        "11": 18500.0,
+        "12": 283405.0,
+        "13": 242360.0,
+        "14": null,
+        "15": 7396.0,
+        "16": 269127.0,
+        "17": 107993.0,
+        "18": 170970.0,
+        "19": 38172.0
+    },
+    "cardmarket_id": {
+        "0": 13850.0,
+        "1": 21851.0,
+        "2": null,
+        "3": 301766.0,
+        "4": 5664.0,
+        "5": 738583.0,
+        "6": 730003.0,
+        "7": 400134.0,
+        "8": 272052.0,
+        "9": 467859.0,
+        "10": 472559.0,
+        "11": 9070.0,
+        "12": 672314.0,
+        "13": 581211.0,
+        "14": null,
+        "15": 3974.0,
+        "16": 652296.0,
+        "17": 285954.0,
+        "18": 361746.0,
+        "19": 19457.0
+    },
+    "name": {
+        "0": "Fury Sliver",
+        "1": "Kor Outfitter",
+        "2": "Spirit",
+        "3": "Siren Lookout",
+        "4": "Web",
+        "5": "Surge of Brilliance",
+        "6": "Obyra's Attendants \/\/ Desperate Parry",
+        "7": "Venerable Knight",
+        "8": "Wildcall",
+        "9": "Mystic Skyfish",
+        "10": "Swamp",
+        "11": "Swamp",
+        "12": "Battlewing Mystic",
+        "13": "Birds of Paradise",
+        "14": "Bronze Horse",
+        "15": "Wall of Vipers",
+        "16": "Admiral Beckett Brass",
+        "17": "Mulch",
+        "18": "Whiptongue Hydra",
+        "19": "Wall of Roots"
+    },
+    "lang": {
+        "0": "en",
+        "1": "en",
+        "2": "en",
+        "3": "en",
+        "4": "en",
+        "5": "en",
+        "6": "en",
+        "7": "en",
+        "8": "en",
+        "9": "en",
+        "10": "en",
+        "11": "en",
+        "12": "en",
+        "13": "en",
+        "14": "en",
+        "15": "en",
+        "16": "en",
+        "17": "en",
+        "18": "en",
+        "19": "en"
+    },
+    "released_at": {
+        "0": 1160092800000,
+        "1": 1254441600000,
+        "2": 1432252800000,
+        "3": 1506643200000,
+        "4": 766022400000,
+        "5": 1697155200000,
+        "6": 1694131200000,
+        "7": 1570147200000,
+        "8": 1421452800000,
+        "9": 1593734400000,
+        "10": 1594944000000,
+        "11": 876787200000,
+        "12": 1662681600000,
+        "13": 1624233600000,
+        "14": 1294617600000,
+        "15": 960163200000,
+        "16": 1651190400000,
+        "17": 1447372800000,
+        "18": 1533772800000,
+        "19": 1199145600000
+    },
+    "uri": {
+        "0": "https:\/\/api.scryfall.com\/cards\/0000579f-7b35-4ed3-b44c-db2a538066fe",
+        "1": "https:\/\/api.scryfall.com\/cards\/00006596-1166-4a79-8443-ca9f82e6db4e",
+        "2": "https:\/\/api.scryfall.com\/cards\/0000a54c-a511-4925-92dc-01b937f9afad",
+        "3": "https:\/\/api.scryfall.com\/cards\/0000cd57-91fe-411f-b798-646e965eec37",
+        "4": "https:\/\/api.scryfall.com\/cards\/00012bd8-ed68-4978-a22d-f450c8a6e048",
+        "5": "https:\/\/api.scryfall.com\/cards\/0001c639-8bd0-426f-89cb-4ca61f3cc054",
+        "6": "https:\/\/api.scryfall.com\/cards\/0001e77a-7fff-49d2-a55c-42f6fdf6db08",
+        "7": "https:\/\/api.scryfall.com\/cards\/0001f1ef-b957-4a55-b47f-14839cdbab6f",
+        "8": "https:\/\/api.scryfall.com\/cards\/00020b05-ecb9-4603-8cc1-8cfa7a14befc",
+        "9": "https:\/\/api.scryfall.com\/cards\/0002ab72-834b-4c81-82b1-0d2760ea96b0",
+        "10": "https:\/\/api.scryfall.com\/cards\/00030770-5e99-4943-819d-8d807c24cc14",
+        "11": "https:\/\/api.scryfall.com\/cards\/000366c8-7a43-49d7-a103-ac5bd7efd9aa",
+        "12": "https:\/\/api.scryfall.com\/cards\/000376ef-8b6c-490d-98cb-d6de15b2e585",
+        "13": "https:\/\/api.scryfall.com\/cards\/0003aa31-d42e-4972-9fb9-086aefe29a2c",
+        "14": "https:\/\/api.scryfall.com\/cards\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d",
+        "15": "https:\/\/api.scryfall.com\/cards\/00042443-4d4e-4087-b4e5-5e781e7cc5fa",
+        "16": "https:\/\/api.scryfall.com\/cards\/0004311b-646a-4df8-a4b4-9171642e9ef4",
+        "17": "https:\/\/api.scryfall.com\/cards\/0005968a-8708-441b-b9a1-9373aeb8114d",
+        "18": "https:\/\/api.scryfall.com\/cards\/0005c844-787c-4f0c-8d25-85cec151642b",
+        "19": "https:\/\/api.scryfall.com\/cards\/000619be-f2b4-407d-a76c-7245d8cab7bd"
+    },
+    "scryfall_uri": {
+        "0": "https:\/\/scryfall.com\/card\/tsp\/157\/fury-sliver?utm_source=api",
+        "1": "https:\/\/scryfall.com\/card\/zen\/21\/kor-outfitter?utm_source=api",
+        "2": "https:\/\/scryfall.com\/card\/tmm2\/5\/spirit?utm_source=api",
+        "3": "https:\/\/scryfall.com\/card\/xln\/78\/siren-lookout?utm_source=api",
+        "4": "https:\/\/scryfall.com\/card\/3ed\/229\/web?utm_source=api",
+        "5": "https:\/\/scryfall.com\/card\/who\/57\/surge-of-brilliance?utm_source=api",
+        "6": "https:\/\/scryfall.com\/card\/woe\/63\/obyras-attendants-desperate-parry?utm_source=api",
+        "7": "https:\/\/scryfall.com\/card\/eld\/35\/venerable-knight?utm_source=api",
+        "8": "https:\/\/scryfall.com\/card\/ugin\/146\/wildcall?utm_source=api",
+        "9": "https:\/\/scryfall.com\/card\/m21\/326\/mystic-skyfish?utm_source=api",
+        "10": "https:\/\/scryfall.com\/card\/jmp\/59\/swamp?utm_source=api",
+        "11": "https:\/\/scryfall.com\/card\/tmp\/340\/swamp?utm_source=api",
+        "12": "https:\/\/scryfall.com\/card\/dmu\/43\/battlewing-mystic?utm_source=api",
+        "13": "https:\/\/scryfall.com\/card\/sld\/176\/birds-of-paradise?utm_source=api",
+        "14": "https:\/\/scryfall.com\/card\/me4\/186\/bronze-horse?utm_source=api",
+        "15": "https:\/\/scryfall.com\/card\/pcy\/80\/wall-of-vipers?utm_source=api",
+        "16": "https:\/\/scryfall.com\/card\/plst\/XLN-217\/admiral-beckett-brass?utm_source=api",
+        "17": "https:\/\/scryfall.com\/card\/c15\/191\/mulch?utm_source=api",
+        "18": "https:\/\/scryfall.com\/card\/c18\/36\/whiptongue-hydra?utm_source=api",
+        "19": "https:\/\/scryfall.com\/card\/f08\/7\/wall-of-roots?utm_source=api"
+    },
+    "layout": {
+        "0": "normal",
+        "1": "normal",
+        "2": "token",
+        "3": "normal",
+        "4": "normal",
+        "5": "normal",
+        "6": "adventure",
+        "7": "normal",
+        "8": "normal",
+        "9": "normal",
+        "10": "normal",
+        "11": "normal",
+        "12": "normal",
+        "13": "normal",
+        "14": "normal",
+        "15": "normal",
+        "16": "normal",
+        "17": "normal",
+        "18": "normal",
+        "19": "normal"
+    },
+    "highres_image": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true,
+        "10": true,
+        "11": true,
+        "12": true,
+        "13": true,
+        "14": true,
+        "15": true,
+        "16": true,
+        "17": true,
+        "18": true,
+        "19": true
+    },
+    "image_status": {
+        "0": "highres_scan",
+        "1": "highres_scan",
+        "2": "highres_scan",
+        "3": "highres_scan",
+        "4": "highres_scan",
+        "5": "highres_scan",
+        "6": "highres_scan",
+        "7": "highres_scan",
+        "8": "highres_scan",
+        "9": "highres_scan",
+        "10": "highres_scan",
+        "11": "highres_scan",
+        "12": "highres_scan",
+        "13": "highres_scan",
+        "14": "highres_scan",
+        "15": "highres_scan",
+        "16": "highres_scan",
+        "17": "highres_scan",
+        "18": "highres_scan",
+        "19": "highres_scan"
+    },
+    "image_uris": {
+        "0": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.png?1562894979",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979"
+        },
+        "1": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.png?1562609251",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251"
+        },
+        "2": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.jpg?1562701869",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.jpg?1562701869",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.jpg?1562701869",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.png?1562701869",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.jpg?1562701869",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0000a54c-a511-4925-92dc-01b937f9afad.jpg?1562701869"
+        },
+        "3": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.png?1562549609",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609"
+        },
+        "4": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.jpg?1559596693",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.jpg?1559596693",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.jpg?1559596693",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.png?1559596693",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.jpg?1559596693",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/00012bd8-ed68-4978-a22d-f450c8a6e048.jpg?1559596693"
+        },
+        "5": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.jpg?1696636586",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.jpg?1696636586",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.jpg?1696636586",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.png?1696636586",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.jpg?1696636586",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0001c639-8bd0-426f-89cb-4ca61f3cc054.jpg?1696636586"
+        },
+        "6": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.jpg?1692937199",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.jpg?1692937199",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.jpg?1692937199",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.png?1692937199",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.jpg?1692937199",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0001e77a-7fff-49d2-a55c-42f6fdf6db08.jpg?1692937199"
+        },
+        "7": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.png?1572489814",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814"
+        },
+        "8": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.png?1562633475",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475"
+        },
+        "9": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.png?1596250027",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027"
+        },
+        "10": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.png?1600716281",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281"
+        },
+        "11": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.jpg?1562052318",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.jpg?1562052318",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.jpg?1562052318",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.png?1562052318",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.jpg?1562052318",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/000366c8-7a43-49d7-a103-ac5bd7efd9aa.jpg?1562052318"
+        },
+        "12": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.png?1673306662",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662"
+        },
+        "13": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.jpg?1675536851",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.jpg?1675536851",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.jpg?1675536851",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.png?1675536851",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.jpg?1675536851",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0003aa31-d42e-4972-9fb9-086aefe29a2c.jpg?1675536851"
+        },
+        "14": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.jpg?1562894975",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.jpg?1562894975",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.jpg?1562894975",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.png?1562894975",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.jpg?1562894975",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d.jpg?1562894975"
+        },
+        "15": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.png?1562894988",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988"
+        },
+        "16": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.jpg?1651796654",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.jpg?1651796654",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.jpg?1651796654",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.png?1651796654",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.jpg?1651796654",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0004311b-646a-4df8-a4b4-9171642e9ef4.jpg?1651796654"
+        },
+        "17": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.jpg?1562700539",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.jpg?1562700539",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.jpg?1562700539",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.png?1562700539",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.jpg?1562700539",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0005968a-8708-441b-b9a1-9373aeb8114d.jpg?1562700539"
+        },
+        "18": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.png?1592710235",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235"
+        },
+        "19": {
+            "small": "https:\/\/cards.scryfall.io\/small\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.jpg?1562164455",
+            "normal": "https:\/\/cards.scryfall.io\/normal\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.jpg?1562164455",
+            "large": "https:\/\/cards.scryfall.io\/large\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.jpg?1562164455",
+            "png": "https:\/\/cards.scryfall.io\/png\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.png?1562164455",
+            "art_crop": "https:\/\/cards.scryfall.io\/art_crop\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.jpg?1562164455",
+            "border_crop": "https:\/\/cards.scryfall.io\/border_crop\/front\/0\/0\/000619be-f2b4-407d-a76c-7245d8cab7bd.jpg?1562164455"
+        }
+    },
+    "mana_cost": {
+        "0": "{5}{R}",
+        "1": "{W}{W}",
+        "2": "",
+        "3": "{2}{U}",
+        "4": "{G}",
+        "5": "{1}{U}",
+        "6": "{4}{U} \/\/ {1}{U}",
+        "7": "{W}",
+        "8": "{X}{G}{G}",
+        "9": "{2}{U}",
+        "10": "",
+        "11": "",
+        "12": "{1}{U}",
+        "13": "{G}",
+        "14": "{7}",
+        "15": "{2}{B}",
+        "16": "{1}{U}{B}{R}",
+        "17": "{1}{G}",
+        "18": "{5}{G}",
+        "19": "{1}{G}"
+    },
+    "cmc": {
+        "0": 6.0,
+        "1": 2.0,
+        "2": 0.0,
+        "3": 3.0,
+        "4": 1.0,
+        "5": 2.0,
+        "6": 5.0,
+        "7": 1.0,
+        "8": 2.0,
+        "9": 3.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 2.0,
+        "13": 1.0,
+        "14": 7.0,
+        "15": 3.0,
+        "16": 4.0,
+        "17": 2.0,
+        "18": 6.0,
+        "19": 2.0
+    },
+    "type_line": {
+        "0": "Creature \u2014 Sliver",
+        "1": "Creature \u2014 Kor Soldier",
+        "2": "Token Creature \u2014 Spirit",
+        "3": "Creature \u2014 Siren Pirate",
+        "4": "Enchantment \u2014 Aura",
+        "5": "Instant",
+        "6": "Creature \u2014 Faerie Wizard \/\/ Instant \u2014 Adventure",
+        "7": "Creature \u2014 Human Knight",
+        "8": "Sorcery",
+        "9": "Creature \u2014 Fish",
+        "10": "Basic Land \u2014 Swamp",
+        "11": "Basic Land \u2014 Swamp",
+        "12": "Creature \u2014 Bird Wizard",
+        "13": "Creature \u2014 Bird",
+        "14": "Artifact Creature \u2014 Horse",
+        "15": "Creature \u2014 Snake Wall",
+        "16": "Legendary Creature \u2014 Human Pirate",
+        "17": "Sorcery",
+        "18": "Creature \u2014 Lizard Hydra",
+        "19": "Creature \u2014 Plant Wall"
+    },
+    "oracle_text": {
+        "0": "All Sliver creatures have double strike.",
+        "1": "When Kor Outfitter enters the battlefield, you may attach target Equipment you control to target creature you control.",
+        "2": "Flying",
+        "3": "Flying\nWhen Siren Lookout enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1\/+1 counter on this creature, then put the card back or put it into your graveyard.)",
+        "4": "Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)\nEnchanted creature gets +0\/+2 and has reach. (It can block creatures with flying.)",
+        "5": "Paradox \u2014 Draw a card for each spell you've cast this turn from anywhere other than your hand.\nForetell {1}{U} (During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)",
+        "6": null,
+        "7": "When Venerable Knight dies, put a +1\/+1 counter on target Knight you control.",
+        "8": "Manifest the top card of your library, then put X +1\/+1 counters on it. (To manifest a card, put it onto the battlefield face down as a 2\/2 creature. Turn it face up any time for its mana cost if it's a creature card.)",
+        "9": "Whenever you draw your second card each turn, Mystic Skyfish gains flying until end of turn.",
+        "10": "({T}: Add {B}.)",
+        "11": "({T}: Add {B}.)",
+        "12": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nFlying\nWhen Battlewing Mystic enters the battlefield, if it was kicked, discard your hand, then draw two cards.",
+        "13": "Flying\n{T}: Add one mana of any color.",
+        "14": "Trample\nAs long as you control another creature, prevent all damage that would be dealt to Bronze Horse by spells that target it.",
+        "15": "Defender (This creature can't attack.)\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.",
+        "16": "Other Pirates you control get +1\/+1.\nAt the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.",
+        "17": "Reveal the top four cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.",
+        "18": "Reach\nWhen Whiptongue Hydra enters the battlefield, destroy all creatures with flying. Put a +1\/+1 counter on Whiptongue Hydra for each creature destroyed this way.",
+        "19": "Defender\nPut a -0\/-1 counter on Wall of Roots: Add {G}. Activate only once each turn."
+    },
+    "power": {
+        "0": "3",
+        "1": "2",
+        "2": "1",
+        "3": "1",
+        "4": null,
+        "5": null,
+        "6": "3",
+        "7": "2",
+        "8": null,
+        "9": "3",
+        "10": null,
+        "11": null,
+        "12": "2",
+        "13": "0",
+        "14": "4",
+        "15": "2",
+        "16": "3",
+        "17": null,
+        "18": "4",
+        "19": "0"
+    },
+    "toughness": {
+        "0": "3",
+        "1": "2",
+        "2": "1",
+        "3": "2",
+        "4": null,
+        "5": null,
+        "6": "4",
+        "7": "1",
+        "8": null,
+        "9": "1",
+        "10": null,
+        "11": null,
+        "12": "1",
+        "13": "1",
+        "14": "4",
+        "15": "4",
+        "16": "3",
+        "17": null,
+        "18": "4",
+        "19": "5"
+    },
+    "colors": {
+        "0": [
+            "R"
+        ],
+        "1": [
+            "W"
+        ],
+        "2": [
+            "W"
+        ],
+        "3": [
+            "U"
+        ],
+        "4": [
+            "G"
+        ],
+        "5": [
+            "U"
+        ],
+        "6": [
+            "U"
+        ],
+        "7": [
+            "W"
+        ],
+        "8": [
+            "G"
+        ],
+        "9": [
+            "U"
+        ],
+        "10": [],
+        "11": [],
+        "12": [
+            "U"
+        ],
+        "13": [
+            "G"
+        ],
+        "14": [],
+        "15": [
+            "B"
+        ],
+        "16": [
+            "B",
+            "R",
+            "U"
+        ],
+        "17": [
+            "G"
+        ],
+        "18": [
+            "G"
+        ],
+        "19": [
+            "G"
+        ]
+    },
+    "color_identity": {
+        "0": [
+            "R"
+        ],
+        "1": [
+            "W"
+        ],
+        "2": [
+            "W"
+        ],
+        "3": [
+            "U"
+        ],
+        "4": [
+            "G"
+        ],
+        "5": [
+            "U"
+        ],
+        "6": [
+            "U"
+        ],
+        "7": [
+            "W"
+        ],
+        "8": [
+            "G"
+        ],
+        "9": [
+            "U"
+        ],
+        "10": [
+            "B"
+        ],
+        "11": [
+            "B"
+        ],
+        "12": [
+            "R",
+            "U"
+        ],
+        "13": [
+            "G"
+        ],
+        "14": [],
+        "15": [
+            "B"
+        ],
+        "16": [
+            "B",
+            "R",
+            "U"
+        ],
+        "17": [
+            "G"
+        ],
+        "18": [
+            "G"
+        ],
+        "19": [
+            "G"
+        ]
+    },
+    "keywords": {
+        "0": [],
+        "1": [],
+        "2": [
+            "Flying"
+        ],
+        "3": [
+            "Flying",
+            "Explore"
+        ],
+        "4": [
+            "Enchant"
+        ],
+        "5": [
+            "Paradox",
+            "Foretell"
+        ],
+        "6": [
+            "Flying"
+        ],
+        "7": [],
+        "8": [
+            "Manifest"
+        ],
+        "9": [],
+        "10": [],
+        "11": [],
+        "12": [
+            "Kicker",
+            "Flying"
+        ],
+        "13": [
+            "Flying"
+        ],
+        "14": [
+            "Trample"
+        ],
+        "15": [
+            "Defender"
+        ],
+        "16": [],
+        "17": [],
+        "18": [
+            "Reach"
+        ],
+        "19": [
+            "Defender"
+        ]
+    },
+    "legalities": {
+        "0": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "restricted",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "legal"
+        },
+        "1": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "legal"
+        },
+        "2": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "not_legal",
+            "legacy": "not_legal",
+            "pauper": "not_legal",
+            "vintage": "not_legal",
+            "penny": "not_legal",
+            "commander": "not_legal",
+            "oathbreaker": "not_legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "not_legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "3": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "legal",
+            "alchemy": "not_legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "4": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "5": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "not_legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "6": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "7": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "legal",
+            "alchemy": "not_legal",
+            "paupercommander": "restricted",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "8": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "9": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "legal",
+            "alchemy": "not_legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "10": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "11": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "12": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "legal",
+            "paupercommander": "restricted",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "13": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "14": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "not_legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "restricted",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "15": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "not_legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "restricted",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "16": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "17": {
+            "standard": "legal",
+            "future": "legal",
+            "historic": "legal",
+            "timeless": "legal",
+            "gladiator": "legal",
+            "pioneer": "legal",
+            "explorer": "legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "legal",
+            "brawl": "legal",
+            "alchemy": "not_legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        },
+        "18": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "not_legal",
+            "legacy": "legal",
+            "pauper": "not_legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "not_legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "not_legal",
+            "predh": "not_legal"
+        },
+        "19": {
+            "standard": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "timeless": "not_legal",
+            "gladiator": "not_legal",
+            "pioneer": "not_legal",
+            "explorer": "not_legal",
+            "modern": "legal",
+            "legacy": "legal",
+            "pauper": "legal",
+            "vintage": "legal",
+            "penny": "not_legal",
+            "commander": "legal",
+            "oathbreaker": "legal",
+            "standardbrawl": "not_legal",
+            "brawl": "not_legal",
+            "alchemy": "not_legal",
+            "paupercommander": "legal",
+            "duel": "legal",
+            "oldschool": "not_legal",
+            "premodern": "legal",
+            "predh": "legal"
+        }
+    },
+    "games": {
+        "0": [
+            "paper",
+            "mtgo"
+        ],
+        "1": [
+            "paper",
+            "mtgo"
+        ],
+        "2": [
+            "paper"
+        ],
+        "3": [
+            "arena",
+            "paper",
+            "mtgo"
+        ],
+        "4": [
+            "paper"
+        ],
+        "5": [
+            "paper"
+        ],
+        "6": [
+            "paper",
+            "arena",
+            "mtgo"
+        ],
+        "7": [
+            "arena",
+            "paper",
+            "mtgo"
+        ],
+        "8": [
+            "paper"
+        ],
+        "9": [
+            "arena",
+            "paper",
+            "mtgo"
+        ],
+        "10": [
+            "arena",
+            "paper"
+        ],
+        "11": [
+            "paper",
+            "mtgo"
+        ],
+        "12": [
+            "paper",
+            "arena",
+            "mtgo"
+        ],
+        "13": [
+            "paper"
+        ],
+        "14": [
+            "mtgo"
+        ],
+        "15": [
+            "paper",
+            "mtgo"
+        ],
+        "16": [
+            "paper"
+        ],
+        "17": [
+            "paper"
+        ],
+        "18": [
+            "paper"
+        ],
+        "19": [
+            "paper"
+        ]
+    },
+    "reserved": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "foil": {
+        "0": true,
+        "1": true,
+        "2": false,
+        "3": true,
+        "4": false,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": true,
+        "13": true,
+        "14": true,
+        "15": true,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": true
+    },
+    "nonfoil": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true,
+        "10": true,
+        "11": true,
+        "12": true,
+        "13": true,
+        "14": true,
+        "15": true,
+        "16": true,
+        "17": true,
+        "18": true,
+        "19": false
+    },
+    "finishes": {
+        "0": [
+            "nonfoil",
+            "foil"
+        ],
+        "1": [
+            "nonfoil",
+            "foil"
+        ],
+        "2": [
+            "nonfoil"
+        ],
+        "3": [
+            "nonfoil",
+            "foil"
+        ],
+        "4": [
+            "nonfoil"
+        ],
+        "5": [
+            "nonfoil",
+            "foil"
+        ],
+        "6": [
+            "nonfoil",
+            "foil"
+        ],
+        "7": [
+            "nonfoil",
+            "foil"
+        ],
+        "8": [
+            "nonfoil"
+        ],
+        "9": [
+            "nonfoil"
+        ],
+        "10": [
+            "nonfoil"
+        ],
+        "11": [
+            "nonfoil"
+        ],
+        "12": [
+            "nonfoil",
+            "foil"
+        ],
+        "13": [
+            "nonfoil",
+            "foil"
+        ],
+        "14": [
+            "nonfoil",
+            "foil"
+        ],
+        "15": [
+            "nonfoil",
+            "foil"
+        ],
+        "16": [
+            "nonfoil"
+        ],
+        "17": [
+            "nonfoil"
+        ],
+        "18": [
+            "nonfoil"
+        ],
+        "19": [
+            "foil"
+        ]
+    },
+    "oversized": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "promo": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": true,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": true
+    },
+    "reprint": {
+        "0": false,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": true,
+        "9": false,
+        "10": true,
+        "11": true,
+        "12": false,
+        "13": true,
+        "14": true,
+        "15": false,
+        "16": true,
+        "17": true,
+        "18": false,
+        "19": true
+    },
+    "variation": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "set_id": {
+        "0": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
+        "1": "eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
+        "2": "f7aa47c6-c1e2-4de5-9a68-4406d84bd6bb",
+        "3": "fe0dad85-54bc-4151-9200-d68da84dd0f2",
+        "4": "45a69797-8adf-468e-a4e1-ba81fd9d66ac",
+        "5": "efdfdd99-cee7-4c11-a5e9-03d60f88bdd6",
+        "6": "79139661-13ee-43c4-8bad-a8c069f1a1df",
+        "7": "a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
+        "8": "fc7ea025-628e-45f4-9e0b-73681b1f68b7",
+        "9": "bc94aba1-7376-4e02-a12d-3a2efb66ab0f",
+        "10": "0f6ccf25-a627-4263-86df-5757137f1696",
+        "11": "10df3a67-178e-4363-8668-34f0e6edf2a7",
+        "12": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
+        "13": "4d92a8a7-ccb0-437d-abdc-9d70fc5ed672",
+        "14": "d38a13b7-6615-4c89-be7d-3b4eaacf1875",
+        "15": "c233bd36-57c0-4aa2-ae6c-7aeabfb4e3ce",
+        "16": "67e47ba2-b019-4181-9005-fe9fc021de44",
+        "17": "ea6c99f9-5489-4504-b30c-c819fa3b1fd3",
+        "18": "06ce6bc2-85cd-4cca-85b1-8c620d3e0902",
+        "19": "1d9c28af-5035-4b6d-9944-62b51cfd688d"
+    },
+    "set": {
+        "0": "tsp",
+        "1": "zen",
+        "2": "tmm2",
+        "3": "xln",
+        "4": "3ed",
+        "5": "who",
+        "6": "woe",
+        "7": "eld",
+        "8": "ugin",
+        "9": "m21",
+        "10": "jmp",
+        "11": "tmp",
+        "12": "dmu",
+        "13": "sld",
+        "14": "me4",
+        "15": "pcy",
+        "16": "plst",
+        "17": "c15",
+        "18": "c18",
+        "19": "f08"
+    },
+    "set_name": {
+        "0": "Time Spiral",
+        "1": "Zendikar",
+        "2": "Modern Masters 2015 Tokens",
+        "3": "Ixalan",
+        "4": "Revised Edition",
+        "5": "Doctor Who",
+        "6": "Wilds of Eldraine",
+        "7": "Throne of Eldraine",
+        "8": "Ugin's Fate",
+        "9": "Core Set 2021",
+        "10": "Jumpstart",
+        "11": "Tempest",
+        "12": "Dominaria United",
+        "13": "Secret Lair Drop",
+        "14": "Masters Edition IV",
+        "15": "Prophecy",
+        "16": "The List",
+        "17": "Commander 2015",
+        "18": "Commander 2018",
+        "19": "Friday Night Magic 2008"
+    },
+    "set_type": {
+        "0": "expansion",
+        "1": "expansion",
+        "2": "token",
+        "3": "expansion",
+        "4": "core",
+        "5": "commander",
+        "6": "expansion",
+        "7": "expansion",
+        "8": "promo",
+        "9": "core",
+        "10": "draft_innovation",
+        "11": "expansion",
+        "12": "expansion",
+        "13": "box",
+        "14": "masters",
+        "15": "expansion",
+        "16": "masters",
+        "17": "commander",
+        "18": "commander",
+        "19": "promo"
+    },
+    "set_uri": {
+        "0": "https:\/\/api.scryfall.com\/sets\/c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
+        "1": "https:\/\/api.scryfall.com\/sets\/eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
+        "2": "https:\/\/api.scryfall.com\/sets\/f7aa47c6-c1e2-4de5-9a68-4406d84bd6bb",
+        "3": "https:\/\/api.scryfall.com\/sets\/fe0dad85-54bc-4151-9200-d68da84dd0f2",
+        "4": "https:\/\/api.scryfall.com\/sets\/45a69797-8adf-468e-a4e1-ba81fd9d66ac",
+        "5": "https:\/\/api.scryfall.com\/sets\/efdfdd99-cee7-4c11-a5e9-03d60f88bdd6",
+        "6": "https:\/\/api.scryfall.com\/sets\/79139661-13ee-43c4-8bad-a8c069f1a1df",
+        "7": "https:\/\/api.scryfall.com\/sets\/a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
+        "8": "https:\/\/api.scryfall.com\/sets\/fc7ea025-628e-45f4-9e0b-73681b1f68b7",
+        "9": "https:\/\/api.scryfall.com\/sets\/bc94aba1-7376-4e02-a12d-3a2efb66ab0f",
+        "10": "https:\/\/api.scryfall.com\/sets\/0f6ccf25-a627-4263-86df-5757137f1696",
+        "11": "https:\/\/api.scryfall.com\/sets\/10df3a67-178e-4363-8668-34f0e6edf2a7",
+        "12": "https:\/\/api.scryfall.com\/sets\/4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
+        "13": "https:\/\/api.scryfall.com\/sets\/4d92a8a7-ccb0-437d-abdc-9d70fc5ed672",
+        "14": "https:\/\/api.scryfall.com\/sets\/d38a13b7-6615-4c89-be7d-3b4eaacf1875",
+        "15": "https:\/\/api.scryfall.com\/sets\/c233bd36-57c0-4aa2-ae6c-7aeabfb4e3ce",
+        "16": "https:\/\/api.scryfall.com\/sets\/67e47ba2-b019-4181-9005-fe9fc021de44",
+        "17": "https:\/\/api.scryfall.com\/sets\/ea6c99f9-5489-4504-b30c-c819fa3b1fd3",
+        "18": "https:\/\/api.scryfall.com\/sets\/06ce6bc2-85cd-4cca-85b1-8c620d3e0902",
+        "19": "https:\/\/api.scryfall.com\/sets\/1d9c28af-5035-4b6d-9944-62b51cfd688d"
+    },
+    "set_search_uri": {
+        "0": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Atsp&unique=prints",
+        "1": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Azen&unique=prints",
+        "2": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Atmm2&unique=prints",
+        "3": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Axln&unique=prints",
+        "4": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3A3ed&unique=prints",
+        "5": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Awho&unique=prints",
+        "6": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Awoe&unique=prints",
+        "7": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Aeld&unique=prints",
+        "8": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Augin&unique=prints",
+        "9": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Am21&unique=prints",
+        "10": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Ajmp&unique=prints",
+        "11": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Atmp&unique=prints",
+        "12": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Admu&unique=prints",
+        "13": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Asld&unique=prints",
+        "14": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Ame4&unique=prints",
+        "15": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Apcy&unique=prints",
+        "16": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Aplst&unique=prints",
+        "17": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Ac15&unique=prints",
+        "18": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Ac18&unique=prints",
+        "19": "https:\/\/api.scryfall.com\/cards\/search?order=set&q=e%3Af08&unique=prints"
+    },
+    "scryfall_set_uri": {
+        "0": "https:\/\/scryfall.com\/sets\/tsp?utm_source=api",
+        "1": "https:\/\/scryfall.com\/sets\/zen?utm_source=api",
+        "2": "https:\/\/scryfall.com\/sets\/tmm2?utm_source=api",
+        "3": "https:\/\/scryfall.com\/sets\/xln?utm_source=api",
+        "4": "https:\/\/scryfall.com\/sets\/3ed?utm_source=api",
+        "5": "https:\/\/scryfall.com\/sets\/who?utm_source=api",
+        "6": "https:\/\/scryfall.com\/sets\/woe?utm_source=api",
+        "7": "https:\/\/scryfall.com\/sets\/eld?utm_source=api",
+        "8": "https:\/\/scryfall.com\/sets\/ugin?utm_source=api",
+        "9": "https:\/\/scryfall.com\/sets\/m21?utm_source=api",
+        "10": "https:\/\/scryfall.com\/sets\/jmp?utm_source=api",
+        "11": "https:\/\/scryfall.com\/sets\/tmp?utm_source=api",
+        "12": "https:\/\/scryfall.com\/sets\/dmu?utm_source=api",
+        "13": "https:\/\/scryfall.com\/sets\/sld?utm_source=api",
+        "14": "https:\/\/scryfall.com\/sets\/me4?utm_source=api",
+        "15": "https:\/\/scryfall.com\/sets\/pcy?utm_source=api",
+        "16": "https:\/\/scryfall.com\/sets\/plst?utm_source=api",
+        "17": "https:\/\/scryfall.com\/sets\/c15?utm_source=api",
+        "18": "https:\/\/scryfall.com\/sets\/c18?utm_source=api",
+        "19": "https:\/\/scryfall.com\/sets\/f08?utm_source=api"
+    },
+    "rulings_uri": {
+        "0": "https:\/\/api.scryfall.com\/cards\/0000579f-7b35-4ed3-b44c-db2a538066fe\/rulings",
+        "1": "https:\/\/api.scryfall.com\/cards\/00006596-1166-4a79-8443-ca9f82e6db4e\/rulings",
+        "2": "https:\/\/api.scryfall.com\/cards\/0000a54c-a511-4925-92dc-01b937f9afad\/rulings",
+        "3": "https:\/\/api.scryfall.com\/cards\/0000cd57-91fe-411f-b798-646e965eec37\/rulings",
+        "4": "https:\/\/api.scryfall.com\/cards\/00012bd8-ed68-4978-a22d-f450c8a6e048\/rulings",
+        "5": "https:\/\/api.scryfall.com\/cards\/0001c639-8bd0-426f-89cb-4ca61f3cc054\/rulings",
+        "6": "https:\/\/api.scryfall.com\/cards\/0001e77a-7fff-49d2-a55c-42f6fdf6db08\/rulings",
+        "7": "https:\/\/api.scryfall.com\/cards\/0001f1ef-b957-4a55-b47f-14839cdbab6f\/rulings",
+        "8": "https:\/\/api.scryfall.com\/cards\/00020b05-ecb9-4603-8cc1-8cfa7a14befc\/rulings",
+        "9": "https:\/\/api.scryfall.com\/cards\/0002ab72-834b-4c81-82b1-0d2760ea96b0\/rulings",
+        "10": "https:\/\/api.scryfall.com\/cards\/00030770-5e99-4943-819d-8d807c24cc14\/rulings",
+        "11": "https:\/\/api.scryfall.com\/cards\/000366c8-7a43-49d7-a103-ac5bd7efd9aa\/rulings",
+        "12": "https:\/\/api.scryfall.com\/cards\/000376ef-8b6c-490d-98cb-d6de15b2e585\/rulings",
+        "13": "https:\/\/api.scryfall.com\/cards\/0003aa31-d42e-4972-9fb9-086aefe29a2c\/rulings",
+        "14": "https:\/\/api.scryfall.com\/cards\/0003b07e-0d6e-4844-93c7-3f1f6a7d8c4d\/rulings",
+        "15": "https:\/\/api.scryfall.com\/cards\/00042443-4d4e-4087-b4e5-5e781e7cc5fa\/rulings",
+        "16": "https:\/\/api.scryfall.com\/cards\/0004311b-646a-4df8-a4b4-9171642e9ef4\/rulings",
+        "17": "https:\/\/api.scryfall.com\/cards\/0005968a-8708-441b-b9a1-9373aeb8114d\/rulings",
+        "18": "https:\/\/api.scryfall.com\/cards\/0005c844-787c-4f0c-8d25-85cec151642b\/rulings",
+        "19": "https:\/\/api.scryfall.com\/cards\/000619be-f2b4-407d-a76c-7245d8cab7bd\/rulings"
+    },
+    "prints_search_uri": {
+        "0": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A44623693-51d6-49ad-8cd7-140505caf02f&unique=prints",
+        "1": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A8ae3562f-28b7-4462-96ed-be0cf7052ccc&unique=prints",
+        "2": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3Adc4e2134-f0c2-49aa-9ea3-ebf83af1445c&unique=prints",
+        "3": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A9f0d82ae-38bf-45d8-8cda-982b6ead1d72&unique=prints",
+        "4": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A5aa12aff-db3c-4be5-822b-3afdf536b33e&unique=prints",
+        "5": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A4d720849-56cd-4b78-b9a7-7b9484702f0f&unique=prints",
+        "6": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A396b088d-f9af-4ee1-843f-dbe1633f9cc8&unique=prints",
+        "7": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3Aef027846-be81-4959-a6b5-56bd01b1e68a&unique=prints",
+        "8": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3Ad96ac790-428b-4a64-8dbd-6baa73eb6210&unique=prints",
+        "9": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A645b5784-a6f7-4cf3-966a-e1a51420b96b&unique=prints",
+        "10": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A56719f6a-1a6c-4c0a-8d21-18f7d7350b68&unique=prints",
+        "11": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A56719f6a-1a6c-4c0a-8d21-18f7d7350b68&unique=prints",
+        "12": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A49f0b317-6b06-482e-ab64-e02713e6c7e8&unique=prints",
+        "13": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3Ad3a0b660-358c-41bd-9cd2-41fbf3491b1a&unique=prints",
+        "14": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3Aa7887b24-977d-4a40-bb30-4bf467e5dba6&unique=prints",
+        "15": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A4fcfe370-ba33-438f-bd96-2ae560f59df9&unique=prints",
+        "16": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A43b5e462-d860-473d-828f-6c513fc7768a&unique=prints",
+        "17": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A12c03a03-36bf-487e-b8be-e55399525da5&unique=prints",
+        "18": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A53d5d961-d6a3-49b1-b335-2c2b49972008&unique=prints",
+        "19": "https:\/\/api.scryfall.com\/cards\/search?order=released&q=oracleid%3A3a21a6ae-b2f2-4f0c-acfd-5f3e8d63fd2f&unique=prints"
+    },
+    "collector_number": {
+        "0": "157",
+        "1": "21",
+        "2": "5",
+        "3": "78",
+        "4": "229",
+        "5": "57",
+        "6": "63",
+        "7": "35",
+        "8": "146",
+        "9": "326",
+        "10": "59",
+        "11": "340",
+        "12": "43",
+        "13": "176",
+        "14": "186",
+        "15": "80",
+        "16": "XLN-217",
+        "17": "191",
+        "18": "36",
+        "19": "7"
+    },
+    "digital": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": true,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "rarity": {
+        "0": "uncommon",
+        "1": "common",
+        "2": "common",
+        "3": "common",
+        "4": "rare",
+        "5": "uncommon",
+        "6": "common",
+        "7": "uncommon",
+        "8": "rare",
+        "9": "common",
+        "10": "common",
+        "11": "common",
+        "12": "uncommon",
+        "13": "rare",
+        "14": "uncommon",
+        "15": "uncommon",
+        "16": "mythic",
+        "17": "common",
+        "18": "rare",
+        "19": "rare"
+    },
+    "flavor_text": {
+        "0": "\"A rift opened, and our arrows were abruptly stilled. To move was to push the world. But the sliver's claw still twitched, red wounds appeared in Thed's chest, and ribbons of blood hung in the air.\"\n\u2014Adom Capashen, Benalish hero",
+        "1": "\"We take only what we need to survive. Believe me, you will need this.\"",
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": "\"They may have superior numbers, but we have superior minds.\"",
+        "6": "Obyra's devoted servants shrieked as their sleeping mistress slashed at them, unseeing.",
+        "7": "\"May this blade guide you on your great journey, as it did me on mine.\"",
+        "8": "A howl on the wind hides many dangers.",
+        "9": "The problem wasn't that fish had learned how to fly. It was that sharks had adapted to follow them.",
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": "What wall can never be climbed, but is always scaled?\n\u2014Nakaya riddle",
+        "16": "\"You and your ship will make a fine addition to my fleet.\"",
+        "17": "The land knows no difference between the graves of commoners and nobles.",
+        "18": "\"Where'd all the birds go?\"\n\u2014Kaldrin, jungle sightseer",
+        "19": "Root systems in Mwonvuli twist through currents of mana rather than soil."
+    },
+    "card_back_id": {
+        "0": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "1": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "2": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "3": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "4": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "5": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "6": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "7": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "8": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "9": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "10": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "11": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "12": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "13": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "14": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "15": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "16": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "17": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "18": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+        "19": "0aeebaf5-8c7d-4636-9e82-8c27447861f7"
+    },
+    "artist": {
+        "0": "Paolo Parente",
+        "1": "Kieran Yanner",
+        "2": "Mike Sass",
+        "3": "Chris Rallis",
+        "4": "Rob Alexander",
+        "5": "Alice Xia Zhang",
+        "6": "Andreas Zafiratos",
+        "7": "Colin Boyer",
+        "8": "Adam Paquette",
+        "9": "Alayna Danner",
+        "10": "Adam Paquette",
+        "11": "Brom",
+        "12": "Borja Pindado",
+        "13": "Mark Poole",
+        "14": "Mark Poole",
+        "15": "Marc Fishman",
+        "16": "Jason Rainville",
+        "17": "Christopher Moeller",
+        "18": "Tomasz Jedruszek",
+        "19": "Matt Stewart"
+    },
+    "artist_ids": {
+        "0": [
+            "d48dd097-720d-476a-8722-6a02854ae28b"
+        ],
+        "1": [
+            "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
+        ],
+        "2": [
+            "155bc2cb-038d-4b1f-9990-6178db1d1a21"
+        ],
+        "3": [
+            "a8e7b854-b15a-421a-b66d-6e68187ae285"
+        ],
+        "4": [
+            "35906871-6c78-4ab2-9ed1-e6792c8efb74"
+        ],
+        "5": [
+            "ba06d65e-de20-4c6b-a279-7aba527712ce"
+        ],
+        "6": [
+            "e2f13a9a-57c5-40de-81d4-3b0723899cdf"
+        ],
+        "7": [
+            "9c201dbe-db56-429a-87e6-189ea70c2632"
+        ],
+        "8": [
+            "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+        ],
+        "9": [
+            "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+        ],
+        "10": [
+            "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+        ],
+        "11": [
+            "bd79c951-2552-45dd-aae7-a333c2b7c1ef"
+        ],
+        "12": [
+            "1624a1a8-3492-4c0b-9abc-83dcf2653111"
+        ],
+        "13": [
+            "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+        ],
+        "14": [
+            "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+        ],
+        "15": [
+            "d50dd2c3-34ae-4eb1-8948-cb4b38d7e4b9"
+        ],
+        "16": [
+            "6ed7e669-579b-443d-b223-e5cbcb2a7483"
+        ],
+        "17": [
+            "21e10012-06ae-44f2-b38d-3824dd2e73d4"
+        ],
+        "18": [
+            "bba69285-2445-4a4b-a847-59397be972ea"
+        ],
+        "19": [
+            "20871267-2d8a-41d5-b03a-be3d557c5734"
+        ]
+    },
+    "illustration_id": {
+        "0": "2fcca987-364c-4738-a75b-099d8a26d614",
+        "1": "de0310d1-e97f-46e0-bc16-c980c2adedee",
+        "2": "1dbe0618-dd47-442c-acf6-ac5e4b136e5a",
+        "3": "e0a40a54-9216-4c86-b9e3-daed04abc310",
+        "4": "1eac4d23-2b24-4f4a-b73f-25607c13b806",
+        "5": "7eb65d52-deea-4693-9111-9f95a3b0c915",
+        "6": "d1ea5321-62e2-4894-a79f-03b792daf2c8",
+        "7": "619c439b-8b4d-4c0c-9f86-9fdae9bd1c25",
+        "8": "b90c25fd-2ee1-4372-89d1-fc806d01d501",
+        "9": "e553dd8e-e593-4504-82ed-cd7a6ad01a0a",
+        "10": "6b07ca0f-0cde-4798-b8f0-429f2fba450d",
+        "11": "bf15950f-cff4-442c-ab48-96f2042d49a2",
+        "12": "6ca11e60-dfb4-466f-b7bf-ebef3cd7b0b0",
+        "13": "96b78cb9-847b-428f-a887-e330c2d9f9ee",
+        "14": "7e9fdcd2-8048-40a5-b1ae-bac89899182b",
+        "15": "65752f0f-a831-4575-a23c-daa54ac16c68",
+        "16": "8590b2be-8a63-4221-a043-d6b40fd2bc91",
+        "17": "524f7ca7-7db4-48d5-94c8-5599bae09211",
+        "18": "a5a61ad7-5d82-4a71-81f9-1500616ca2b6",
+        "19": "6d297367-b6e1-4b4f-a157-d7bb7d94a205"
+    },
+    "border_color": {
+        "0": "black",
+        "1": "black",
+        "2": "black",
+        "3": "black",
+        "4": "white",
+        "5": "black",
+        "6": "black",
+        "7": "black",
+        "8": "black",
+        "9": "black",
+        "10": "black",
+        "11": "black",
+        "12": "black",
+        "13": "black",
+        "14": "black",
+        "15": "black",
+        "16": "black",
+        "17": "black",
+        "18": "black",
+        "19": "black"
+    },
+    "frame": {
+        "0": "2003",
+        "1": "2003",
+        "2": "2015",
+        "3": "2015",
+        "4": "1993",
+        "5": "2015",
+        "6": "2015",
+        "7": "2015",
+        "8": "2015",
+        "9": "2015",
+        "10": "2015",
+        "11": "1997",
+        "12": "2015",
+        "13": "2015",
+        "14": "1997",
+        "15": "1997",
+        "16": "2015",
+        "17": "2015",
+        "18": "2015",
+        "19": "2003"
+    },
+    "full_art": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "textless": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "booster": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": false,
+        "10": true,
+        "11": true,
+        "12": true,
+        "13": false,
+        "14": true,
+        "15": true,
+        "16": true,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "story_spotlight": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false,
+        "10": false,
+        "11": false,
+        "12": false,
+        "13": false,
+        "14": false,
+        "15": false,
+        "16": false,
+        "17": false,
+        "18": false,
+        "19": false
+    },
+    "edhrec_rank": {
+        "0": 7278.0,
+        "1": 16914.0,
+        "2": null,
+        "3": 14753.0,
+        "4": 22900.0,
+        "5": 9016.0,
+        "6": 16327.0,
+        "7": 15204.0,
+        "8": 17837.0,
+        "9": 23666.0,
+        "10": null,
+        "11": null,
+        "12": 20402.0,
+        "13": 40.0,
+        "14": 20951.0,
+        "15": 24925.0,
+        "16": 5092.0,
+        "17": 4443.0,
+        "18": 4613.0,
+        "19": 3288.0
+    },
+    "penny_rank": {
+        "0": 9666.0,
+        "1": 5141.0,
+        "2": null,
+        "3": 11224.0,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": 1656.0,
+        "8": 12658.0,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": 9832.0,
+        "13": 64.0,
+        "14": null,
+        "15": null,
+        "16": 7793.0,
+        "17": 2782.0,
+        "18": null,
+        "19": null
+    },
+    "prices": {
+        "0": {
+            "usd": "0.41",
+            "usd_foil": "1.49",
+            "usd_etched": null,
+            "eur": "0.19",
+            "eur_foil": "0.91",
+            "tix": "0.03"
+        },
+        "1": {
+            "usd": "0.15",
+            "usd_foil": "5.57",
+            "usd_etched": null,
+            "eur": "0.16",
+            "eur_foil": "2.19",
+            "tix": "0.03"
+        },
+        "2": {
+            "usd": "0.12",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": null,
+            "eur_foil": null,
+            "tix": null
+        },
+        "3": {
+            "usd": "0.03",
+            "usd_foil": "0.33",
+            "usd_etched": null,
+            "eur": "0.08",
+            "eur_foil": "0.20",
+            "tix": "0.03"
+        },
+        "4": {
+            "usd": "0.67",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.97",
+            "eur_foil": null,
+            "tix": null
+        },
+        "5": {
+            "usd": "0.12",
+            "usd_foil": "2.04",
+            "usd_etched": null,
+            "eur": "0.24",
+            "eur_foil": "0.30",
+            "tix": null
+        },
+        "6": {
+            "usd": "0.02",
+            "usd_foil": "0.03",
+            "usd_etched": null,
+            "eur": "0.05",
+            "eur_foil": "0.08",
+            "tix": "0.03"
+        },
+        "7": {
+            "usd": "0.09",
+            "usd_foil": "0.25",
+            "usd_etched": null,
+            "eur": "0.10",
+            "eur_foil": "0.50",
+            "tix": "0.03"
+        },
+        "8": {
+            "usd": "1.01",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "2.66",
+            "eur_foil": null,
+            "tix": null
+        },
+        "9": {
+            "usd": "0.19",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.13",
+            "eur_foil": null,
+            "tix": "0.19"
+        },
+        "10": {
+            "usd": "0.27",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.26",
+            "eur_foil": null,
+            "tix": null
+        },
+        "11": {
+            "usd": "0.45",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.34",
+            "eur_foil": null,
+            "tix": "0.04"
+        },
+        "12": {
+            "usd": "0.05",
+            "usd_foil": "0.04",
+            "usd_etched": null,
+            "eur": "0.11",
+            "eur_foil": "0.14",
+            "tix": "0.03"
+        },
+        "13": {
+            "usd": "5.61",
+            "usd_foil": "5.53",
+            "usd_etched": null,
+            "eur": "7.39",
+            "eur_foil": "7.70",
+            "tix": null
+        },
+        "14": {
+            "usd": null,
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": null,
+            "eur_foil": null,
+            "tix": "0.05"
+        },
+        "15": {
+            "usd": "0.21",
+            "usd_foil": "8.34",
+            "usd_etched": null,
+            "eur": "0.17",
+            "eur_foil": "2.05",
+            "tix": "0.09"
+        },
+        "16": {
+            "usd": "0.51",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.40",
+            "eur_foil": null,
+            "tix": null
+        },
+        "17": {
+            "usd": "0.12",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.11",
+            "eur_foil": null,
+            "tix": null
+        },
+        "18": {
+            "usd": "0.80",
+            "usd_foil": null,
+            "usd_etched": null,
+            "eur": "0.41",
+            "eur_foil": null,
+            "tix": null
+        },
+        "19": {
+            "usd": null,
+            "usd_foil": "4.24",
+            "usd_etched": null,
+            "eur": null,
+            "eur_foil": "2.16",
+            "tix": null
+        }
+    },
+    "related_uris": {
+        "0": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=109722&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DFury%2BSliver",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DFury%2BSliver",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Fury+Sliver"
+        },
+        "1": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=189637&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DKor%2BOutfitter",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DKor%2BOutfitter",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Kor+Outfitter"
+        },
+        "2": {
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSpirit",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSpirit",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Spirit"
+        },
+        "3": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=435231&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSiren%2BLookout",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSiren%2BLookout",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Siren+Lookout"
+        },
+        "4": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=1278&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DWeb",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DWeb",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Web"
+        },
+        "5": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=634752&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSurge%2Bof%2BBrilliance",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSurge%2Bof%2BBrilliance",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Surge+of+Brilliance"
+        },
+        "6": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=629564&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DObyra%2527s%2BAttendants%2B%252F%252F%2BDesperate%2BParry",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DObyra%2527s%2BAttendants%2B%252F%252F%2BDesperate%2BParry",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Obyra%27s+Attendants"
+        },
+        "7": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=472997&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DVenerable%2BKnight",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DVenerable%2BKnight",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Venerable+Knight"
+        },
+        "8": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=394089&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DWildcall",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DWildcall",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Wildcall"
+        },
+        "9": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=488632&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DMystic%2BSkyfish",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DMystic%2BSkyfish",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Mystic+Skyfish"
+        },
+        "10": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=489643&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSwamp",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSwamp",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Swamp"
+        },
+        "11": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=4925&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DSwamp",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DSwamp",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Swamp"
+        },
+        "12": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=574523&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DBattlewing%2BMystic",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DBattlewing%2BMystic",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Battlewing+Mystic"
+        },
+        "13": {
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DBirds%2Bof%2BParadise",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DBirds%2Bof%2BParadise",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Birds+of+Paradise"
+        },
+        "14": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=202610&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DBronze%2BHorse",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DBronze%2BHorse",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Bronze+Horse"
+        },
+        "15": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=24609&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DWall%2Bof%2BVipers",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DWall%2Bof%2BVipers",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Wall+of+Vipers"
+        },
+        "16": {
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DAdmiral%2BBeckett%2BBrass",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DAdmiral%2BBeckett%2BBrass",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Admiral+Beckett+Brass"
+        },
+        "17": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=405311&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DMulch",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DMulch",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Mulch"
+        },
+        "18": {
+            "gatherer": "https:\/\/gatherer.wizards.com\/Pages\/Card\/Details.aspx?multiverseid=450637&printed=false",
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DWhiptongue%2BHydra",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DWhiptongue%2BHydra",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Whiptongue+Hydra"
+        },
+        "19": {
+            "tcgplayer_infinite_articles": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Darticle%26game%3Dmagic%26partner%3Dscryfall%26q%3DWall%2Bof%2BRoots",
+            "tcgplayer_infinite_decks": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&trafcat=infinite&u=https%3A%2F%2Finfinite.tcgplayer.com%2Fsearch%3FcontentMode%3Ddeck%26game%3Dmagic%26partner%3Dscryfall%26q%3DWall%2Bof%2BRoots",
+            "edhrec": "https:\/\/edhrec.com\/route\/?cc=Wall+of+Roots"
+        }
+    },
+    "purchase_uris": {
+        "0": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F14240%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Time-Spiral\/Fury-Sliver?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/25527?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "1": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F33347%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Zendikar\/Kor-Outfitter?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/34586?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "2": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F98659%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Search?referrer=scryfall&searchString=Spirit&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Spirit&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "3": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F145764%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Ixalan\/Siren-Lookout?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/65170?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "4": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F1623%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Revised\/Web?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Web&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "5": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F519582%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Universes-Beyond-Doctor-Who\/Surge-of-Brilliance?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Surge+of+Brilliance&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "6": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F513888%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Wilds-of-Eldraine\/Obyras-Attendants-Desperate-Parry?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/116428?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "7": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F198861%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Throne-of-Eldraine\/Venerable-Knight?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/78170?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "8": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F95585%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Ugins-Fate-Promos\/Wildcall?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Wildcall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "9": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F215418%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Core-2021-Extras\/Mystic-Skyfish?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/81171?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "10": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F215984%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Jumpstart\/Swamp-V6?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Swamp&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "11": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F18500%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Tempest\/Swamp-V-2?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/9701?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "12": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F283405%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Dominaria-United\/Battlewing-Mystic?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/102562?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "13": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F242360%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Secret-Lair-Drop-Series-All-Natural-Totally-Refreshing-Superdrop\/Birds-of-Paradise?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Birds+of+Paradise&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "14": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fmagic%2Fproduct%3FproductLineName%3Dmagic%26q%3DBronze%2BHorse%26view%3Dgrid",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Search?referrer=scryfall&searchString=Bronze+Horse&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/38804?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "15": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F7396%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Prophecy\/Wall-of-Vipers?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards\/14297?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "16": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F269127%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/The-List\/Admiral-Beckett-Brass?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Admiral+Beckett+Brass&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "17": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F107993%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Commander-2015\/Mulch?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Mulch&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "18": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F170970%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Commander-2018\/Whiptongue-Hydra?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Whiptongue+Hydra&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        },
+        "19": {
+            "tcgplayer": "https:\/\/tcgplayer.pxf.io\/c\/4931599\/1830156\/21018?subId1=api&u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F38172%3Fpage%3D1",
+            "cardmarket": "https:\/\/www.cardmarket.com\/en\/Magic\/Products\/Singles\/Friday-Night-Magic-Promos\/Wall-of-Roots?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "cardhoarder": "https:\/\/www.cardhoarder.com\/cards?affiliate_id=scryfall&data%5Bsearch%5D=Wall+of+Roots&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall"
+        }
+    },
+    "all_parts": {
+        "0": null,
+        "1": null,
+        "2": [
+            {
+                "object": "related_card",
+                "id": "4d8542f6-ee34-42c6-acd5-07b0c7cc2f63",
+                "component": "combo_piece",
+                "name": "Funeral Pyre",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/4d8542f6-ee34-42c6-acd5-07b0c7cc2f63"
+            },
+            {
+                "object": "related_card",
+                "id": "66210a3f-010b-4a9b-a08f-97d3ca962b0c",
+                "component": "combo_piece",
+                "name": "Haunted Dead",
+                "type_line": "Creature \u2014 Zombie",
+                "uri": "https:\/\/api.scryfall.com\/cards\/66210a3f-010b-4a9b-a08f-97d3ca962b0c"
+            },
+            {
+                "object": "related_card",
+                "id": "d333e35c-ca90-4aaa-950a-48b5623c31a6",
+                "component": "combo_piece",
+                "name": "Blessed Defiance",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/d333e35c-ca90-4aaa-950a-48b5623c31a6"
+            },
+            {
+                "object": "related_card",
+                "id": "f0ad0796-0357-4e74-9d65-c7761a3f223c",
+                "component": "combo_piece",
+                "name": "Slayer's Plate",
+                "type_line": "Artifact \u2014 Equipment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/f0ad0796-0357-4e74-9d65-c7761a3f223c"
+            },
+            {
+                "object": "related_card",
+                "id": "f11908e8-8c85-4eb7-b29d-b97712be42ee",
+                "component": "combo_piece",
+                "name": "Lingering Souls",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/f11908e8-8c85-4eb7-b29d-b97712be42ee"
+            },
+            {
+                "object": "related_card",
+                "id": "17be11f2-f2db-40c4-8fc1-2ed7173f9a1a",
+                "component": "combo_piece",
+                "name": "Staff of the Storyteller",
+                "type_line": "Artifact",
+                "uri": "https:\/\/api.scryfall.com\/cards\/17be11f2-f2db-40c4-8fc1-2ed7173f9a1a"
+            },
+            {
+                "object": "related_card",
+                "id": "8a840ee7-5728-4b1b-92ac-54612e5397b3",
+                "component": "combo_piece",
+                "name": "Gallows at Willow Hill",
+                "type_line": "Artifact",
+                "uri": "https:\/\/api.scryfall.com\/cards\/8a840ee7-5728-4b1b-92ac-54612e5397b3"
+            },
+            {
+                "object": "related_card",
+                "id": "dd4287fc-3e16-473f-818c-9f4d57d03125",
+                "component": "combo_piece",
+                "name": "Kaya the Inexorable",
+                "type_line": "Legendary Planeswalker \u2014 Kaya",
+                "uri": "https:\/\/api.scryfall.com\/cards\/dd4287fc-3e16-473f-818c-9f4d57d03125"
+            },
+            {
+                "object": "related_card",
+                "id": "a4861c8d-5e4a-4c4b-854c-410aad2d49cb",
+                "component": "combo_piece",
+                "name": "Nearheath Chaplain",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/a4861c8d-5e4a-4c4b-854c-410aad2d49cb"
+            },
+            {
+                "object": "related_card",
+                "id": "d2709d91-4235-482c-b9b3-ac5d61cb5bcb",
+                "component": "combo_piece",
+                "name": "Oath of the Grey Host",
+                "type_line": "Enchantment \u2014 Saga",
+                "uri": "https:\/\/api.scryfall.com\/cards\/d2709d91-4235-482c-b9b3-ac5d61cb5bcb"
+            },
+            {
+                "object": "related_card",
+                "id": "d7953153-e7da-4e3d-a962-eb57b726aaf0",
+                "component": "combo_piece",
+                "name": "Ethereal Investigator",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/d7953153-e7da-4e3d-a962-eb57b726aaf0"
+            },
+            {
+                "object": "related_card",
+                "id": "a3f29cbb-d802-4085-a236-86775764bc9e",
+                "component": "combo_piece",
+                "name": "Whispering Wizard",
+                "type_line": "Creature \u2014 Human Wizard",
+                "uri": "https:\/\/api.scryfall.com\/cards\/a3f29cbb-d802-4085-a236-86775764bc9e"
+            },
+            {
+                "object": "related_card",
+                "id": "9964629e-d79e-46e4-b3fd-e7d1759cbc60",
+                "component": "combo_piece",
+                "name": "Spectral Procession",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/9964629e-d79e-46e4-b3fd-e7d1759cbc60"
+            },
+            {
+                "object": "related_card",
+                "id": "0df01c9a-5d2c-4391-99a3-f10e404b7133",
+                "component": "combo_piece",
+                "name": "Abzan Ascendancy",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/0df01c9a-5d2c-4391-99a3-f10e404b7133"
+            },
+            {
+                "object": "related_card",
+                "id": "d080c35d-f2c6-4f4e-8f7c-305b319d4cde",
+                "component": "combo_piece",
+                "name": "Benevolent Offering",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/d080c35d-f2c6-4f4e-8f7c-305b319d4cde"
+            },
+            {
+                "object": "related_card",
+                "id": "c630a2ba-9009-4463-91f8-a0eb4af3c1b0",
+                "component": "combo_piece",
+                "name": "King of the Oathbreakers",
+                "type_line": "Legendary Creature \u2014 Spirit Noble",
+                "uri": "https:\/\/api.scryfall.com\/cards\/c630a2ba-9009-4463-91f8-a0eb4af3c1b0"
+            },
+            {
+                "object": "related_card",
+                "id": "1b302947-5d66-425d-b67e-bf1d5846d490",
+                "component": "combo_piece",
+                "name": "Nurturing Presence",
+                "type_line": "Enchantment \u2014 Aura",
+                "uri": "https:\/\/api.scryfall.com\/cards\/1b302947-5d66-425d-b67e-bf1d5846d490"
+            },
+            {
+                "object": "related_card",
+                "id": "d7cf5453-f8b8-4f86-a2f0-fdc79f7c977f",
+                "component": "combo_piece",
+                "name": "Triplicate Spirits",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/d7cf5453-f8b8-4f86-a2f0-fdc79f7c977f"
+            },
+            {
+                "object": "related_card",
+                "id": "258946f2-294a-4ddf-be91-9ff4c94e4bdb",
+                "component": "combo_piece",
+                "name": "Afterlife",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/258946f2-294a-4ddf-be91-9ff4c94e4bdb"
+            },
+            {
+                "object": "related_card",
+                "id": "020dc072-96e2-4923-b9c9-1791a0732c29",
+                "component": "combo_piece",
+                "name": "Field of Souls",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/020dc072-96e2-4923-b9c9-1791a0732c29"
+            },
+            {
+                "object": "related_card",
+                "id": "fbbbbbf7-eaae-462e-a8eb-7f6a97703600",
+                "component": "combo_piece",
+                "name": "Kirtar's Wrath",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/fbbbbbf7-eaae-462e-a8eb-7f6a97703600"
+            },
+            {
+                "object": "related_card",
+                "id": "df8bbd04-981e-45ec-a835-7237350630cf",
+                "component": "combo_piece",
+                "name": "Moorland Haunt",
+                "type_line": "Land",
+                "uri": "https:\/\/api.scryfall.com\/cards\/df8bbd04-981e-45ec-a835-7237350630cf"
+            },
+            {
+                "object": "related_card",
+                "id": "dc8037d5-79fa-47e3-9d3b-eb29643ecae7",
+                "component": "combo_piece",
+                "name": "Hallowed Spiritkeeper",
+                "type_line": "Creature \u2014 Avatar",
+                "uri": "https:\/\/api.scryfall.com\/cards\/dc8037d5-79fa-47e3-9d3b-eb29643ecae7"
+            },
+            {
+                "object": "related_card",
+                "id": "ddcb90f4-82c0-412c-9e90-9fffc8c5df10",
+                "component": "combo_piece",
+                "name": "Requiem Angel",
+                "type_line": "Creature \u2014 Angel",
+                "uri": "https:\/\/api.scryfall.com\/cards\/ddcb90f4-82c0-412c-9e90-9fffc8c5df10"
+            },
+            {
+                "object": "related_card",
+                "id": "7618aa2d-d5b3-41e6-978f-2c8292f7f896",
+                "component": "combo_piece",
+                "name": "Spectral Reserves",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/7618aa2d-d5b3-41e6-978f-2c8292f7f896"
+            },
+            {
+                "object": "related_card",
+                "id": "43227caf-f902-46b4-936f-125d879eb54a",
+                "component": "combo_piece",
+                "name": "Mausoleum Guard",
+                "type_line": "Creature \u2014 Human Scout",
+                "uri": "https:\/\/api.scryfall.com\/cards\/43227caf-f902-46b4-936f-125d879eb54a"
+            },
+            {
+                "object": "related_card",
+                "id": "add661e7-b337-44e4-9614-ca958e20e86f",
+                "component": "combo_piece",
+                "name": "Occult Epiphany",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/add661e7-b337-44e4-9614-ca958e20e86f"
+            },
+            {
+                "object": "related_card",
+                "id": "eb405cb1-3643-417c-b27f-4b6c3dca3a96",
+                "component": "combo_piece",
+                "name": "Hanged Executioner",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/eb405cb1-3643-417c-b27f-4b6c3dca3a96"
+            },
+            {
+                "object": "related_card",
+                "id": "5345d199-79e5-466b-85f3-365f6e39457d",
+                "component": "combo_piece",
+                "name": "Millicent, Restless Revenant",
+                "type_line": "Legendary Creature \u2014 Spirit Soldier",
+                "uri": "https:\/\/api.scryfall.com\/cards\/5345d199-79e5-466b-85f3-365f6e39457d"
+            },
+            {
+                "object": "related_card",
+                "id": "f01e857d-cc78-4364-9f31-6879d4ec74e1",
+                "component": "combo_piece",
+                "name": "Kykar, Wind's Fury",
+                "type_line": "Legendary Creature \u2014 Bird Wizard",
+                "uri": "https:\/\/api.scryfall.com\/cards\/f01e857d-cc78-4364-9f31-6879d4ec74e1"
+            },
+            {
+                "object": "related_card",
+                "id": "6fbc9abd-8719-4cea-8bf4-1a3d78e3f00b",
+                "component": "combo_piece",
+                "name": "Priest of the Blessed Graf",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/6fbc9abd-8719-4cea-8bf4-1a3d78e3f00b"
+            },
+            {
+                "object": "related_card",
+                "id": "e732cdf6-b127-4c6b-aa8a-109ddafa0aef",
+                "component": "combo_piece",
+                "name": "Thalisse, Reverent Medium",
+                "type_line": "Legendary Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/e732cdf6-b127-4c6b-aa8a-109ddafa0aef"
+            },
+            {
+                "object": "related_card",
+                "id": "c9786c13-b57a-46be-bbbe-e17333defbd4",
+                "component": "combo_piece",
+                "name": "Sanctifier of Souls",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/c9786c13-b57a-46be-bbbe-e17333defbd4"
+            },
+            {
+                "object": "related_card",
+                "id": "783a4c53-c006-46d7-bca6-cd9e12f0da13",
+                "component": "combo_piece",
+                "name": "Teysa, Orzhov Scion",
+                "type_line": "Legendary Creature \u2014 Human Advisor",
+                "uri": "https:\/\/api.scryfall.com\/cards\/783a4c53-c006-46d7-bca6-cd9e12f0da13"
+            },
+            {
+                "object": "related_card",
+                "id": "219dd7c5-0d8f-46a2-9181-3ed30d489397",
+                "component": "combo_piece",
+                "name": "Avacyn's Collar",
+                "type_line": "Artifact \u2014 Equipment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/219dd7c5-0d8f-46a2-9181-3ed30d489397"
+            },
+            {
+                "object": "related_card",
+                "id": "83632e73-be3f-43fc-932f-45cb1af4f8fb",
+                "component": "combo_piece",
+                "name": "Valor of the Worthy",
+                "type_line": "Enchantment \u2014 Aura",
+                "uri": "https:\/\/api.scryfall.com\/cards\/83632e73-be3f-43fc-932f-45cb1af4f8fb"
+            },
+            {
+                "object": "related_card",
+                "id": "4205f8f8-7b18-4999-ac51-860fab376d79",
+                "component": "combo_piece",
+                "name": "Brine Comber \/\/ Brinebound Gift",
+                "type_line": "Creature \u2014 Spirit \/\/ Enchantment \u2014 Aura",
+                "uri": "https:\/\/api.scryfall.com\/cards\/4205f8f8-7b18-4999-ac51-860fab376d79"
+            },
+            {
+                "object": "related_card",
+                "id": "c3ac419f-7630-48c7-9039-88ce28898b6d",
+                "component": "combo_piece",
+                "name": "Luminous Angel",
+                "type_line": "Creature \u2014 Angel",
+                "uri": "https:\/\/api.scryfall.com\/cards\/c3ac419f-7630-48c7-9039-88ce28898b6d"
+            },
+            {
+                "object": "related_card",
+                "id": "29bf245f-e8e0-4d32-8cd7-06d832609910",
+                "component": "combo_piece",
+                "name": "Seize the Soul",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/29bf245f-e8e0-4d32-8cd7-06d832609910"
+            },
+            {
+                "object": "related_card",
+                "id": "3a79a435-9b58-4bcd-8544-79d9a71d85a2",
+                "component": "combo_piece",
+                "name": "Heron-Blessed Geist",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/3a79a435-9b58-4bcd-8544-79d9a71d85a2"
+            },
+            {
+                "object": "related_card",
+                "id": "8a03d414-bff9-4aba-8b0a-0ed57982251e",
+                "component": "combo_piece",
+                "name": "Doomed Traveler",
+                "type_line": "Creature \u2014 Human Soldier",
+                "uri": "https:\/\/api.scryfall.com\/cards\/8a03d414-bff9-4aba-8b0a-0ed57982251e"
+            },
+            {
+                "object": "related_card",
+                "id": "eddc09d1-63de-4791-b654-31b354032c54",
+                "component": "combo_piece",
+                "name": "Midnight Haunting",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/eddc09d1-63de-4791-b654-31b354032c54"
+            },
+            {
+                "object": "related_card",
+                "id": "a36ab7fa-7b90-4ccc-8fe9-93453f10a237",
+                "component": "combo_piece",
+                "name": "Drogskol Cavalry",
+                "type_line": "Creature \u2014 Spirit Knight",
+                "uri": "https:\/\/api.scryfall.com\/cards\/a36ab7fa-7b90-4ccc-8fe9-93453f10a237"
+            },
+            {
+                "object": "related_card",
+                "id": "9b0f860c-029c-4856-a999-05b3306c7d46",
+                "component": "combo_piece",
+                "name": "Spirit Cairn",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/9b0f860c-029c-4856-a999-05b3306c7d46"
+            },
+            {
+                "object": "related_card",
+                "id": "c369d381-b48e-43cf-a032-8bcb120f443e",
+                "component": "combo_piece",
+                "name": "Bishop of Wings",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/c369d381-b48e-43cf-a032-8bcb120f443e"
+            },
+            {
+                "object": "related_card",
+                "id": "ef2bb440-87b7-4d3d-9b37-2f1ebaca4b3f",
+                "component": "combo_piece",
+                "name": "Twilight Drover",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/ef2bb440-87b7-4d3d-9b37-2f1ebaca4b3f"
+            },
+            {
+                "object": "related_card",
+                "id": "97c4288f-7d22-4a5f-9b2e-d67734d9a6e7",
+                "component": "combo_piece",
+                "name": "Path of the Ghosthunter",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/97c4288f-7d22-4a5f-9b2e-d67734d9a6e7"
+            },
+            {
+                "object": "related_card",
+                "id": "5deefe63-0d42-4983-9871-3b58e8547d07",
+                "component": "combo_piece",
+                "name": "Shadow Summoning",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/5deefe63-0d42-4983-9871-3b58e8547d07"
+            },
+            {
+                "object": "related_card",
+                "id": "f07dd0f1-b80b-4af0-ae76-907ec55ec7d5",
+                "component": "combo_piece",
+                "name": "March of Souls",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/f07dd0f1-b80b-4af0-ae76-907ec55ec7d5"
+            },
+            {
+                "object": "related_card",
+                "id": "87673b63-cacb-43b3-8723-924a7d5aed0c",
+                "component": "combo_piece",
+                "name": "Confront the Assault",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/87673b63-cacb-43b3-8723-924a7d5aed0c"
+            },
+            {
+                "object": "related_card",
+                "id": "f4051020-688c-473a-9a08-b62f0fd75675",
+                "component": "combo_piece",
+                "name": "Vessel of Ephemera",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/f4051020-688c-473a-9a08-b62f0fd75675"
+            },
+            {
+                "object": "related_card",
+                "id": "bf6570e3-f245-4556-89b4-a48f26b6dc4f",
+                "component": "combo_piece",
+                "name": "Dauntless Cathar",
+                "type_line": "Creature \u2014 Human Soldier",
+                "uri": "https:\/\/api.scryfall.com\/cards\/bf6570e3-f245-4556-89b4-a48f26b6dc4f"
+            },
+            {
+                "object": "related_card",
+                "id": "1c8c41dd-8551-4ce8-a9be-9b9f65718852",
+                "component": "combo_piece",
+                "name": "Ranar the Ever-Watchful",
+                "type_line": "Legendary Creature \u2014 Spirit Warrior",
+                "uri": "https:\/\/api.scryfall.com\/cards\/1c8c41dd-8551-4ce8-a9be-9b9f65718852"
+            },
+            {
+                "object": "related_card",
+                "id": "6a0dd7ba-673e-4f69-8cd3-806784501dc2",
+                "component": "combo_piece",
+                "name": "Custodi Soulbinders",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/6a0dd7ba-673e-4f69-8cd3-806784501dc2"
+            },
+            {
+                "object": "related_card",
+                "id": "3fdf5020-ea97-4f95-a096-cb5688dad2e2",
+                "component": "combo_piece",
+                "name": "Alharu, Solemn Ritualist",
+                "type_line": "Legendary Creature \u2014 Human Monk",
+                "uri": "https:\/\/api.scryfall.com\/cards\/3fdf5020-ea97-4f95-a096-cb5688dad2e2"
+            },
+            {
+                "object": "related_card",
+                "id": "0000a54c-a511-4925-92dc-01b937f9afad",
+                "component": "token",
+                "name": "Spirit",
+                "type_line": "Token Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/0000a54c-a511-4925-92dc-01b937f9afad"
+            },
+            {
+                "object": "related_card",
+                "id": "86a4c348-1012-4339-960a-c7bc7fd84fbb",
+                "component": "combo_piece",
+                "name": "Clarion Spirit",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/86a4c348-1012-4339-960a-c7bc7fd84fbb"
+            },
+            {
+                "object": "related_card",
+                "id": "9135b501-82be-43cb-9aa5-9cf08789c636",
+                "component": "combo_piece",
+                "name": "Kaya, Geist Hunter",
+                "type_line": "Legendary Planeswalker \u2014 Kaya",
+                "uri": "https:\/\/api.scryfall.com\/cards\/9135b501-82be-43cb-9aa5-9cf08789c636"
+            },
+            {
+                "object": "related_card",
+                "id": "05860b72-fb1b-44d8-9275-12863724a9ef",
+                "component": "combo_piece",
+                "name": "Not Forgotten",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/05860b72-fb1b-44d8-9275-12863724a9ef"
+            },
+            {
+                "object": "related_card",
+                "id": "4d09ef1d-3552-43a3-91c7-0d14c0f06780",
+                "component": "combo_piece",
+                "name": "Geist-Honored Monk",
+                "type_line": "Creature \u2014 Human Monk",
+                "uri": "https:\/\/api.scryfall.com\/cards\/4d09ef1d-3552-43a3-91c7-0d14c0f06780"
+            },
+            {
+                "object": "related_card",
+                "id": "1b7a47cc-9311-4f92-b19c-8956db5f2b5f",
+                "component": "combo_piece",
+                "name": "Rousing of Souls",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/1b7a47cc-9311-4f92-b19c-8956db5f2b5f"
+            },
+            {
+                "object": "related_card",
+                "id": "7ebd275e-f097-448c-aba3-eab8ee8c9a8c",
+                "component": "combo_piece",
+                "name": "And\u00faril, Flame of the West",
+                "type_line": "Legendary Artifact \u2014 Equipment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/7ebd275e-f097-448c-aba3-eab8ee8c9a8c"
+            },
+            {
+                "object": "related_card",
+                "id": "b3e98964-e1ce-40ba-be0d-27e39e724074",
+                "component": "combo_piece",
+                "name": "Haunted Library",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/b3e98964-e1ce-40ba-be0d-27e39e724074"
+            },
+            {
+                "object": "related_card",
+                "id": "c342e1da-7ab9-4e29-96e6-77d820a45ede",
+                "component": "combo_piece",
+                "name": "Elgaud Inquisitor",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/c342e1da-7ab9-4e29-96e6-77d820a45ede"
+            },
+            {
+                "object": "related_card",
+                "id": "4531482d-9238-40de-957e-61beb5700330",
+                "component": "combo_piece",
+                "name": "Thalia's Geistcaller",
+                "type_line": "Creature \u2014 Human Cleric",
+                "uri": "https:\/\/api.scryfall.com\/cards\/4531482d-9238-40de-957e-61beb5700330"
+            },
+            {
+                "object": "related_card",
+                "id": "cc5fa496-a830-4031-a19a-d6467d074ad1",
+                "component": "combo_piece",
+                "name": "Emissary of the Sleepless",
+                "type_line": "Creature \u2014 Spirit",
+                "uri": "https:\/\/api.scryfall.com\/cards\/cc5fa496-a830-4031-a19a-d6467d074ad1"
+            },
+            {
+                "object": "related_card",
+                "id": "aa2a3aaa-e78a-48cc-b7d3-7f65e467054c",
+                "component": "combo_piece",
+                "name": "Spirit Bonds",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/aa2a3aaa-e78a-48cc-b7d3-7f65e467054c"
+            },
+            {
+                "object": "related_card",
+                "id": "2f28187b-2c99-4502-99d5-3a53ff3fa008",
+                "component": "combo_piece",
+                "name": "Transluminant",
+                "type_line": "Creature \u2014 Dryad Shaman",
+                "uri": "https:\/\/api.scryfall.com\/cards\/2f28187b-2c99-4502-99d5-3a53ff3fa008"
+            },
+            {
+                "object": "related_card",
+                "id": "dc098d5b-0cdb-422f-8bd2-7afd81a7b7c3",
+                "component": "combo_piece",
+                "name": "Court of Grace",
+                "type_line": "Enchantment",
+                "uri": "https:\/\/api.scryfall.com\/cards\/dc098d5b-0cdb-422f-8bd2-7afd81a7b7c3"
+            },
+            {
+                "object": "related_card",
+                "id": "b34a7501-4afc-4467-b0d6-b32d7657064e",
+                "component": "combo_piece",
+                "name": "Sandsteppe Outcast",
+                "type_line": "Creature \u2014 Human Warrior",
+                "uri": "https:\/\/api.scryfall.com\/cards\/b34a7501-4afc-4467-b0d6-b32d7657064e"
+            }
+        ],
+        "3": null,
+        "4": null,
+        "5": [
+            {
+                "object": "related_card",
+                "id": "0e202cf6-d7a0-47a8-94fc-0345ea53c21b",
+                "component": "combo_piece",
+                "name": "Surge of Brilliance",
+                "type_line": "Instant",
+                "uri": "https:\/\/api.scryfall.com\/cards\/0e202cf6-d7a0-47a8-94fc-0345ea53c21b"
+            },
+            {
+                "object": "related_card",
+                "id": "fb02637f-1385-4d3d-8dc0-de513db7633a",
+                "component": "combo_piece",
+                "name": "Foretell",
+                "type_line": "Card",
+                "uri": "https:\/\/api.scryfall.com\/cards\/fb02637f-1385-4d3d-8dc0-de513db7633a"
+            }
+        ],
+        "6": [
+            {
+                "object": "related_card",
+                "id": "0001e77a-7fff-49d2-a55c-42f6fdf6db08",
+                "component": "combo_piece",
+                "name": "Obyra's Attendants \/\/ Desperate Parry",
+                "type_line": "Creature \u2014 Faerie Wizard \/\/ Instant \u2014 Adventure",
+                "uri": "https:\/\/api.scryfall.com\/cards\/0001e77a-7fff-49d2-a55c-42f6fdf6db08"
+            },
+            {
+                "object": "related_card",
+                "id": "fcf4c7fb-7859-4c11-8552-6817f5119d2e",
+                "component": "combo_piece",
+                "name": "On an Adventure",
+                "type_line": "Card",
+                "uri": "https:\/\/api.scryfall.com\/cards\/fcf4c7fb-7859-4c11-8552-6817f5119d2e"
+            }
+        ],
+        "7": null,
+        "8": [
+            {
+                "object": "related_card",
+                "id": "00020b05-ecb9-4603-8cc1-8cfa7a14befc",
+                "component": "combo_piece",
+                "name": "Wildcall",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/00020b05-ecb9-4603-8cc1-8cfa7a14befc"
+            },
+            {
+                "object": "related_card",
+                "id": "e9f896d4-34b4-407d-be7e-bf7a69aaf811",
+                "component": "combo_piece",
+                "name": "Manifest",
+                "type_line": "Creature",
+                "uri": "https:\/\/api.scryfall.com\/cards\/e9f896d4-34b4-407d-be7e-bf7a69aaf811"
+            }
+        ],
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": [
+            {
+                "object": "related_card",
+                "id": "577304f8-89e5-47d2-bdb3-311d4be88af2",
+                "component": "combo_piece",
+                "name": "Brazen Boarding",
+                "type_line": "Sorcery",
+                "uri": "https:\/\/api.scryfall.com\/cards\/577304f8-89e5-47d2-bdb3-311d4be88af2"
+            },
+            {
+                "object": "related_card",
+                "id": "0004311b-646a-4df8-a4b4-9171642e9ef4",
+                "component": "combo_piece",
+                "name": "Admiral Beckett Brass",
+                "type_line": "Legendary Creature \u2014 Human Pirate",
+                "uri": "https:\/\/api.scryfall.com\/cards\/0004311b-646a-4df8-a4b4-9171642e9ef4"
+            }
+        ],
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "promo_types": {
+        "0": null,
+        "1": null,
+        "2": [
+            "setpromo"
+        ],
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": [
+            "setpromo"
+        ],
+        "9": [
+            "planeswalkerdeck"
+        ],
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": [
+            "tourney",
+            "fnm"
+        ]
+    },
+    "arena_id": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": 66119.0,
+        "4": null,
+        "5": null,
+        "6": 86752.0,
+        "7": 70182.0,
+        "8": null,
+        "9": 72048.0,
+        "10": 72579.0,
+        "11": null,
+        "12": 82095.0,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "security_stamp": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": "triangle",
+        "6": null,
+        "7": null,
+        "8": "oval",
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": "oval",
+        "14": null,
+        "15": null,
+        "16": "oval",
+        "17": null,
+        "18": "oval",
+        "19": null
+    },
+    "card_faces": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": [
+            {
+                "object": "card_face",
+                "name": "Obyra's Attendants",
+                "mana_cost": "{4}{U}",
+                "type_line": "Creature \u2014 Faerie Wizard",
+                "oracle_text": "Flying",
+                "power": "3",
+                "toughness": "4",
+                "flavor_text": "Obyra's devoted servants shrieked as their sleeping mistress slashed at them, unseeing.",
+                "artist": "Andreas Zafiratos",
+                "artist_id": "e2f13a9a-57c5-40de-81d4-3b0723899cdf",
+                "illustration_id": "d1ea5321-62e2-4894-a79f-03b792daf2c8"
+            },
+            {
+                "object": "card_face",
+                "name": "Desperate Parry",
+                "flavor_name": "",
+                "mana_cost": "{1}{U}",
+                "type_line": "Instant \u2014 Adventure",
+                "oracle_text": "Target creature gets -4\/-0 until end of turn. (Then exile this card. You may cast the creature later from exile.)",
+                "artist": "Andreas Zafiratos",
+                "artist_id": "e2f13a9a-57c5-40de-81d4-3b0723899cdf"
+            }
+        ],
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "preview": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": {
+            "source": "Autumn Burchett",
+            "source_uri": "https:\/\/twitter.com\/AutumnLilyMTG\/status\/1172207122555293696",
+            "previewed_at": "2019-09-04"
+        },
+        "8": null,
+        "9": {
+            "source": "CBR.com",
+            "source_uri": "https:\/\/www.cbr.com\/magic-the-gathering-planeswalker-decks-core-set-2021\/",
+            "previewed_at": "2020-06-05"
+        },
+        "10": {
+            "source": "GameStar",
+            "source_uri": "https:\/\/www.gamestar.de\/galerien\/magic_the_gathering_jumpstart,134800.html",
+            "previewed_at": "2020-06-17"
+        },
+        "11": null,
+        "12": {
+            "source": "Wizards of the Coast",
+            "source_uri": "https:\/\/weibo.com\/n\/\u4e07\u667a\u724cMAGIC",
+            "previewed_at": "2022-08-23"
+        },
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "produced_mana": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": [
+            "B"
+        ],
+        "11": [
+            "B"
+        ],
+        "12": null,
+        "13": [
+            "B",
+            "G",
+            "R",
+            "U",
+            "W"
+        ],
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": [
+            "G"
+        ]
+    },
+    "watermark": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": "fnm"
+    },
+    "frame_effects": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "loyalty": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "printed_name": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "tcgplayer_etched_id": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "flavor_name": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "attraction_lights": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "color_indicator": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "printed_type_line": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "printed_text": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "variation_of": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "life_modifier": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "hand_modifier": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    },
+    "content_warning": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": null,
+        "10": null,
+        "11": null,
+        "12": null,
+        "13": null,
+        "14": null,
+        "15": null,
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null
+    }
+}
