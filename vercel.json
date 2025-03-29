@@ -3,16 +3,13 @@
     "builds": [
         {
             "src": "front/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "front/dist/front/browser"
-            }
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/index.html"
+            "dest": "front/dist/front/$1"
         }
     ]
 }
