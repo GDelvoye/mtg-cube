@@ -7,6 +7,11 @@ app = Flask(__name__)
 CORS(app)
 
 
+@app.route("/hello", methods=["GET"])
+def hello():
+    return {"text": "coucou"}
+
+
 @app.route("/visualization-official", methods=["POST"])
 def visualize_official() -> Response:
     """Route asking data for visualization of an official set."""
