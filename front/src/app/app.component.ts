@@ -16,5 +16,5 @@ import { TextAnalysisDisplayComponent } from './text-analysis-display/text-analy
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'front';
+  title = 'mtg-cube';
 }
