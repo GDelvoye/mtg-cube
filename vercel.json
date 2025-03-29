@@ -1,0 +1,14 @@
+{
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/browser/index.html"
+        }
+    ],
+    "builds": [
+        {
+            "src": "front/dist/front/browser/**",
+            "use": "@vercel/static"
+        }
+    ]
+}
