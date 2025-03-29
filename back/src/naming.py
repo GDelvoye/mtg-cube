@@ -2,12 +2,12 @@ from typing import Any
 
 from src.cube_analyzer.cube import Cube
 import pandas as pd
-from src.config import DATA_DIR
+from src.config import JSON_DB
 
 
 def get_set_from_card_pool(set_name: str) -> pd.DataFrame:
     """Read JSON and return DataFrame of all card of same set."""
-    json_path = DATA_DIR / "data-clean-en-latest.json"
+    json_path = JSON_DB
     df_clean = pd.read_json(json_path)
     df_set = df_clean[df_clean["set"] == set_name]
     return df_set
