@@ -1,14 +1,18 @@
 {
-    "rewrites": [
-        {
-            "source": "/",
-            "destination": "/browser/index.html"
-        }
-    ],
+    "version": 2,
     "builds": [
         {
-            "src": "front/dist/front/browser/**",
-            "use": "@vercel/static"
+            "src": "front/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "front/dist/front/browser"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
