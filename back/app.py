@@ -4,7 +4,7 @@ from src.naming import generate_visualization_infos_official_set, get_stat_about
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://mtg-cube.vercel.app/p", "http://localhost:4200"])
 
 
 @app.route("/hello", methods=["GET"])
