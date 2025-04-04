@@ -8,6 +8,7 @@ from sqlalchemy.orm import (
 )
 from typing import List
 from dataclasses import dataclass
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 DATABASE_URL = "postgresql://mtg_user:password@localhost/mtg_cube"
@@ -32,8 +33,15 @@ class User(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     username: Mapped[str] = mapped_column(String, unique=True, nullable=False)
+    password_hash: Mapped[str] = mapped_column(String, nullable=False)
 
     cubes: Mapped[List["Cube"]] = relationship("Cube", back_populates="owner")
+
+    def set_password(self, raw_password: str) -> None:
+        self.password_hash = generate_password_hash(raw_password)
+
+    def check_password(self, raw_password: str) -> bool:
+        return check_password_hash(self.password_hash, raw_password)
 
 
 @dataclass
