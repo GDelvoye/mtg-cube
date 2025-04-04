@@ -13,7 +13,7 @@ def client():
 
 def test_visualize_official_success(client: FlaskClient):
     """Test if the route return a correct JSON."""
-    response = client.post("/visualize-official", json={"set_name": "mrd"})
+    response = client.post("/visualization-official", json={"setName": "mrd"})
     assert response.status_code == 200
     assert response.is_json
     data = response.get_json()
