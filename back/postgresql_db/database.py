@@ -18,10 +18,12 @@ from sqlalchemy.orm import (
 from typing import List, Optional
 from dataclasses import dataclass
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
 
 
-DATABASE_URL = "postgresql://mtg_user:password@localhost/mtg_cube"
-engine = create_engine(DATABASE_URL)
+# DATABASE_URL = "postgresql://mtg_user:password@localhost/mtg_cube"
+db_url = os.getenv("DATABASE_URL")
+engine = create_engine(db_url)
 
 
 class Base(DeclarativeBase):
