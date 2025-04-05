@@ -12,7 +12,9 @@ session = SessionLocal()
 # Read Cards
 cards = session.query(Card).all()
 for card in cards:
-    print(f"CARDS ||| ID: {card.id}, name: {card.name}")
+    print(
+        f"CARDS ||| ID: {card.id}, name: {card.name}, {card.id_full}, {card.type_line}"
+    )
 
 # Read Users
 users = session.query(User).all()

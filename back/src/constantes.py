@@ -1,3 +1,27 @@
+COLUMNS_TO_KEEP = [
+    "id",
+    "name",
+    "lang",
+    "mana_cost",
+    "cmc",
+    "type_line",
+    "oracle_text",
+    "colors",
+    "color_identity",
+    "keywords",
+    "produced_mana",
+    "legalities",
+    "set",
+    "set_name",
+    "set_type",
+    "rarity",
+    "prices",
+    "power",
+    "toughness",
+    "flavor text",
+]
+
+
 COLUMNS_TO_DROP = [
     "object",
     "id",

@@ -1,13 +1,19 @@
 from typing import Optional
 import pandas as pd
 
-from src.constantes import COLUMNS_TO_DROP
+from src.constantes import COLUMNS_TO_DROP, COLUMNS_TO_KEEP
 
 
 def remove_useless_columns(
     df_bulk: pd.DataFrame, columns_to_drop: list[str] = COLUMNS_TO_DROP
 ) -> pd.DataFrame:
     return df_bulk.drop(columns=columns_to_drop)
+
+
+def keep_only_relevant_columns(
+    df_bulk: pd.DataFrame, columns_to_keep: list[str] = COLUMNS_TO_KEEP
+) -> pd.DataFrame:
+    return df_bulk[[col for col in columns_to_keep if col in df_bulk.columns]]
 
 
 def remove_doublon(pool_cards: pd.DataFrame) -> pd.DataFrame:
@@ -38,7 +44,7 @@ def apply_us_price(df: pd.DataFrame) -> pd.DataFrame:
     return df_new
 
 
-def merge_two_sided_card_text_into_text_cell(
+def merge_text_of_two_sided_cards(
     text_cell: Optional[str],
     two_sided_text_cell: Optional[list[dict[str, str]]],
 ) -> Optional[str]:
@@ -52,6 +58,7 @@ def merge_two_sided_card_text_into_text_cell(
                 merged_text += dict_sided["oracle_text"] + "\n"
             return merged_text[:-3]
         except Exception as ex:
+            print("TOTO")
             print(ex)
             print(two_sided_text_cell)
             return None
@@ -61,9 +68,7 @@ def merge_two_sided_card_text_into_text_cell(
 def format_oracle_text(df: pd.DataFrame) -> pd.DataFrame:
     df_new = df.copy()
     df_new["oracle_text"] = df.apply(
-        lambda x: merge_two_sided_card_text_into_text_cell(
-            x["oracle_text"], x["card_faces"]
-        ),
+        lambda x: merge_text_of_two_sided_cards(x["oracle_text"], x["card_faces"]),
         axis=1,
     )
     return df_new
@@ -72,6 +77,7 @@ def format_oracle_text(df: pd.DataFrame) -> pd.DataFrame:
 def apply_numeric_values(df_bulk: pd.DataFrame) -> pd.DataFrame:
     """Transform str column int int or float."""
     # Liste des valeurs non numériques à supprimer
+    df_bulk = df_bulk.copy()  #  To avoid SettingWithCopyWarning
     invalid_values = {
         "*",
         "*²",
@@ -132,7 +138,8 @@ def format_bulk_df(
     df_remove_basic = remove_basic_land(df_bulk)
     df_us_price = apply_us_price(df_remove_basic)
     # df = remove_doublon(df)
-    df_column = remove_useless_columns(df_us_price)
+    # df_column = remove_useless_columns(df_us_price)
+    df_column = keep_only_relevant_columns(df_us_price)
 
     return apply_numeric_values(df_column)
 
@@ -145,6 +152,44 @@ def filter_by_extension(
     df_single = remove_doublon(df[df["set"].isin(extension_list)])
     return df_single
     # return remove_useless_columns(df_single, ["card_faces"])
+
+
+def select_only_expansion_and_core(df: pd.DataFrame) -> pd.DataFrame:
+    df = df[df["set_type"].isin(["expansion", "core", "commander"])]
+    return df
+
+
+def from_bulk_df_to_pre_database(
+    df_bulk: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Clean the bulk data, return dataframe to feed the database
+
+    1. Remove basic land
+    2. Convert price dict into US price float
+    4. Remove "A - " cards ???
+    5. Merge card faces texts into oracle_text ?????
+    6. Keep only relevant columns
+    7. Transform all numeric string into int or float.
+
+    return:
+        pd.DataFrame
+    """
+    # Set NaN to None
+    df_bulk = df_bulk.where(pd.notnull(df_bulk), None)
+    df_remove_basic = remove_basic_land(df_bulk)
+    print("basic removed")
+    df_us_price = apply_us_price(df_remove_basic)
+    print("us_price_applied")
+    # df = remove_doublon(df)
+    # df_column = remove_useless_columns(df_us_price)
+    df_format_text = format_oracle_text(df_us_price)
+    print("text formatted")
+    df_column = keep_only_relevant_columns(df_format_text)
+    print("good column keeped")
+    df_column = select_only_expansion_and_core(df_column)
+
+    return apply_numeric_values(df_column)
 
 
 if __name__ == "__main__":
