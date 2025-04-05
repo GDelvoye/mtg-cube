@@ -1,7 +1,7 @@
 from typing import Any
 import pandas as pd
 
-from src.database_manager.data_cleaner import format_oracle_text, remove_doublon
+from src.database_manager.data_cleaner import remove_doublon
 
 
 def color_proportion(pool_cards: pd.DataFrame) -> dict[str, float]:
@@ -116,14 +116,14 @@ class Cube:
         return color_proportion(self.pool)
 
     def get_pool_filtered(self, text: str) -> pd.DataFrame:
-        df_format_text = format_oracle_text(self.pool)
+        df_format_text = self.pool  # format_oracle_text(self.pool)
         filtered_pool = df_format_text[
             self.pool["oracle_text"].str.contains(f"(?i){text}", na=False)
         ]
         return remove_doublon(filtered_pool)
 
     def get_pool_filtered_regex(self, regex: str) -> pd.DataFrame:
-        df_format_text = format_oracle_text(self.pool)
+        df_format_text = self.pool  # format_oracle_text(self.pool)
         filtered_pool = df_format_text[
             self.pool["oracle_text"].str.contains(regex, case=False, na=False)
         ]
