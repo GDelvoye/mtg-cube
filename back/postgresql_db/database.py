@@ -23,14 +23,8 @@ import os
 
 load_dotenv()
 
-
-# DATABASE_URL = "postgresql://mtg_user:password@localhost/mtg_cube"
-# db_url = os.getenv("DATABASE_URL")
-# engine = create_engine(db_url)
-DATABASE_URL = os.environ[
-    "DATABASE_URL_TEST"
-]  # "postgresql://postgres:JNvhXBWpVenDSFaOIEOPPlVwmlKSsETU@caboose.proxy.rlwy.net:24041/railway"
-engine = create_engine(DATABASE_URL)
+database_url = os.environ["DATABASE_URL"]
+engine = create_engine(database_url)
 
 
 class Base(DeclarativeBase):
