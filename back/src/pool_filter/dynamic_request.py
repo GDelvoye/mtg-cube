@@ -14,8 +14,10 @@ from sqlalchemy import (
     ColumnElement,
 )
 from sqlalchemy.orm import sessionmaker, Session
-from src.config import SQL_DB_PATH
-from src.database_manager.card_orm import Cards
+
+from postgresql_db.database import Card
+
+SQL_DB_PATH = "to_find"  #  SQL_DIR / "pipicaca.db"  # "latest.db"  # "cards.db"
 
 
 def logical_operator_to_apply(
@@ -61,19 +63,7 @@ def card_type_query(
     query = overload_query_with_logical_field(
         "card_type", filters, query, cards_table.c.type_line
     )
-    # print(filters["card_type"])
 
-    # if "card_type" in filters and filters["card_type"]:
-    #     print(type(cards_table.c.type_line))
-    #     conditions = [
-    #         cards_table.c.type_line.ilike(
-    #             f"%{ctype}%"
-    #         )  # Vérifie si le type apparaît dans la chaîne
-    #         for ctype in filters["card_type"]
-    #     ]
-    #     query = query.where(
-    #         logical_operator_to_apply(conditions, filters["card_type_operator"])
-    #     )
     return query
 
 
@@ -138,36 +128,6 @@ def dynamic_query_builder(
     return query
 
 
-# @dataclass
-# class QueryFilter:
-#     set_list: Optional[list[str]] = None
-#     min_or_eq_power: int = 0
-#     max_power: int = 99
-#     min_or_eq_toughness: int = 0
-#     max_toughness: int = 99
-
-#     def build_query(
-#         self,
-#         query: Select,
-#         cards_table: Table,
-#     ) -> Select:
-#         """
-#         Return overloaded query with appropriate filters dict.
-#         """
-#         if self.set_list is not None:
-#             query = query.where(cards_table.c.set.in_(self.set_list))
-
-#         query = query.where(
-#             self.min_or_eq_power <= cards_table.c.power.cast(Integer)  #
-#         )
-
-#         query = query.where(
-#             self.min_or_eq_toughness <= cards_table.c.toughness.cast(Integer)
-#             # < self.max_toughness
-#         )
-#         return query
-
-
 class DataBaseManager:
     def __init__(self, sql_db_path: str):
         self.sql_db_path = sql_db_path
@@ -185,16 +145,9 @@ class DataBaseManager:
         query: Select,
         query_filter: dict[str, Any],
     ):
-        # query = dynamic_query_builder(query_filter, query, self.cards)
-        query = select(Cards).where(Cards.prices > 2000)
+        query = select(Card).where(Card.prices > 2000)
         res = self.session.execute(query).fetchall()
-        # i = 0
-        # for row in res:
-        #     i += 1
-        #     print(
-        #         row.name, row.cmc, row.prices, row.type_line, row.power, row.toughness
-        #     )
-        # print(f"TOTAL: {i}")
+
         print(len(res))
         for e in res:
             print(type(e))
@@ -227,52 +180,3 @@ if __name__ == "__main__":
     }
 
     db_man.get_result(query, query_filter)
-
-
-# def get_cards_table(
-#     sql_db_path: str,
-# ) -> Table:
-#     engine = create_engine(f"sqlite:///{sql_db_path}")
-
-#     Session = sessionmaker(bind=engine)
-#     session = Session()
-
-#     metadata = MetaData()
-#     return Table("cards", metadata, autoload_with=engine)
-
-
-# with engine.connect() as conn:
-#     result = conn.execute(text("SELECT name FROM sqlite_master WHERE type='table';"))
-#     tables = result.fetchall()
-#     print("Tables existantes dans la base :", [t[0] for t in tables])
-
-
-# from sqlalchemy import inspect
-
-# inspector = inspect(engine)
-# columns = inspector.get_columns("cards")
-
-# print("Colonnes de la table 'cards' :")
-# for col in columns:
-#     print(f"- {col['name']} ({col['type']})")
-
-
-# filters = {
-#     "sets": ["eld"],
-#     "min_or_eq_power": 5,
-#     "max_power": 6,
-#     "min_or_eq_toughness": 5,
-#     "max_toughness": 6,
-#     "min_or_eq_price": 1,
-#     "max_price": 2,
-# }
-
-# query = select(cards.c.name, cards.c.set).where(True)
-
-
-# results = session.execute(query).fetchall()
-
-# print(len(results))
-
-# for row in results:
-#     print(row.name)
