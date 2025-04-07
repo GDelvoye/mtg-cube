@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
-from postgresql_db.database import SessionLocal, User
+from database.models import User
+from database.connection import SessionLocal
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.exc import IntegrityError
 from flask_jwt_extended import create_access_token

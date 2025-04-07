@@ -1,5 +1,5 @@
-from postgresql_db.database import SessionLocal, Card, User, Cube
-
+from database.models import Card, User, Cube
+from database.connection import SessionLocal
 
 session = SessionLocal()
 

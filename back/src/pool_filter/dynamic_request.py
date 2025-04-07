@@ -15,7 +15,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import sessionmaker, Session
 
-from postgresql_db.database import Card
+from database.models import Card
 
 SQL_DB_PATH = "to_find"  #  SQL_DIR / "pipicaca.db"  # "latest.db"  # "cards.db"
 

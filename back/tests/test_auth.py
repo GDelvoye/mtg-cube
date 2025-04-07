@@ -2,7 +2,7 @@ import pytest
 
 from flask.testing import FlaskClient
 from api.run import app
-from postgresql_db.database import Base, engine
+from database.connection import Base, engine
 from werkzeug.test import TestResponse
 
 
@@ -18,21 +18,21 @@ def client():
 
 
 def test_signup_and_login(client: FlaskClient) -> None:
-    response: TestResponse = client.post(
+    response_signup: TestResponse = client.post(
         "/auth/signup",
         json={
             "username": "testuser",
             "password": "testpass",
         },
     )
-    assert response.status_code == 201
+    assert response_signup.status_code == 201
 
-    response: TestResponse = client.post(
+    response_login: TestResponse = client.post(
         "/auth/login",
         json={
             "username": "testuser",
             "password": "testpass",
         },
     )
-    assert response.status_code == 200
-    assert "access_token" in response.get_json()
+    assert response_login.status_code == 200
+    assert "access_token" in response_login.get_json()

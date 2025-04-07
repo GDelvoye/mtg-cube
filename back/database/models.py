@@ -1,5 +1,4 @@
 from sqlalchemy import (
-    create_engine,
     Column,
     Integer,
     JSON,
@@ -10,26 +9,13 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import (
     relationship,
-    sessionmaker,
-    DeclarativeBase,
     Mapped,
     mapped_column,
 )
 from typing import List, Optional
 from dataclasses import dataclass
 from werkzeug.security import generate_password_hash, check_password_hash
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
-database_url = os.environ["DATABASE_URL"]
-engine = create_engine(database_url)
-
-
-class Base(DeclarativeBase):
-    pass
-
+from database.connection import Base
 
 cube_card_association = Table(
     "cube_card_association",
@@ -88,13 +74,9 @@ class Card(Base):
     colors: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=True)
     color_identity: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=False)
     keywords: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=True)
-    # produced_mana: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=True)
-
-    # legalities: Mapped[Optional[Dict[str, str]]] = mapped_column(JSON, nullable=False)
 
     set: Mapped[str] = mapped_column(String, nullable=False)
     set_name: Mapped[str] = mapped_column(String, nullable=False)
-    # set_type: Mapped[str] = mapped_column(String, nullable=False)
     rarity: Mapped[str] = mapped_column(String, nullable=False)
 
     prices: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
@@ -104,8 +86,3 @@ class Card(Base):
     cubes: Mapped[List["Cube"]] = relationship(
         "Cube", secondary=cube_card_association, back_populates="cards"
     )
-
-
-Base.metadata.create_all(engine)
-
-SessionLocal = sessionmaker(bind=engine)

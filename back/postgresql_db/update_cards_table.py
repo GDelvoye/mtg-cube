@@ -1,5 +1,6 @@
+from database.models import Card
+from database.connection import SessionLocal
 from sqlalchemy.orm import Session
-from postgresql_db.database import Card, SessionLocal
 import pandas as pd
 
 
