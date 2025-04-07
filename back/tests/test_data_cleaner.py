@@ -1,4 +1,4 @@
-from src.bulk_data_cleaner import (
+from src.preprocessing.cleaner import (
     merge_text_of_two_sided_cards,
     format_oracle_text,
 )

@@ -1,6 +1,6 @@
 from typing import Any
 
-from src.cube_analyzer.cube import Cube
+from src.analysis.cube_analyzer import CubeAnalyzer
 import pandas as pd
 from src.config import JSON_DB
 from postgresql_db.query import get_df
@@ -26,7 +26,7 @@ def generate_visualization_infos_official_set(set_name: str) -> dict[str, Any]:
 
     # df_set = get_set_from_card_pool(set_name)
     df_set = get_df(set_name)
-    cube = Cube(df_set)
+    cube = CubeAnalyzer(df_set)
 
     return cube.statistic_summarize()
 
@@ -34,11 +34,11 @@ def generate_visualization_infos_official_set(set_name: str) -> dict[str, Any]:
 def get_stat_about_regex(regex: str, set_name: str) -> dict[str, Any]:
     # df_set = get_set_from_card_pool(set_name)
     df_set = get_df(set_name)
-    cube = Cube(df_set)
-    sub_cube = Cube(cube.get_pool_filtered(regex))
+    cube = CubeAnalyzer(df_set)
+    sub_cube = CubeAnalyzer(cube.get_pool_filtered(regex))
     return {
-        "expectancy_by_booster": cube.esperance_to_find_keyword_by_booster(
-            regex, in_cube=False
+        "expectancy_by_booster": cube.get_expected_value_of_keyword_per_booster(
+            regex, official_booster=True
         ),
         "color_proportion": sub_cube.color_proportion,
     }

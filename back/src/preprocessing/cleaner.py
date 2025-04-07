@@ -1,7 +1,7 @@
 from typing import Optional
 import pandas as pd
 
-from src.constantes import COLUMNS_TO_DROP, COLUMNS_TO_KEEP
+from src.preprocessing.constantes import COLUMNS_TO_DROP, COLUMNS_TO_KEEP
 
 
 def remove_useless_columns(
@@ -16,8 +16,12 @@ def keep_only_relevant_columns(
     return df_bulk[[col for col in columns_to_keep if col in df_bulk.columns]]
 
 
-def remove_doublon(pool_cards: pd.DataFrame) -> pd.DataFrame:
-    """Keep lower price."""
+def drop_duplicate_card_names(pool_cards: pd.DataFrame) -> pd.DataFrame:
+    """
+    Returns a DataFrame with duplicate card names removed.
+
+    Keep the lowest price row.
+    """
     price_sorted = pool_cards.sort_values(by=["prices"])
     return price_sorted.drop_duplicates(subset=["name"], keep="first")
 

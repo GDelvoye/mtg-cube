@@ -42,7 +42,7 @@ def populate_cards_from_dataframe(df: pd.DataFrame, db_session: Session) -> None
 
 
 if __name__ == "__main__":
-    from src.bulk_data_cleaner import from_bulk_df_to_pre_database
+    from src.preprocessing.cleaner import from_bulk_df_to_pre_database
     from src.config import JSON_DB
     import numpy as np
 
