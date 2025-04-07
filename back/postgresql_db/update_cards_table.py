@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from postgresql_db.database import Card, SessionLocal  # adapte l'import à ton projet
+from postgresql_db.database import Card, SessionLocal
 import pandas as pd
 
 
@@ -11,12 +11,11 @@ def populate_cards_from_dataframe(df: pd.DataFrame, db_session: Session) -> None
     for _, row in df.iterrows():
         id_full = row["id"]
 
-        # Vérifie si la carte est déjà en base
+        # Check if card already in database
         exists = db_session.query(Card).filter_by(id_full=id_full).first()
         if exists:
             continue
 
-        # Création de la carte
         card = Card(
             id_full=row["id"],
             name=row["name"],
@@ -28,11 +27,8 @@ def populate_cards_from_dataframe(df: pd.DataFrame, db_session: Session) -> None
             colors=row.get("colors"),
             color_identity=row.get("color_identity"),
             keywords=row.get("keywords"),
-            # produced_mana=row.get("produced_mana"),
-            # legalities=row.get("legalities"),
             set=row["set"],
             set_name=row["set_name"],
-            # set_type=row["set_type"],
             rarity=row["rarity"],
             prices=row.get("prices"),
             power=row.get("power"),
@@ -45,7 +41,7 @@ def populate_cards_from_dataframe(df: pd.DataFrame, db_session: Session) -> None
 
 
 if __name__ == "__main__":
-    from src.database_manager.data_cleaner import from_bulk_df_to_pre_database
+    from src.bulk_data_cleaner import from_bulk_df_to_pre_database
     from src.config import JSON_DB
     import numpy as np
 

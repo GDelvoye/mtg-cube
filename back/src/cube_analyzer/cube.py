@@ -1,7 +1,7 @@
 from typing import Any
 import pandas as pd
 
-from src.database_manager.data_cleaner import remove_doublon
+from src.bulk_data_cleaner import remove_doublon
 
 
 def color_proportion(pool_cards: pd.DataFrame) -> dict[str, float]:

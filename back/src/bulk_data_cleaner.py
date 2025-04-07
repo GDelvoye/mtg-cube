@@ -119,41 +119,6 @@ def apply_numeric_values(df_bulk: pd.DataFrame) -> pd.DataFrame:
     return df_bulk
 
 
-def format_bulk_df(
-    df_bulk: pd.DataFrame,
-) -> pd.DataFrame:
-    """
-    Clean the bulk data.
-
-    1. Remove basic land
-    2. Convert price dict into US price float
-    # 3. Remove all doublons
-    4. Remove "A - " cards
-    5. Merge card faces texts into oracle_text
-    6. Drop useless columns
-
-    return:
-        pd.DataFrame
-    """
-    df_remove_basic = remove_basic_land(df_bulk)
-    df_us_price = apply_us_price(df_remove_basic)
-    # df = remove_doublon(df)
-    # df_column = remove_useless_columns(df_us_price)
-    df_column = keep_only_relevant_columns(df_us_price)
-
-    return apply_numeric_values(df_column)
-
-
-def filter_by_extension(
-    df_clean: pd.DataFrame, extension_list: list[str]
-) -> pd.DataFrame:
-    """Return dataframe containing only cards of extension_list."""
-    df = format_oracle_text(df_clean)
-    df_single = remove_doublon(df[df["set"].isin(extension_list)])
-    return df_single
-    # return remove_useless_columns(df_single, ["card_faces"])
-
-
 def select_only_expansion_and_core(df: pd.DataFrame) -> pd.DataFrame:
     df = df[df["set_type"].isin(["expansion", "core", "commander"])]
     return df
@@ -190,15 +155,3 @@ def from_bulk_df_to_pre_database(
     df_column = select_only_expansion_and_core(df_column)
 
     return apply_numeric_values(df_column)
-
-
-if __name__ == "__main__":
-    # data_path = "data/default-cards-en-latest.json"
-    # with open(data_path, "r") as data_json:
-    #     data = json.load(data_json)
-    from src.config import DATA_DIR
-
-    data_path = DATA_DIR / "default-cards-en-latest.json"
-    df_bulk = pd.read_json(data_path)
-    df_clean = format_bulk_df(df_bulk)
-    df_clean.to_json(DATA_DIR / "data-clean-en-latest.json")
