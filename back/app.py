@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 from src.naming import generate_visualization_infos_official_set, get_stat_about_regex
+from src.querying.query import search
 
 
 app = Flask(__name__)
@@ -31,6 +32,19 @@ def cube_text_request() -> Response:
     set_name = payload["setName"]
 
     return jsonify(get_stat_about_regex(regex, set_name))
+
+
+@app.route("/search-cards", methods=["POST"])
+def search_cards() -> Response:
+    filters = request.get_json()
+    print("FILTERS FILTERS", filters)
+    if not filters:
+        return jsonify({"error": "No filters provided"}), 400
+
+    result = search(filters)
+    resres = [card.to_dict() for card in result]
+    print(resres)
+    return jsonify(resres)
 
 
 if __name__ == "__main__":

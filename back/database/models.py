@@ -1,12 +1,6 @@
-from sqlalchemy import (
-    Column,
-    Integer,
-    JSON,
-    Float,
-    String,
-    ForeignKey,
-    Table,
-)
+from sqlalchemy import Column, Integer, Float, String, ForeignKey, Table  # , JSON
+
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import (
     relationship,
     Mapped,
@@ -71,9 +65,9 @@ class Card(Base):
     type_line: Mapped[str] = mapped_column(String, nullable=True)
     oracle_text: Mapped[str] = mapped_column(String, nullable=True)
 
-    colors: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=True)
-    color_identity: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=False)
-    keywords: Mapped[Optional[List[str]]] = mapped_column(JSON, nullable=True)
+    colors: Mapped[Optional[List[str]]] = mapped_column(JSONB, nullable=True)
+    color_identity: Mapped[Optional[List[str]]] = mapped_column(JSONB, nullable=False)
+    keywords: Mapped[Optional[List[str]]] = mapped_column(JSONB, nullable=True)
 
     set: Mapped[str] = mapped_column(String, nullable=False)
     set_name: Mapped[str] = mapped_column(String, nullable=False)
@@ -86,3 +80,15 @@ class Card(Base):
     cubes: Mapped[List["Cube"]] = relationship(
         "Cube", secondary=cube_card_association, back_populates="cards"
     )
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "oracle_text": self.oracle_text,
+            "colors": self.colors,
+            "mana_cost": self.mana_cost,
+            "type_line": self.type_line,
+            "id_full": self.id_full,
+            # etc. selon les champs utiles au front
+        }

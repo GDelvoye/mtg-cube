@@ -1,0 +1,50 @@
+<div class="display-component-container">
+    <div class="header">
+        <h4>Card List</h4>
+        <button (click)="toggleCollapse()">
+            {{ isCollapsed ? '▶️' : '🔽' }}
+        </button>
+    </div>
+
+    <div class="display-content" *ngIf="!isCollapsed">
+        <div *ngIf="loading(); else content">
+            Fetching data...
+        </div>
+        <ng-template #content>
+            <div *ngIf="cardsList(); else noData">
+                <div class="results-container" *ngIf="cardsList().length >0$">
+                    <h2>Résultats ({{ cardsList().length }})</h2>
+                    <table class="card-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Nom</th>
+                                <th>Mana</th>
+                                <th>Type</th>
+                                <th>Texte</th>
+                                <th>Couleurs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let card of cardsList()">
+                                <td>
+                                    <img [src]="buildImagePath(card.id_full)" />
+                                </td>
+                                <td>{{ card.name }}</td>
+                                <td>{{ card.mana_cost }}</td>
+                                <td>{{ card.type_line }}</td>
+                                <td>{{ card.oracle_text }}</td>
+                                <td>{{ card.colors?.join(', ') || '-' }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </ng-template>
+
+        <ng-template #noData>
+            No data available.
+        </ng-template>
+
+    </div>
+</div>

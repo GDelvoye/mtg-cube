@@ -1,11 +1,17 @@
+
+
 <div class="dashboard-container">
+
     <div class="sidebar">
+        <app-advanced-search (search)="onSearch($event)"></app-advanced-search>
         <app-cube-summary-selector class="selector"></app-cube-summary-selector>
-        <app-text-analysis-input class="text-analysis-input"></app-text-analysis-input>
-    
+        <app-text-analysis-input
+            class="text-analysis-input"></app-text-analysis-input>
+
     </div>
     <div class="main-content">
-    <app-cube-summary-display ></app-cube-summary-display>
-    <app-text-analysis-display ></app-text-analysis-display>
+        <app-card-search-result></app-card-search-result>
+        <app-cube-summary-display></app-cube-summary-display>
+        <app-text-analysis-display></app-text-analysis-display>
     </div>
 </div>

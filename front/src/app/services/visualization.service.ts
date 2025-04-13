@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { CubeSummary } from '../models/cube-summary.model';
 import { TextAnalysis } from '../models/text-analysis.model';
 import { environment } from '../../environments/environment';
+import { SearchCardsFilters } from '../models/search-cards-filters.model';
+import { Card } from '../models/card.model';
 
 @Injectable({
   providedIn: 'root',
@@ -29,5 +31,10 @@ export class VisualizationService {
       `${this.apiUrl}/cube-text-request`,
       payload
     );
+  }
+
+  searchCards(filters: SearchCardsFilters): Observable<Card[]> {
+    console.log('FILTYERS', filters);
+    return this.http.post<Card[]>(`${this.apiUrl}/search-cards`, filters);
   }
 }

@@ -7,7 +7,7 @@ from sqlalchemy import pool
 from alembic import context
 import sys
 import os
-from postgresql_db.database import Base  # ajuste ce chemin
+from database.connection import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -1,0 +1,20 @@
+.results-container {
+    margin-top: 2rem;
+  }
+  
+  .card-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .card-table th,
+  .card-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .card-table th {
+    background-color: #f0f0f0;
+  }
+  

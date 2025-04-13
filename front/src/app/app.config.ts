@@ -8,6 +8,9 @@ import {
 } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
+import { cardReducer } from './store/reducers/search-cards.reducer';
+import { CardEffects } from './store/effects/search-cards.effects';
+
 import { cubeSummaryReducer } from './store/reducers/cube-summary.reducer';
 import { provideEffects } from '@ngrx/effects';
 import { CubeSummaryEffects } from './store/effects/cube-summary.effects';
@@ -21,8 +24,9 @@ export const appConfig: ApplicationConfig = {
       cubeSummary: cubeSummaryReducer,
       textAnalysis: textAnalysisReducer,
       userInput: userInputReducer,
+      searchCards: cardReducer,
     }),
-    provideEffects([CubeSummaryEffects, TextAnalysisEffects]),
+    provideEffects([CubeSummaryEffects, TextAnalysisEffects, CardEffects]),
     provideHttpClient(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),

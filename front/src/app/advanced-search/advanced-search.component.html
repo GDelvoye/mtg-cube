@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="search-form">
+    <div>
+        <label for="name">Card name</label>
+        <input id="name" type="text" formControlName="name"
+            placeholder="e.g. Dragon" />
+    </div>
+
+    <div formGroupName="colorFilter">
+        <div formGroupName="colors" class="checkbox-group">
+            <div *ngFor="let color of colors" class="checkbox-item">
+                <label>
+                    <input type="checkbox" [formControlName]="color" />
+                    {{ color }}
+                </label>
+            </div>
+        </div>
+        <label for="mode">Color Match Mode</label>
+        <select id="mode" formControlName="mode">
+            <option *ngFor="let mode of modes" [value]="mode.value">{{
+                mode.label }}</option>
+        </select>
+    </div>
+
+    <button type="submit">Search</button>
+</form>
