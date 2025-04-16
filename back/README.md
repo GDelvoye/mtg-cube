@@ -6,6 +6,19 @@ Il possède deux fonctionnalités :
   * obtenir des statistiques des mécaniques proposées dans un cube.
 
 
+## Fonction de recherche textuelle.
+Possible d'utiliser des regex pour la recherche textuelle.
+Par défault, la recherche est insensible à la casse.
+* dragon.$ : toutes les cartes finissant par dragon (ou Dragon) avec un éventuel caractère comme un "."
+  * certains text ne finissent pas par ".", d'autres oui...
+* ^target : toutes les cartes *commençant* part "target".
+* ^target.*dragon.$
+* \ylife\y : avoid lifelink :)
+* OU : flying|sacrifice
+* ET : flying & sacrifice
+* EXLUSION : ! whenever
+
+
 
 ## Le Cube
 

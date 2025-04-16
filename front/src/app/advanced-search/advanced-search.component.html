@@ -4,6 +4,11 @@
         <input id="name" type="text" formControlName="name"
             placeholder="e.g. Dragon" />
     </div>
+    <div>
+        <label for="text">Text</label>
+        <input id="text" type="text" formControlName="text"
+            placeholder="Any text, e.g. 'draw a card'" />
+    </div>
 
     <div formGroupName="colorFilter">
         <div formGroupName="colors" class="checkbox-group">
@@ -20,6 +25,13 @@
                 mode.label }}</option>
         </select>
     </div>
+
+    <app-multi-select-set
+        [label]="'Set(s)'"
+        [options]="allSets"
+        [selected]="selectedSets"
+        (selectedChange)="onSetsSelected($event)">
+    </app-multi-select-set>
 
     <button type="submit">Search</button>
 </form>

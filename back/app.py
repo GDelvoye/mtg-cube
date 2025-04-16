@@ -43,7 +43,7 @@ def search_cards() -> Response:
 
     result = search(filters)
     resres = [card.to_dict() for card in result]
-    print(resres)
+    # print(resres)
     return jsonify(resres)
 
 

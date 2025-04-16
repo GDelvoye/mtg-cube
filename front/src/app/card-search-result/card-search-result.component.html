@@ -13,7 +13,7 @@
         <ng-template #content>
             <div *ngIf="cardsList(); else noData">
                 <div class="results-container" *ngIf="cardsList().length >0$">
-                    <h2>Résultats ({{ cardsList().length }})</h2>
+                    <h2>Results ({{ cardsList().length }})</h2>
                     <table class="card-table">
                         <thead>
                             <tr>
@@ -21,8 +21,8 @@
                                 <th>Nom</th>
                                 <th>Mana</th>
                                 <th>Type</th>
-                                <th>Texte</th>
-                                <th>Couleurs</th>
+                                <th>Text</th>
+                                <th>Colors</th>
                             </tr>
                         </thead>
                         <tbody>

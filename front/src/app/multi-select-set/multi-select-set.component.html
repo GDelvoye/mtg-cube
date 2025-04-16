@@ -1,0 +1,33 @@
+<mat-form-field appearance="fill">
+    <mat-label>{{ label }}</mat-label>
+
+    <mat-chip-listbox aria-label="Selected options">
+        <mat-chip-option
+            *ngFor="let option of selected"
+            [removable]="true"
+            (removed)="remove(option)">
+            {{ option }}
+            <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-chip-option>
+
+        <!-- Champ texte -->
+        <input
+            matInput
+            [formControl]="inputControl"
+            [matAutocomplete]="auto"
+            (keyup.enter)="addTextValue()"
+            placeholder="Ajouter une option..." />
+    </mat-chip-listbox>
+
+    <!-- Autocomplete -->
+    <mat-autocomplete #auto="matAutocomplete"
+        (optionSelected)="selectedEvent($event)">
+        <mat-option
+            *ngFor="let option of filteredOptions$ | async"
+            [value]="option">
+            {{ option }}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>

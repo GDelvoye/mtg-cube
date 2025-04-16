@@ -1,14 +1,15 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { searchCards } from '../store/actions/search-cards.actions';
 import { SearchCardsFilters } from '../models/search-cards-filters.model';
+import { MultiSelectSetComponent } from '../multi-select-set/multi-select-set.component';
 
 @Component({
   standalone: true,
   selector: 'app-advanced-search',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, MultiSelectSetComponent],
   templateUrl: './advanced-search.component.html',
   styleUrl: './advanced-search.component.scss',
 })
@@ -18,6 +19,7 @@ export class AdvancedSearchComponent {
 
   form = this.fb.group({
     name: [''],
+    text: [''],
     colorFilter: this.fb.group({
       colors: this.fb.group({
         W: [false],
@@ -38,6 +40,14 @@ export class AdvancedSearchComponent {
     { label: 'Exact match', value: 'exact' },
   ];
 
+  allSets: string[] = ['Alpha', 'Beta', 'Modern Horizons', 'Time Spiral']; // à alimenter dynamiquement
+  selectedSets: string[] = [];
+
+  onSetsSelected(sets: string[]) {
+    this.selectedSets = sets;
+    console.log('SELECTION' + this.selectedSets);
+  }
+
   onSubmit() {
     const value = this.form.value;
 
@@ -47,6 +57,7 @@ export class AdvancedSearchComponent {
 
     const filters: SearchCardsFilters = {
       name: value.name ?? undefined,
+      oracle_text: value.text ?? undefined,
       colors: {
         values: selectedColor,
         mode: value.colorFilter?.mode ?? 'any',

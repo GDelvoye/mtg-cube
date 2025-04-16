@@ -9,5 +9,6 @@ export interface ColorFilter {
 
 export interface SearchCardsFilters {
   name?: string;
+  oracle_text?: string;
   colors?: ColorFilter;
 }

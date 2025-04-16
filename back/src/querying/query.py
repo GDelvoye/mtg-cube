@@ -1,7 +1,27 @@
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, aliased
 from sqlalchemy import String, and_, func, cast
 from database.models import Card
 from sqlalchemy.dialects.postgresql import ARRAY
+
+
+# def build_oracle_text_filter(oracle_text_filter: str, conditions: list):
+#     # conditions.append(Card.oracle_text.ilike(f"%{filters['oracle_text']}%"))
+#     oracle_text_filter
+
+#     # token delimited by "&", logical AND
+#     tokens = [t.strip() for t in oracle_text_filter.split("&")]
+#     for token in tokens:
+#         if token.startswith("!"):
+#             print("!!!!!!!!!!", token)
+#             word = token[1:].strip()
+#             print("WORD", word)
+#             if word:
+#                 conditions.append(
+#                     ~Card.oracle_text.op("~*")(word)  # rf"\y{word}\y")
+#                 )  # \m et \M = délimiteurs de mot PostgreSQL
+#         else:
+#             conditions.append(Card.oracle_text.op("~*")(token))
+#     return conditions
 
 
 def build_color_filter(colors_filter: dict):
@@ -51,7 +71,24 @@ def advanced_card_search(filters: dict, db: Session):
         conditions.append(Card.type_line.ilike(f"%{filters['type_line']}%"))
 
     if "oracle_text" in filters:
-        conditions.append(Card.oracle_text.ilike(f"%{filters['oracle_text']}%"))
+        # conditions.append(Card.oracle_text.ilike(f"%{filters['oracle_text']}%"))
+        oracle_text: str = filters["oracle_text"]
+
+        # token delimited by "&", logical AND
+        tokens = [t.strip() for t in oracle_text.split("&")]
+        for token in tokens:
+            if token.startswith("!"):
+                print("!!!!!!!!!!", token)
+                word = token[1:].strip()
+                print("WORD", word)
+                if word:
+                    conditions.append(
+                        ~Card.oracle_text.op("~*")(word)  # rf"\y{word}\y")
+                    )  # \m et \M = délimiteurs de mot PostgreSQL
+            else:
+                conditions.append(Card.oracle_text.op("~*")(token))
+            # conditions.append(Card.oracle_text.op("~*")(token))
+        # conditions.append(Card.oracle_text.op("~*")(filters["oracle_text"]))
 
     # Champs JSON : recherche de couleur
     # if "colors" in filters:
@@ -95,7 +132,33 @@ def advanced_card_search(filters: dict, db: Session):
     if conditions:
         query = query.filter(and_(*conditions))
 
+    # print(str(query.statement.compile(compile_kwargs={"literal_binds": True})))
+
+    query = remove_cards_of_same_name(db, conditions)
     return query.all()
+
+
+def remove_cards_of_same_name(db: Session, conditions: list):
+    # Sous-requête avec row_number
+    subq = (
+        db.query(
+            Card,
+            func.row_number()
+            .over(
+                partition_by=Card.name,  # grouper par nom
+                order_by=Card.id.asc(),  # ou release_date.desc() si tu veux la + récente
+            )
+            .label("rn"),
+        )
+        .filter(*conditions)
+        .subquery()
+    )
+
+    # Alias pour mapper les résultats sur Card
+    CardAlias = aliased(Card, subq)
+
+    # Requête finale : ne garder que la ligne rn = 1
+    return db.query(CardAlias).filter(subq.c.rn == 1)
 
 
 def search(filters: dict):
