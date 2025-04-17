@@ -6,6 +6,7 @@ import { TextAnalysis } from '../models/text-analysis.model';
 import { environment } from '../../environments/environment';
 import { SearchCardsFilters } from '../models/search-cards-filters.model';
 import { Card } from '../models/card.model';
+import { AppInfo } from '../models/app-info.model';
 
 @Injectable({
   providedIn: 'root',
@@ -36,5 +37,9 @@ export class VisualizationService {
   searchCards(filters: SearchCardsFilters): Observable<Card[]> {
     console.log('FILTYERS', filters);
     return this.http.post<Card[]>(`${this.apiUrl}/search-cards`, filters);
+  }
+
+  fetchAppInfo(): Observable<AppInfo> {
+    return this.http.get<AppInfo>(`${this.apiUrl}/fetch-app-info`);
   }
 }

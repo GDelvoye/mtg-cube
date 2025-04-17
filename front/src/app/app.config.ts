@@ -17,6 +17,8 @@ import { CubeSummaryEffects } from './store/effects/cube-summary.effects';
 import { TextAnalysisEffects } from './store/effects/text-analysis.effects';
 import { textAnalysisReducer } from './store/reducers/text-analysis.reducer';
 import { userInputReducer } from './store/reducers/user-input.reducer';
+import { appInfoReducer } from './store/reducers/app-info.reducer';
+import { AppInfoEffects } from './store/effects/app-infos.effects';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -25,8 +27,14 @@ export const appConfig: ApplicationConfig = {
       textAnalysis: textAnalysisReducer,
       userInput: userInputReducer,
       searchCards: cardReducer,
+      appInfo: appInfoReducer,
     }),
-    provideEffects([CubeSummaryEffects, TextAnalysisEffects, CardEffects]),
+    provideEffects([
+      AppInfoEffects,
+      CubeSummaryEffects,
+      TextAnalysisEffects,
+      CardEffects,
+    ]),
     provideHttpClient(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),

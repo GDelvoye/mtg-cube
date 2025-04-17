@@ -1,7 +1,8 @@
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
+from src.querying.query import get_all_sets
 from src.naming import generate_visualization_infos_official_set, get_stat_about_regex
-from src.querying.query import search
+from src.querying.advanced_query import search
 
 
 app = Flask(__name__)
@@ -45,6 +46,16 @@ def search_cards() -> Response:
     resres = [card.to_dict() for card in result]
     # print(resres)
     return jsonify(resres)
+
+
+@app.route("/fetch-app-info", methods=["GET"])
+def fetch_app_info() -> Response:
+    result = {
+        "availableSets": get_all_sets(),
+        "totalCardsNumber": 47890,
+    }
+
+    return jsonify(result)
 
 
 if __name__ == "__main__":

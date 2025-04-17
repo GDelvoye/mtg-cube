@@ -3,7 +3,7 @@ from typing import Any
 from src.analysis.cube_analyzer import CubeAnalyzer
 import pandas as pd
 from src.config import JSON_DB
-from postgresql_db.query import get_df
+from src.querying.query import get_df
 
 
 def get_set_from_card_pool(set_name: str) -> pd.DataFrame:

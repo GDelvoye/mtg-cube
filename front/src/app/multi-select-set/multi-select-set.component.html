@@ -18,6 +18,7 @@
             [formControl]="inputControl"
             [matAutocomplete]="auto"
             (keyup.enter)="addTextValue()"
+            (focus)="onFocus()"
             placeholder="Ajouter une option..." />
     </mat-chip-listbox>
 

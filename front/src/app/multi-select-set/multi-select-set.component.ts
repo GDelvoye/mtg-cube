@@ -16,6 +16,7 @@ import {
   MatAutocomplete,
   MatAutocompleteModule,
   MatAutocompleteSelectedEvent,
+  MatAutocompleteTrigger,
 } from '@angular/material/autocomplete';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -30,6 +31,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatChipsModule,
     MatAutocompleteModule,
     MatIconModule,
+    MatAutocompleteTrigger,
   ],
   templateUrl: './multi-select-set.component.html',
   styleUrl: './multi-select-set.component.scss',
@@ -45,6 +47,7 @@ export class MultiSelectSetComponent {
   filteredOptions$: Observable<string[]> = of([]);
 
   @ViewChild(MatAutocomplete) auto: MatAutocomplete | undefined;
+  @ViewChild(MatAutocompleteTrigger) autocomplete!: MatAutocompleteTrigger;
 
   ngOnInit() {
     this.filteredOptions$ = this.inputControl.valueChanges.pipe(
@@ -87,5 +90,18 @@ export class MultiSelectSetComponent {
   remove(option: string): void {
     const newList = this.selected.filter((item) => item !== option);
     this.selectedChange.emit(newList);
+  }
+
+  onFocus() {
+    // Si le champ est vide, on déclenche la logique de filtrage manuellement
+    const currentValue = this.inputControl.value;
+    if (!currentValue) {
+      this.inputControl.setValue(''); // force valueChanges => tous les sets seront proposés
+    }
+
+    // Ouvre le panneau de suggestions
+    setTimeout(() => {
+      this.autocomplete.openPanel();
+    });
   }
 }
