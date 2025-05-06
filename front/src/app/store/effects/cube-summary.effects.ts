@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, mergeMap, tap, withLatestFrom } from 'rxjs/operators';
+import { catchError, mergeMap, tap, withLatestFrom } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { VisualizationService } from '../../services/visualization.service';
 import {

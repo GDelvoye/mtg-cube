@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, Response, request, jsonify
 from database.models import User
 from database.connection import SessionLocal
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -31,19 +31,30 @@ def signup():
 
 
 @auth_bp.route("/login", methods=["POST"])
-def login():
+def login() -> Response:
     data = request.get_json()
+    print("DATA", data)
     username = data["username"]
     password = data["password"]
+    print("USERNAME", username)
 
     db = SessionLocal()
     user = db.query(User).filter_by(username=username).first()
+    users = db.query(User).all()
+    for usera in users:
+        print(
+            f"USERS |||| Id: {usera.id}, name: {usera.username}, pass: {usera.password_hash}"
+        )
     db.close()
 
     if user is None or not check_password_hash(user.password_hash, password):
-        return jsonify({"msg", "Invalid identifiers."}), 401
+        print("COIN COIN")
+        result = {"msg": "Invalid identifiers."}
+        return jsonify(result)  # , 401
 
     # JWT creation for user
+    print("GOOOOD")
     access_token = create_access_token(identity=user.id)
+    print("ACCESS TOKEN", access_token)
 
-    return jsonify(access_token=access_token), 200
+    return jsonify({"token": access_token, "username": username}), 200

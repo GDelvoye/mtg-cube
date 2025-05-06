@@ -19,6 +19,8 @@ import { textAnalysisReducer } from './store/reducers/text-analysis.reducer';
 import { userInputReducer } from './store/reducers/user-input.reducer';
 import { appInfoReducer } from './store/reducers/app-info.reducer';
 import { AppInfoEffects } from './store/effects/app-infos.effects';
+import { AuthEffects } from './store/effects/auth.effects';
+import { authReducer } from './store/reducers/auth.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -28,8 +30,10 @@ export const appConfig: ApplicationConfig = {
       userInput: userInputReducer,
       searchCards: cardReducer,
       appInfo: appInfoReducer,
+      auth: authReducer,
     }),
     provideEffects([
+      AuthEffects,
       AppInfoEffects,
       CubeSummaryEffects,
       TextAnalysisEffects,

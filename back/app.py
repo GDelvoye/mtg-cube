@@ -1,12 +1,24 @@
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
+from flask_jwt_extended import JWTManager
+from api.config import Config
 from src.querying.query import get_all_sets
 from src.naming import generate_visualization_infos_official_set, get_stat_about_regex
 from src.querying.advanced_query import search
+from api.routes.auth import auth_bp
 
 
 app = Flask(__name__)
 CORS(app)
+
+jwt = JWTManager()
+
+
+app.config.from_object(Config)
+
+jwt.init_app(app)
+
+app.register_blueprint(auth_bp, url_prefix="/auth")
 
 
 @app.route("/hello", methods=["GET"])

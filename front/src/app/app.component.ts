@@ -7,6 +7,8 @@ import { AdvancedSearchComponent } from './advanced-search/advanced-search.compo
 import { CardSearchResultComponent } from './card-search-result/card-search-result.component';
 import { Store } from '@ngrx/store';
 import { loadAppInfo } from './store/actions/app-infos.actions';
+import { HeaderComponent } from './core/header/header.component';
+import { selectIsAuthenticated } from './store/selectors/auth.selector';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +19,7 @@ import { loadAppInfo } from './store/actions/app-infos.actions';
     TextAnalysisDisplayComponent,
     AdvancedSearchComponent,
     CardSearchResultComponent,
+    HeaderComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
