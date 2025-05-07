@@ -1,10 +1,11 @@
 import { Component, computed, inject, Signal } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { analyzeText } from '../store/actions/text-analysis.actions';
-import { selectTextAnalysisLoading } from '../store/selectors/text-analysis.selector';
+import { analyzeText } from '../store/text-analysis.actions';
+
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { selectCubeSetSelected } from '../store/selectors/user-input.selector';
+import { selectCubeSetSelected } from '../../store/selectors/user-input.selector';
+import { selectTextAnalysisLoading } from '../store/text-analysis.selector';
 
 @Component({
   selector: 'app-text-analysis-input',

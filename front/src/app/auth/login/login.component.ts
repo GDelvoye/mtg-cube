@@ -11,7 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Store } from '@ngrx/store';
 import { MatDialogRef } from '@angular/material/dialog';
-import { logIn } from '../../store/actions/auth.actions';
+import { logIn } from '../store/auth.actions';
 
 @Component({
   selector: 'app-login',

@@ -1,21 +1,27 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
 import {
-  selectSearchCards,
-  selectSearchCardsLoading,
-} from '../store/selectors/search-cards.selector';
+  selectContextCards,
+  selectContextLoading,
+} from '../store/cards.selector';
 
 @Component({
-  selector: 'app-card-search-result',
+  selector: 'app-card-display',
   imports: [CommonModule],
-  templateUrl: './card-search-result.component.html',
-  styleUrl: './card-search-result.component.scss',
+  templateUrl: './card-display.component.html',
+  styleUrl: './card-display.component.scss',
 })
-export class CardSearchResultComponent {
+export class CardDisplayComponent {
+  @Input() context = 'search';
+
   private store = inject(Store);
-  cardsList = computed(() => this.store.selectSignal(selectSearchCards)());
-  loading = computed(() => this.store.selectSignal(selectSearchCardsLoading)());
+  cardsList = computed(() =>
+    this.store.selectSignal(selectContextCards(this.context))()
+  );
+  loading = computed(() =>
+    this.store.selectSignal(selectContextLoading(this.context))()
+  );
 
   isCollapsed: boolean = false;
   toggleCollapse(): void {

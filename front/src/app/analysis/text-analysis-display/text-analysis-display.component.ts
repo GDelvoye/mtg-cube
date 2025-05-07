@@ -1,17 +1,17 @@
 import { Component, computed, inject, Signal } from '@angular/core';
 import { Store } from '@ngrx/store';
-import {
-  selectTextAnalysis,
-  selectTextAnalysisLoading,
-} from '../store/selectors/text-analysis.selector';
-import {
-  selectCubeSetSelected,
-  selectTextAnalysisQuery,
-} from '../store/selectors/user-input.selector';
-import { TextAnalysis } from '../models/text-analysis.model';
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from '../bar-chart/bar-chart.component';
 import { PieChartComponent } from '../pie-chart/pie-chart.component';
+import { TextAnalysis } from '../models/text-analysis.model';
+import {
+  selectTextAnalysis,
+  selectTextAnalysisLoading,
+} from '../store/text-analysis.selector';
+import {
+  selectCubeSetSelected,
+  selectTextAnalysisQuery,
+} from '../../store/selectors/user-input.selector';
 
 @Component({
   selector: 'app-text-analysis-display',

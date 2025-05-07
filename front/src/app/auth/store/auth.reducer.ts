@@ -1,10 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import {
-  logIn,
-  logInFailure,
-  logInSuccess,
-  logOut,
-} from '../actions/auth.actions';
+import { logIn, logInFailure, logInSuccess, logOut } from './auth.actions';
 
 export interface AuthState {
   token: string | null;

@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { TextAnalysis } from '../../models/text-analysis.model';
+import { TextAnalysis } from '../models/text-analysis.model';
 
 export const analyzeText = createAction(
   '[Text Analysis] Analyze Text',

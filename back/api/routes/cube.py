@@ -25,16 +25,16 @@ def create_cube() -> Response:
     if not username or not cube_name:
         return jsonify({"error": "Missing username or cube_name"}), 400
 
-    db: Session = get_db()
-    try:
-        create_new_cube(db, username, cube_name)
-        return jsonify({"message": f"Cube '{cube_name}' created."}), 201
-    except ValueError as ve:
-        return jsonify({"error": str(ve)}), 400
+    for db in get_db():
+        try:
+            create_new_cube(db, username, cube_name)
+            return jsonify({"message": f"Cube '{cube_name}' created."}), 201
+        except ValueError as ve:
+            return jsonify({"error": str(ve)}), 400
 
-    except SQLAlchemyError:
-        db.rollback()
-        return jsonify({"error": "Database error"}), 500
+        except SQLAlchemyError:
+            db.rollback()
+            return jsonify({"error": "Database error"}), 500
 
 
 @cube_bp.route("/delete-cube", methods=["POST"])
@@ -67,17 +67,17 @@ def display_cards_in_cube() -> Response:
     if not username or not cube_name:
         return jsonify({"error": "Missing username or cube_name"}), 400
 
-    db: Session = get_db()
-    try:
-        list_cards = get_cards_in_cube(db, username, cube_name)
-        result = [card.to_dict() for card in list_cards]
-        return jsonify(result), 201
-    except ValueError as ve:
-        return jsonify({"error": str(ve)}), 400
+    for db in get_db():
+        try:
+            list_cards = get_cards_in_cube(db, username, cube_name)
+            result = [card.to_dict() for card in list_cards]
+            return jsonify(result), 201
+        except ValueError as ve:
+            return jsonify({"error": str(ve)}), 400
 
-    except SQLAlchemyError:
-        db.rollback()
-        return jsonify({"error": "Database error"}), 500
+        except SQLAlchemyError:
+            db.rollback()
+            return jsonify({"error": "Database error"}), 500
 
 
 @cube_bp.route("/add-card-in-cube", methods=["POST"])

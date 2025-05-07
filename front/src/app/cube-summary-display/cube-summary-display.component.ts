@@ -5,8 +5,8 @@ import {
   selectCubeSummaryLoading,
 } from '../store/selectors/cube-summary.selector';
 import { CommonModule } from '@angular/common';
-import { BarChartComponent } from '../bar-chart/bar-chart.component';
-import { PieChartComponent } from '../pie-chart/pie-chart.component';
+import { BarChartComponent } from '../analysis/bar-chart/bar-chart.component';
+import { PieChartComponent } from '../analysis/pie-chart/pie-chart.component';
 import { selectCubeSetSelected } from '../store/selectors/user-input.selector';
 
 @Component({

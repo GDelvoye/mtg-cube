@@ -5,15 +5,16 @@ import {
   analyzeText,
   analyzeTextFailure,
   analyzeTextSuccess,
-} from '../actions/text-analysis.actions';
-import { setTextAnalysisQuery } from '../actions/user-input.actions';
+} from './text-analysis.actions';
+import { setTextAnalysisQuery } from '../../store/actions/user-input.actions';
 import { catchError, map, mergeMap, of, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
+import { AnalysisService } from '../analysis.service';
 
 @Injectable()
 export class TextAnalysisEffects {
   private actions$ = inject(Actions);
-  private cubeService = inject(VisualizationService);
+  private analysisService = inject(AnalysisService);
   private store = inject(Store);
 
   analyzeText$ = createEffect(() =>
@@ -23,7 +24,7 @@ export class TextAnalysisEffects {
         this.store.dispatch(setTextAnalysisQuery({ query: params.text }));
       }),
       mergeMap(({ params }) =>
-        this.cubeService.getTextAnalysis(params).pipe(
+        this.analysisService.getTextAnalysis(params).pipe(
           map((data) => analyzeTextSuccess({ data })),
           catchError((error) => of(analyzeTextFailure({ error })))
         )

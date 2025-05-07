@@ -1,10 +1,11 @@
 import { createReducer, on } from '@ngrx/store';
-import { TextAnalysis } from '../../models/text-analysis.model';
+
 import {
   analyzeText,
   analyzeTextFailure,
   analyzeTextSuccess,
-} from '../actions/text-analysis.actions';
+} from './text-analysis.actions';
+import { TextAnalysis } from '../models/text-analysis.model';
 
 export interface TextAnalysisState {
   textAnalysis: TextAnalysis | null;

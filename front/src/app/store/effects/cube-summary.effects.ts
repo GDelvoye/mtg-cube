@@ -11,7 +11,7 @@ import {
 import { Store } from '@ngrx/store';
 import { setCubeSetSelected } from '../actions/user-input.actions';
 import { selectTextAnalysisQuery } from '../selectors/user-input.selector';
-import { analyzeText } from '../actions/text-analysis.actions';
+import { analyzeText } from '../../analysis/store/text-analysis.actions';
 
 @Injectable()
 export class CubeSummaryEffects {

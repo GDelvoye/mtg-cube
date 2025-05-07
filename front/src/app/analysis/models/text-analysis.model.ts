@@ -1,4 +1,4 @@
-import { NumberDictionary } from './common.model';
+import { NumberDictionary } from '../../models/common.model';
 
 export interface TextAnalysis {
   expectancy_by_booster: number;

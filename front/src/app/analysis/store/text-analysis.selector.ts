@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { TextAnalysisState } from '../reducers/text-analysis.reducer';
+import { TextAnalysisState } from '../../analysis/store/text-analysis.reducer';
 
 export const selectTextAnalysisState =
   createFeatureSelector<TextAnalysisState>('textAnalysis');

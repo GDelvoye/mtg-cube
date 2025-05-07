@@ -5,9 +5,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from '../../auth/login/login.component';
 import { Store } from '@ngrx/store';
-import { selectIsAuthenticated } from '../../store/selectors/auth.selector';
+import { selectIsAuthenticated } from '../../auth/store/auth.selector';
 import { CommonModule } from '@angular/common';
-import { logOut } from '../../store/actions/auth.actions';
+import { logOut } from '../../auth/store/auth.actions';
 
 @Component({
   selector: 'app-header',
