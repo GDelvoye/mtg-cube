@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { CubeSummaryDisplayComponent } from './cube-summary-display/cube-summary-display.component';
-import { CubeSummarySelectorComponent } from './cube-summary-selector/cube-summary-selector.component';
+import { CubeSummaryDisplayComponent } from './cube/cube-summary-display/cube-summary-display.component';
+import { CubeSummarySelectorComponent } from './cube/cube-summary-selector/cube-summary-selector.component';
 import { TextAnalysisInputComponent } from './analysis/text-analysis-input/text-analysis-input.component';
 
 import { AdvancedSearchComponent } from './cards/advanced-search/advanced-search.component';

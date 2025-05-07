@@ -11,9 +11,9 @@ import { provideStore } from '@ngrx/store';
 import { cardReducer } from './cards/store/cards.reducer';
 import { CardEffects } from './cards/store/cards.effects';
 
-import { cubeSummaryReducer } from './store/reducers/cube-summary.reducer';
+import { cubeSummaryReducer } from './cube/store/cube-summary.reducer';
 import { provideEffects } from '@ngrx/effects';
-import { CubeSummaryEffects } from './store/effects/cube-summary.effects';
+import { CubeSummaryEffects } from './cube/store/cube-summary.effects';
 import { TextAnalysisEffects } from './analysis/store/text-analysis.effects';
 import { textAnalysisReducer } from './analysis/store/text-analysis.reducer';
 import { userInputReducer } from './store/reducers/user-input.reducer';

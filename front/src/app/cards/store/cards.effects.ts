@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { loadCards, loadCardsSuccess, loadCardsFailure } from './cards.actions';
 import { catchError, map, mergeMap, Observable, of } from 'rxjs';
-import { CubeService } from '../../services/cube.service';
+import { CubeService } from '../../cube/cube.service';
 import { Card } from '../models/card.model';
 import { CardService } from '../card.service';
 
@@ -26,7 +26,7 @@ export class CardEffects {
             request$ = this.cardService.searchCards(action.payload);
             break;
           case 'cube':
-            request$ = this.cubeService.displayCube(action.payload);
+            request$ = this.cubeService.loadCubeCards(action.payload);
             break;
         }
 

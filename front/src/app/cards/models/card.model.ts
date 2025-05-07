@@ -1,4 +1,4 @@
-import { CubeAccessPayload } from '../../models/cube.model';
+import { CubeAccessPayload } from '../../cube/models/cube.model';
 import { SearchCardsFilters } from './search-cards-filters.model';
 
 export interface Card {

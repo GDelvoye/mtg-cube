@@ -28,7 +28,7 @@ def hello():
     return {"text": "coucou"}
 
 
-@app.route("/visualization-official", methods=["POST"])
+@app.route("/get-cube-summary", methods=["POST"])
 def visualize_official() -> Response:
     """Route asking data for visualization of an official set."""
     set_name = request.get_json()["setName"]

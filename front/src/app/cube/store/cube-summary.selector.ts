@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { CubeSummaryState } from '../reducers/cube-summary.reducer';
+import { CubeSummaryState } from '../../cube/store/cube-summary.reducer';
 
 export const selectCubeSummaryState =
   createFeatureSelector<CubeSummaryState>('cubeSummary');

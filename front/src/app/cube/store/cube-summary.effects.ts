@@ -2,21 +2,21 @@ import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, mergeMap, tap, withLatestFrom } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { VisualizationService } from '../../services/visualization.service';
 import {
   loadCubeSummary,
   loadCubeSummaryFailure,
   loadCubeSummarySuccess,
-} from '../actions/cube-summary.actions';
+} from './cube-summary.actions';
 import { Store } from '@ngrx/store';
-import { setCubeSetSelected } from '../actions/user-input.actions';
-import { selectTextAnalysisQuery } from '../selectors/user-input.selector';
+import { setCubeSetSelected } from '../../store/actions/user-input.actions';
+import { selectTextAnalysisQuery } from '../../store/selectors/user-input.selector';
 import { analyzeText } from '../../analysis/store/text-analysis.actions';
+import { CubeService } from '../cube.service';
 
 @Injectable()
 export class CubeSummaryEffects {
   private actions$ = inject(Actions);
-  private cubeService = inject(VisualizationService);
+  private cubeService = inject(CubeService);
   private store = inject(Store);
 
   loadCubeSummary$ = createEffect(() =>
@@ -29,7 +29,7 @@ export class CubeSummaryEffects {
       }),
       withLatestFrom(this.store.select(selectTextAnalysisQuery)),
       mergeMap(([{ params }, query]) =>
-        this.cubeService.getOfficialVisualizationDta(params).pipe(
+        this.cubeService.loadCubeSummary(params).pipe(
           mergeMap((data) => {
             const actions: any[] = [loadCubeSummarySuccess({ data })];
             if (query != '') {
