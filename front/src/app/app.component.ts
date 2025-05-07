@@ -6,7 +6,7 @@ import { TextAnalysisInputComponent } from './analysis/text-analysis-input/text-
 import { AdvancedSearchComponent } from './cards/advanced-search/advanced-search.component';
 import { CardDisplayComponent } from './cards/card-display/card-display.component';
 import { Store } from '@ngrx/store';
-import { loadAppInfo } from './store/actions/app-infos.actions';
+import { loadAppInfo } from './app-info/store/app-infos.actions';
 import { HeaderComponent } from './core/header/header.component';
 import { selectIsAuthenticated } from './auth/store/auth.selector';
 import { TextAnalysisDisplayComponent } from './analysis/text-analysis-display/text-analysis-display.component';

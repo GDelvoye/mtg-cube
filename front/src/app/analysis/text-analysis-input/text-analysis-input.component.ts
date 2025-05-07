@@ -4,7 +4,7 @@ import { analyzeText } from '../store/text-analysis.actions';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { selectCubeSetSelected } from '../../store/selectors/user-input.selector';
+import { selectCubeSetSelected } from '../../cube/store/user-input.selector';
 import { selectTextAnalysisLoading } from '../store/text-analysis.selector';
 
 @Component({

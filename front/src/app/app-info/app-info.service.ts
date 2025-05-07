@@ -3,12 +3,12 @@ import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { environment } from '../../environments/environment';
-import { AppInfo } from '../models/app-info.model';
+import { AppInfo } from './models/app-info.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class VisualizationService {
+export class AppInfoService {
   private apiUrl = environment.apiUrl;
   private http = inject(HttpClient);
 

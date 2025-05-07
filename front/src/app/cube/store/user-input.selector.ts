@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { UserInputState } from '../reducers/user-input.reducer';
+import { UserInputState } from './user-input.reducer';
 
 export const selectUserInputState =
   createFeatureSelector<UserInputState>('userInput');

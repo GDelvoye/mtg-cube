@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { AppInfoState } from '../reducers/app-info.reducer';
+import { AppInfoState } from './app-info.reducer';
 
 export const selectAppInfoState =
   createFeatureSelector<AppInfoState>('appInfo');

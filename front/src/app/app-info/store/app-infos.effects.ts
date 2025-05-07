@@ -1,19 +1,19 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
-import { VisualizationService } from '../../services/visualization.service';
+import { AppInfoService } from '../app-info.service';
 import {
   loadAppInfo,
   loadAppInfoFailure,
   loadAppInfoSuccess,
-} from '../actions/app-infos.actions';
+} from '../../app-info/store/app-infos.actions';
 import { catchError, map, mergeMap, of } from 'rxjs';
 
 @Injectable()
 export class AppInfoEffects {
   private actions$ = inject(Actions);
   private store = inject(Store);
-  private apiService = inject(VisualizationService);
+  private apiService = inject(AppInfoService);
 
   loadAppInfo$ = createEffect(() =>
     this.actions$.pipe(

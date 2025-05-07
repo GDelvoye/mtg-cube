@@ -8,8 +8,8 @@ import {
   loadCubeSummarySuccess,
 } from './cube-summary.actions';
 import { Store } from '@ngrx/store';
-import { setCubeSetSelected } from '../../store/actions/user-input.actions';
-import { selectTextAnalysisQuery } from '../../store/selectors/user-input.selector';
+import { setCubeSetSelected } from './user-input.actions';
+import { selectTextAnalysisQuery } from './user-input.selector';
 import { analyzeText } from '../../analysis/store/text-analysis.actions';
 import { CubeService } from '../cube.service';
 

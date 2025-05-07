@@ -1,6 +1,6 @@
 import { createAction, props } from '@ngrx/store';
-import { StringDictionary } from '../../models/common.model';
-import { AppInfo } from '../../models/app-info.model';
+import { StringDictionary } from '../../shared/models/common.model';
+import { AppInfo } from '../models/app-info.model';
 
 export const loadAppInfo = createAction('[App Info] Load App Info');
 

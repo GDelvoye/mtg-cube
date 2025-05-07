@@ -2,7 +2,7 @@ import { createReducer, on } from '@ngrx/store';
 import {
   setCubeSetSelected,
   setTextAnalysisQuery,
-} from '../actions/user-input.actions';
+} from '../../cube/store/user-input.actions';
 
 export interface UserInputState {
   query: string;

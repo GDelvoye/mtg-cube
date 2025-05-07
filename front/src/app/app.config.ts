@@ -16,11 +16,13 @@ import { provideEffects } from '@ngrx/effects';
 import { CubeSummaryEffects } from './cube/store/cube-summary.effects';
 import { TextAnalysisEffects } from './analysis/store/text-analysis.effects';
 import { textAnalysisReducer } from './analysis/store/text-analysis.reducer';
-import { userInputReducer } from './store/reducers/user-input.reducer';
-import { appInfoReducer } from './store/reducers/app-info.reducer';
-import { AppInfoEffects } from './store/effects/app-infos.effects';
+
+import { appInfoReducer } from './app-info/store/app-info.reducer';
+
 import { authReducer } from './auth/store/auth.reducer';
 import { AuthEffects } from './auth/store/auth.effects';
+import { AppInfoEffects } from './app-info/store/app-infos.effects';
+import { userInputReducer } from './cube/store/user-input.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [

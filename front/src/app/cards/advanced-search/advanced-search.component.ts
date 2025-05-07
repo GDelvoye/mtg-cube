@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { loadCards } from '../store/cards.actions';
 import { SearchCardsFilters } from '../models/search-cards-filters.model';
-import { MultiSelectSetComponent } from '../../multi-select-set/multi-select-set.component';
-import { selectAvailableSets } from '../../store/selectors/app-info.selector';
+import { MultiSelectSetComponent } from '../../shared/multi-select-set/multi-select-set.component';
+import { selectAvailableSets } from '../../app-info/store/app-info.selector';
 
 @Component({
   standalone: true,

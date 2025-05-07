@@ -11,7 +11,7 @@ import {
 import {
   selectCubeSetSelected,
   selectTextAnalysisQuery,
-} from '../../store/selectors/user-input.selector';
+} from '../../cube/store/user-input.selector';
 
 @Component({
   selector: 'app-text-analysis-display',

@@ -1,12 +1,11 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { VisualizationService } from '../../services/visualization.service';
 import {
   analyzeText,
   analyzeTextFailure,
   analyzeTextSuccess,
 } from './text-analysis.actions';
-import { setTextAnalysisQuery } from '../../store/actions/user-input.actions';
+import { setTextAnalysisQuery } from '../../cube/store/user-input.actions';
 import { catchError, map, mergeMap, of, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { AnalysisService } from '../analysis.service';

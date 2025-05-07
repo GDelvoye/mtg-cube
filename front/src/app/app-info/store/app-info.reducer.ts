@@ -1,10 +1,10 @@
 import { createReducer, on } from '@ngrx/store';
-import { AppInfo } from '../../models/app-info.model';
+import { AppInfo } from '../models/app-info.model';
 import {
   loadAppInfo,
   loadAppInfoFailure,
   loadAppInfoSuccess,
-} from '../actions/app-infos.actions';
+} from './app-infos.actions';
 
 export interface AppInfoState {
   appInfo: AppInfo | null;
