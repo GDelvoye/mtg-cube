@@ -6,6 +6,7 @@ from src.querying.query import get_all_sets
 from src.naming import generate_visualization_infos_official_set, get_stat_about_regex
 from src.querying.advanced_query import search
 from api.routes.auth import auth_bp
+from api.routes.cube import cube_bp
 
 
 app = Flask(__name__)
@@ -19,6 +20,7 @@ app.config.from_object(Config)
 jwt.init_app(app)
 
 app.register_blueprint(auth_bp, url_prefix="/auth")
+app.register_blueprint(cube_bp, url_prefix="/cube")
 
 
 @app.route("/hello", methods=["GET"])
